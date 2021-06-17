@@ -1,0 +1,71 @@
+Overall ideas:
+
+    be able to listen to WUMB curated songs easily...
+
+    use youtube to listen to the tracks
+        - search and match 
+            - (from ...) is the hard part
+        - use embedded player to play continuously
+
+    report which songs were found and misses:
+        - I wonder if the videos info will have the
+
+    enter in a time plus date 
+        - also allow shows e.g. Holly Harris 6-9pm Saturday
+
+    liking and storing:
+        - personal likes / dislikes
+        - bookmarks...go to a particular route to "save" time of the song
+        - backend that stores parsed playlists + associated youtube addresses
+
+    downloading
+        - use youtube-dl to download the songs
+        - use youtube-dl to save the songs to cloud
+        - use ffmpeg to extract audio only
+
+    other platfroms:
+        - spotify?
+        - associated websites:
+            - beale street caravan
+
+6.17
+    [x] get proxy server running the fetch
+        [x] why doesn't .text() on the fetch work?
+        https://gomakethings.com/converting-a-string-into-markup-with-vanilla-js/
+
+    [ ] get a git init/commit in there
+
+
+6.13
+
+All Programs on the station
+http://www.wumb.org/programs/programdescriptions.php?SortPrograms=4
+
+Affliliate Sites:
+
+    No playlist but does have a soundcloud:
+    https://www.bealestreetcaravan.com/weekly-show/bsc2532/
+
+Youtube api: search example
+	https://github.com/youtube/api-samples/blob/master/python/search.py
+
+[ ] how to make fetches from https document to http remotes?
+    - build a proxy server
+
+[ ] how to use 
+
+[ ] Youtube ProofOfConcept
+    [ ] get youtube api key
+    [ ] find demo example
+
+example playlist, saturday with Holly Harris:
+http://wumb.org/cgi-bin/playlist1.pl?date=210522
+http://wumb.org/cgi-bin/playlist1.pl?date=210521
+
+    -> notice each day changes by one
+
+parsing notes:
+    
+    tbs = document.getElementById("MainContentTextOnly").getElementsByTagName("tbody")
+    
+    Array.from(tbs).map( tb => {return {time: tb.children[0].innerText.split("\t")[0], artist: tb.children[0].innerText.split("\t")[1], title: tb.children[1].innerText}} )

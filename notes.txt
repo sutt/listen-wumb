@@ -37,11 +37,15 @@ Overall ideas:
 
     [x] get parsing on the DOM from the fetch
 
-    problems:
-        we get a lot of \n's in the innerHTML
-        dwe also lose our \t which means we don't parse the table correctly for `artist` vs `time` fields
+    [x] build a static site to simulate the page (no wifi)
+        -> site-mock/ express server on port 3005
+        -> could just use python -m http.server
 
-        - solutions...try a differnt method to convert from string to html
+    problems:
+        [x] we get a lot of \n's in the innerHTML
+        [x] dwe also lose our \t which means we don't parse the table correctly for `artist` vs `time` fields
+        [x] solutions...try a differnt method to convert from string to html
+
 
 
 6.13

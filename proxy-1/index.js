@@ -12,9 +12,11 @@ app.get("/", (req, res) => {
     res.json(data)
 })
 
+
 app.get("/parse", (req, res) => {
     
-    url = "http://wumb.org/cgi-bin/playlist1.pl"
+    // const url = "http://wumb.org/cgi-bin/playlist1.pl"
+    const url = "http://localhost:3005/page"
 
     fetch(url)
         .then(pageRes => {

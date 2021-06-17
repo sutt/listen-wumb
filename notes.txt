@@ -33,7 +33,15 @@ Overall ideas:
         [x] why doesn't .text() on the fetch work?
         https://gomakethings.com/converting-a-string-into-markup-with-vanilla-js/
 
-    [ ] get a git init/commit in there
+    [x] get a git init/commit in there
+
+    [x] get parsing on the DOM from the fetch
+
+    problems:
+        we get a lot of \n's in the innerHTML
+        dwe also lose our \t which means we don't parse the table correctly for `artist` vs `time` fields
+
+        - solutions...try a differnt method to convert from string to html
 
 
 6.13

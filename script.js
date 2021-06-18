@@ -2,8 +2,8 @@ console.log("hello js")
 
 const url = "http://127.0.0.1:3000/parse"
 
-
-fetch(url)
+function scrapeArchive () {
+    fetch(url)
     .then(res => {
         res.text()   
             .then(body => {
@@ -21,5 +21,31 @@ fetch(url)
                 })
 
                 console.log(data)
+                
+                displayPlaylistTable(data)
             })
     })
+}
+
+
+function displayPlaylistTable(playlist) {
+    const table = document.createElement("table")
+    let row     = null
+    let col     = null
+    playlist.forEach(item => {
+        row = document.createElement("tr")
+        for (key of ["time", "artist", "title"]) {
+            col = document.createElement("td")
+            col.innerText = item[key]
+            row.appendChild(col)
+        }
+        table.appendChild(row)
+    })
+    const div = document.getElementById("playlistMain")
+    div.appendChild(table)
+    
+
+}
+
+scrapeArchive()
+

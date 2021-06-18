@@ -28,6 +28,12 @@ Overall ideas:
         - associated websites:
             - beale street caravan
 
+6.18
+
+    [x] build a html display of js results
+
+    [ ] initial proof of concept for YT-search
+
 6.17
     [x] get proxy server running the fetch
         [x] why doesn't .text() on the fetch work?
@@ -46,7 +52,28 @@ Overall ideas:
         [x] dwe also lose our \t which means we don't parse the table correctly for `artist` vs `time` fields
         [x] solutions...try a differnt method to convert from string to html
 
+    [ ] Youtube ProofOfConcept
+        [x] get youtube api key
+        [ ] find demo example
 
+            Youtube search: javascript
+            https://github.com/youtube/api-samples/blob/master/javascript/search.js
+
+            Youtube search: python
+            https://github.com/youtube/api-samples/blob/master/python/search.py
+
+            [ ] get the auth.js part working, then the search sample
+                https://github.com/youtube/api-samples/blob/master/javascript/auth.js
+        
+        [ ] test if .env can work in proxy1
+            
+        Misc notes on Google API's
+
+            quotas on youtube
+            https://developers.google.com/youtube/v3/determine_quota_cost#videoCategories
+
+            how to restrict a key:
+            https://cloud.google.com/docs/authentication/api-keys?hl=en&visit_id=637596178206159069-1127291161&rd=1
 
 6.13
 
@@ -58,17 +85,10 @@ Affliliate Sites:
     No playlist but does have a soundcloud:
     https://www.bealestreetcaravan.com/weekly-show/bsc2532/
 
-Youtube api: search example
-	https://github.com/youtube/api-samples/blob/master/python/search.py
 
-[ ] how to make fetches from https document to http remotes?
+[x] how to make fetches from https document to http remotes?
     - build a proxy server
 
-[ ] how to use 
-
-[ ] Youtube ProofOfConcept
-    [ ] get youtube api key
-    [ ] find demo example
 
 example playlist, saturday with Holly Harris:
 http://wumb.org/cgi-bin/playlist1.pl?date=210522
@@ -81,3 +101,5 @@ parsing notes:
     tbs = document.getElementById("MainContentTextOnly").getElementsByTagName("tbody")
     
     Array.from(tbs).map( tb => {return {time: tb.children[0].innerText.split("\t")[0], artist: tb.children[0].innerText.split("\t")[1], title: tb.children[1].innerText}} )
+
+end

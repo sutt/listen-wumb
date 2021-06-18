@@ -44,8 +44,8 @@ Overall ideas:
         [x] apply the change from root -> frontend as git mv
         [x] commit initial frontend
     
-    [ ] stub out the key insertion handlebars solution
-        [ ] commit that
+    [x] stub out the key insertion handlebars solution
+        [x] commit that
 
     [ ] add yt search functionality to script.js
 

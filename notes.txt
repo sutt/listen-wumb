@@ -34,18 +34,46 @@ Overall ideas:
 
     [x] initial proof of concept for YT-search
 
+    [ ] build a node app to send the page with the key
+        [x] send the basic html
+        [x] how to serve javascript file?
+            https://expressjs.com/en/starter/static-files.html
+            -> express.static('public')
+        [x] demonstrate how to do this in a repo with handlebars installed
+        [x] how do you put the key into js file?
+        [ ] apply the change from root -> frontend as git mv
+        [ ] commit initial frontend
+    
+    [ ] stub out the key insertion handlebars solution
+        [ ] commit that
+
+    [ ] add yt search functionality to script.js
+
+    [ ] build a readme
+        [ ] quickstart section
+    
     [ ] check if site does actually scrape
 
     [ ] deploy proxy server the pipeline
 
+    [ ] build a setup.bat
+
     [ ] perform search for each of the items
         [ ] need to remove "(from <album-name>)" from `title`
 
+    [ ] get a heroku account personally
+
     misc questions:
     
+        [ ] how can we fetch from wumb.org from the client since that site is http while ours is likely https?
+        
         [ ] how to decode special characters?
             'Everlast - What it&#39;s Like (Music Video)' 
             I think that's the apostrophe
+
+        [ ] extra helpful params in search api?
+            e.g. sort by viewCount
+            https://developers.google.com/youtube/v3/guides/implementation/search
 
 6.17
     [x] get proxy server running the fetch

@@ -34,15 +34,15 @@ Overall ideas:
 
     [x] initial proof of concept for YT-search
 
-    [ ] build a node app to send the page with the key
+    [x] build a node app to send the page with the key
         [x] send the basic html
         [x] how to serve javascript file?
             https://expressjs.com/en/starter/static-files.html
             -> express.static('public')
         [x] demonstrate how to do this in a repo with handlebars installed
         [x] how do you put the key into js file?
-        [ ] apply the change from root -> frontend as git mv
-        [ ] commit initial frontend
+        [x] apply the change from root -> frontend as git mv
+        [x] commit initial frontend
     
     [ ] stub out the key insertion handlebars solution
         [ ] commit that

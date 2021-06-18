@@ -47,7 +47,19 @@ Overall ideas:
     [x] stub out the key insertion handlebars solution
         [x] commit that
 
-    [ ] add yt search functionality to script.js
+    [x] add yt search functionality to script.js
+        [x] add cors to cross-site
+        [x] why is it rendering as js obj in ul
+        [x] increase the timeout to view a increase the async rendering
+        [x] convert script js to hbs to turn on bTesting
+        [x] demonstrate the async nature of loading up the table
+            [x] show the uls get rendered
+            [x] build a mock youtube response app
+        
+    [ ] get example of yt-search api response
+
+    [ ] making the initial table fancier
+        [ ] add a css to and some classList stuff to make exapndeable subdirs for the result
 
     [ ] build a readme
         [ ] quickstart section
@@ -72,8 +84,16 @@ Overall ideas:
             I think that's the apostrophe
 
         [ ] extra helpful params in search api?
+            [ ] limit the duration
+                - could match the duration from the radio
             e.g. sort by viewCount
             https://developers.google.com/youtube/v3/guides/implementation/search
+
+        [ ] get one song from full album
+            b/c often full album is upload, 
+            the below has a description with each of the songs + timestampm on it
+            example - Ginny Hawker and Kay Justice	Waves on the Sea (from Bristol)
+                    https://www.youtube.com/watch?v=cO8W0UOtr3Q
 
 6.17
     [x] get proxy server running the fetch
@@ -93,7 +113,7 @@ Overall ideas:
         [x] dwe also lose our \t which means we don't parse the table correctly for `artist` vs `time` fields
         [x] solutions...try a differnt method to convert from string to html
 
-    [ ] Youtube ProofOfConcept
+    [x] Youtube ProofOfConcept
         [x] get youtube api key
         [x] find demo example
 

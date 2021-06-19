@@ -27,6 +27,37 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+6.19
+
+    How to Solve the quota limit:
+        - use the user quota instead of the non-logged in version?
+            - investigate by doc:
+                [x] difference between quotas
+                [x] api quotas
+                    https://console.cloud.google.com/iam-admin/quotas?service=youtube.googleapis.com&project=listen-wumb
+                    - "queries per minute"  : 1,800,000
+                    - "queries per day"     :    10,000
+                        
+                        this guy is wondering the same thing:
+                        https://stackoverflow.com/questions/62578928/google-api-quota-limits-for-youtube-api
+
+                        all the stackoverflows say the same thing:
+                        https://stackoverflow.com/questions/66673884/youtube-api-quotas-please-explain-quota-exceeded-how-to-solve
+                        https://stackoverflow.com/questions/58116255/youtube-v3-api-quota-usage-assist
+                        https://stackoverflow.com/questions/42998086/youtube-video-uploads-rejected-before-api-quota-limit-reached
+                        https://stackoverflow.com/questions/43158150/our-application-uploads-hundreds-of-videos-per-day-using-the-youtube-api-but-no
+                        https://stackoverflow.com/questions/42998086/youtube-video-uploads-rejected-before-api-quota-limit-reached
+                        https://stackoverflow.com/questions/66673884/youtube-api-quotas-please-explain-quota-exceeded-how-to-solve
+
+        - use bing search api
+
+        - use an economical approach to yt-search with:
+            - previous search cache-ing, "memo-ization"-stratgey
+            - user log-in to be able to search new blocks
+                - move yt-search server-side
+            - can have a microservice serverside, to check my api quota and display it clientside
+                - this is because we want the cloud console key to be hidden
+
 
 6.18
 
@@ -55,20 +86,30 @@ Overall ideas:
         [x] demonstrate the async nature of loading up the table
             [x] show the uls get rendered
             [x] build a mock youtube response app
-        
-    [ ] get example of yt-search api response
+
+    [ ] preparse project for next step:
+        [ ] observe the quota - reset + increment
+        [ ] turn the testing params on/off easily
+        [ ] build a setup.bat
+        [ ] get actual yt-search data onto mock-site
+
+    [ ] build a readme
+        [ ] quickstart section
+            - how to setup the .env
+        [ ] remove testing args
+        [ ] draw diagram of pipeline
+    
+    [ ] check if site does actually scrape
+    [ ] make the mock-site return actual youtube data
+        [ ] get example of yt-search api response
+        [ ] build list of shortvideos for player testing
 
     [ ] making the initial table fancier
         [ ] add a css to and some classList stuff to make exapndeable subdirs for the result
 
-    [ ] build a readme
-        [ ] quickstart section
-    
-    [ ] check if site does actually scrape
+    [ ] deploy proxy server to heroku
 
-    [ ] deploy proxy server the pipeline
-
-    [ ] build a setup.bat
+    [ ] how to code a file with js intellisense but hbs extension to enable key insertion?
 
     [ ] perform search for each of the items
         [ ] need to remove "(from <album-name>)" from `title`

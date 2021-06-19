@@ -16,14 +16,14 @@ The components of this application:
 ```
 YT_KEY=<youtube-data-v3-api-key>
 ```
-This key can be obtained here:
+This key can be obtained [here.](https://developers.google.com/youtube/v3/getting-started)
 
 **Start servers:** three express servers to run the app:
  - `frontend/` *- port 4000*
- - `proxy-1/`  *-  port 3000*
+ - `proxy-1/`  *-  port 3004*
  - `site-mock/`  *-  port 3005*
 
-You can do this manually or run the setup script in `misc/utils/`: setup.sh or setup.bat 
+You can do this manually (or **TODO** - run the setup script in `misc/utils/`: setup.sh or setup.bat).
 
 **View Page:** Then make a request to frontend to load the page, http://localhost:4000/. 
 
@@ -33,10 +33,15 @@ By default this should use site-mock server to serve wumb-playlist and yt-search
 
 v1 architecture:
 ![arch-v1-diagram](./misc/assets/arch-v1.png)
+*Access the diagram [here](https://docs.google.com/drawings/d/1A_ioaQ7K0XIW4GsnEkEQVx_wzUZJVe95PGS_5knNQC4/edit)*
 
 The proxy server allows us to get around CORS-error when fetching the html page from wumb domain.
 
-In v2 arch, the proxy server will also make the requests to youtube data api.
+In v2 arch:
+
+- the proxy server will also make the requests to youtube data api to ensure api-rate limiting and use auth to certify api access.
+
+- a server will store past requests to limit the amount of search-api-requests required to play songs.
 
 ### Testing Switches
 

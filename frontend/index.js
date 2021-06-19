@@ -19,7 +19,6 @@ app.get("/", (req, res) => {
         {root: __dirname + '/static/'}
     )
 })
-console.log(process.env.YT_KEY)
 
 app.get("/script.js", (req, res) => {
     res.render('script.hbs', {YT_KEY:process.env.YT_KEY})

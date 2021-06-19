@@ -5,7 +5,7 @@ const app = express()
 
 const bLog = true
 app.use(cors())
-app.set('port', process.env.PORT || 3000 )
+app.set('port', process.env.PORT || 3004 )
 
 app.get("/", (req, res) => {
     const data = {ok: true}

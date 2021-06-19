@@ -50,6 +50,10 @@ Overall ideas:
                         https://stackoverflow.com/questions/66673884/youtube-api-quotas-please-explain-quota-exceeded-how-to-solve
 
         - use bing search api
+            - looks promising
+            - $7 / 1,000 requests
+
+        - spotify api
 
         - use an economical approach to yt-search with:
             - previous search cache-ing, "memo-ization"-stratgey
@@ -87,22 +91,39 @@ Overall ideas:
             [x] show the uls get rendered
             [x] build a mock youtube response app
 
-    [ ] preparse project for next step:
-        [ ] observe the quota - reset + increment
-        [ ] turn the testing params on/off easily
-        [ ] build a setup.bat
-        [ ] get actual yt-search data onto mock-site
+    [x] preparse project for next step:
+        [x] change port 3000 -> 3004
+        [x] observe the quota - reset + increment
+            -> it did not reset at PDT mignight, maybe rolling 24 hours?
+        [x] turn the testing params on/off easily
+        [x] build a setup.bat
+        [x] get actual yt-search data onto mock-site
+            [x] demo loading json files from object
+            [x] how to load all files in a directory?
 
-    [ ] build a readme
-        [ ] quickstart section
+    [x] build a readme
+        [x] quickstart section
             - how to setup the .env
-        [ ] remove testing args
-        [ ] draw diagram of pipeline
+        [x] remove testing args
+        [x] draw diagram of pipeline
     
+    [x] make the mock-site return actual youtube data
+        [x] get example of yt-search api response
+        [x] build list of shortvideos for player testing
+            
+            use this to find params:
+            https://developers.google.com/youtube/v3/docs/search/list?apix=true&apix_params=%7B%22part%22%3A%22snippet%22%2C%22order%22%3A%22viewCount%22%2C%22q%22%3A%22skateboarding%20dog%22%2C%22type%22%3A%22video%22%2C%22videoDefinition%22%3A%22high%22%7D
+        
+                https://youtube.googleapis.com/youtube/v3/search?
+                    part=snippet
+                    &order=viewCount
+                    &q=skateboarding%20dog
+                    &type=video
+                    &videoDefinition=high
+                    &videoDuration=short
+                    &key=[YOUR_API_KEY]'
+
     [ ] check if site does actually scrape
-    [ ] make the mock-site return actual youtube data
-        [ ] get example of yt-search api response
-        [ ] build list of shortvideos for player testing
 
     [ ] making the initial table fancier
         [ ] add a css to and some classList stuff to make exapndeable subdirs for the result

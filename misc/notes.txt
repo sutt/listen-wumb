@@ -27,6 +27,65 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+6.22
+
+    [ ] build proxy-2
+        [ ] add mongoose + Model
+        [ ] how to lookup previous caches?
+        
+        [ ] move scrape api request onto server side
+
+6.21
+   
+   http://10.1.10.106:8880/guest/s/default/?ap=f0:9f:c2:6c:c2:98&ec=Lk0LfdVBUfriVQMTChpkCiCGnyq_ceWwNpfJ0IhWIKxxXgxTiZiQM0e-sw0U0C9fGu7MuY-9gCqyPU8sHiOuDHuGQRhuEFYGeCkL9DeH_PpidVV0HPQE5bFDjzJUE70hjcur--yzzz55ashSWIP0Axoz5_iSy8X-MUh1UjtHtL5lb_32_43n5Qh-hEWk0X6B
+
+   200 - prep
+    10 - js logic
+    20 - js logic
+    30 - break
+    40 - break
+    50 - js logic
+   300 - js logic
+    10 - js logic
+    20 - break
+    30 - test + commit
+
+    [ ] Connect the three elements
+        [x] Add Next button to demo
+        [x] add currently playing div highlighter
+        [x] connect the yt results to vids
+        [~] autoplay
+        [x] double skip bug
+        [x] Test Dead
+        [x] Test Live
+        [ ] problem in the order returned
+
+    misc
+        [ ] get actual songs on site mock
+        [ ] autoplay
+
+    [ ] Deploy
+        [ ] deploy all three
+            [ ] account signup
+            [ ] env variables
+            [ ] frontend/
+            [ ] proxy-1
+            [ ] mock-site
+
+        [ ] How to switch testing action without code control?
+            - different urls
+        [ ] Test Dead
+        [ ] Test Alive?
+
+    [ ] add scraping logic and basic player controls
+        [ ] date + time input buttons
+        [ ] tie the parameters of scraper to it
+        [ ] backend logic
+            [ ] parse string times
+            [ ] tie ?d= wumb.org paramter to a particular date
+        [ ] hard code the number of songs to play
+        
+
 
 6.20
 
@@ -48,7 +107,7 @@ Overall ideas:
         [x] proof of concept:    
             [x] using "Getting started" example
                 - why doesn't it autoplay on load?
-            [ ] loading a video
+            [x] loading a video
             player.loadVideoById(
                 {"videoId": "FKh8hjJNhWc", 
                 "startSeconds":22, 

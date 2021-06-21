@@ -21,7 +21,9 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var player;
+var player
+var currentVidIndex = 0
+
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         height: '390',
@@ -39,6 +41,28 @@ function onYouTubeIframeAPIReady() {
         'onStateChange': onPlayerStateChange
         }
     });
+}
+
+function nextVideo() {
+    player.loadVideoById(vids.pop())
+    player.playVideo()
+    currentVidIndex ++
+    setHighlightClass()
+}
+
+function setHighlightClass(v1=false) {
+        
+    const trs = document
+        .getElementById("playlistMain")
+        .children[0]
+        .querySelectorAll("tr")
+    
+    const newInd = v1 ? currentVidIndex * 2 : currentVidIndex
+    const oldInd = Math.max(-1, (v1 ? (currentVidIndex-1) * 2 : currentVidIndex - 1))
+    console.log(newInd, oldInd)
+    
+    trs[newInd].classList.add("current")
+    if (oldInd >= 0) trs[oldInd].classList.remove("current")
 }
 
 function onPlayerReady(event) {
@@ -66,6 +90,8 @@ function onPlayerStateChange(event) {
     }
 }
 
+
+// search yt api ----------------------------
 function searchItem(searchStr) {
 
     const bLog = false
@@ -93,7 +119,7 @@ function searchItem(searchStr) {
     }
 }
 
-function setElementValue(elem, scrapedObj) {
+function setElementValue(elem, scrapedObj, maxRes=5) {
     searchItem(buildSearchStr(scrapedObj))
     .then( data => {
         console.log(data)
@@ -105,7 +131,7 @@ function setElementValue(elem, scrapedObj) {
             // list up to 5 possilbe you tube videos
             const listTag = document.createElement("ul")
             const ytBaseUrl = `https://youtube.com/watch?v=`
-            for (let i=0; i < Math.min(5, data.length); i++) {
+            for (let i=0; i < Math.min(maxRes, data.length); i++) {
                 const itemTag = document.createElement("li")
                 const linkTag = document.createElement("a")
                 try {
@@ -118,6 +144,7 @@ function setElementValue(elem, scrapedObj) {
                 } catch {}
             }
             elem.innerHTML = listTag.outerHTML
+            cuePlaylist(data[0])
             
         }
     })
@@ -151,12 +178,18 @@ function scrapeArchive () {
                 console.log(data)
                 
                 displayPlaylistTable(data)
+                
             })
     })
 }
 
 
-function displayPlaylistTable(playlist) {
+function cuePlaylist(data) {
+    vids.push(data.id.videoId)
+    console.log(vids)
+}
+
+function displayPlaylistTable(playlist, v1=false) {
     const table = document.createElement("table")
     let row     = null
     let col     = null
@@ -171,17 +204,28 @@ function displayPlaylistTable(playlist) {
             col.innerText = item[key]
             row.appendChild(col)
         }
+        
+        if (!v1) {
+            col = document.createElement("td")
+            col.innerText = "loading..."
+            setElementValue(col, item, maxRes=1)
+            row.appendChild(col)
+        }
+
         table.appendChild(row)
         
-        row = document.createElement("tr")
-        col = document.createElement("td")
-        col.innerText = "loading..."
-        setElementValue(col, item)
-        row.appendChild(col)
-        table.appendChild(row)
+        if (v1) {
+            row = document.createElement("tr")
+            col = document.createElement("td")
+            col.innerText = "loading..."
+            setElementValue(col, item)
+            row.appendChild(col)
+            table.appendChild(row)
+        }
     })
     const div = document.getElementById("playlistMain")
     div.appendChild(table)
+    setHighlightClass(v1=v1)
     
 
 }

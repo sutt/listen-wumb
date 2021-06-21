@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .current {
+            background-color:pink;
+        }
+    </style>
 </head>
 <body>
     <h3>WUMB Playback</h3>
+    <div id="controlbar">
+        <button onclick="nextVideo()">Next</button>
+    </div>
+    <p></p>
     <div id="player"></div>
     <div id="playlistMain"></div>
     <script src="script.js"></script>

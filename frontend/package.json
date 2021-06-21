@@ -8,6 +8,7 @@
   },
   "keywords": [],
   "author": "",
+  "start": "node index.js",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",

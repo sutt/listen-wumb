@@ -27,6 +27,67 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+
+6.20
+
+    [x] check that quota has reset 
+        -> yes!
+        -> firing off one request now 9pm EST to see when it resets
+
+    [x] get a yt-embed-player running
+        
+        [x] research
+            
+            basic embedding with iframe
+            https://developers.google.com/youtube/player_parameters
+                seems like you can't actually control the playlist
+
+            using the api
+            https://developers.google.com/youtube/iframe_api_reference
+
+        [x] proof of concept:    
+            [x] using "Getting started" example
+                - why doesn't it autoplay on load?
+            [ ] loading a video
+            player.loadVideoById(
+                {"videoId": "FKh8hjJNhWc", 
+                "startSeconds":22, 
+                "endSeconds":33}
+                )
+            player.playVideo()
+            player.pauseVideo()
+            player.getCurrentTime()
+            player.getDuration()
+
+        [x] build a list of required params
+            [x] loading a song
+            [x] playing/pausing
+            [x] event for when song is up
+            YT.PlayerState:            
+                BUFFERING: 3
+                CUED: 5
+                ENDED: 0
+                PAUSED: 2
+                PLAYING: 1
+                UNSTARTED: -1
+            [ ] getting info on the video:
+                - duration
+
+        [ ] bugs - getting autoplay to start is buggy:
+
+            Failed to execute 'postMessage' on 'DOMWindow': The target origin provided
+
+            https://stackoverflow.com/questions/27573017/failed-to-execute-postmessage-on-domwindow-https-www-youtube-com-http
+
+
+    [ ] get a heroku account personally
+    [ ] deploy proxy server to heroku
+    [ ] better solution for .js -> .hbs / fill in key
+
+    [ ] move yt-search onto proxy
+
+
+
 6.19
 
     How to Solve the quota limit:
@@ -123,24 +184,24 @@ Overall ideas:
                     &videoDuration=short
                     &key=[YOUR_API_KEY]'
 
-    [ ] check if site does actually scrape
+    [x] check if site does actually scrape
 
-    [ ] making the initial table fancier
-        [ ] add a css to and some classList stuff to make exapndeable subdirs for the result
+    [~] making the initial table fancier
+        [~] add a css to and some classList stuff to make exapndeable subdirs for the result
 
-    [ ] deploy proxy server to heroku
+    
 
-    [ ] how to code a file with js intellisense but hbs extension to enable key insertion?
+    [~] how to code a file with js intellisense but hbs extension to enable key insertion?
+        -> just using cp
 
-    [ ] perform search for each of the items
-        [ ] need to remove "(from <album-name>)" from `title`
-
-    [ ] get a heroku account personally
+    [x] perform search for each of the items
+        [x] need to remove "(from <album-name>)" from `title`
 
     misc questions:
     
-        [ ] how can we fetch from wumb.org from the client since that site is http while ours is likely https?
-        
+        [x] how can we fetch from wumb.org from the client since that site is http while ours is likely https?
+            -> yes via proxy
+
         [ ] how to decode special characters?
             'Everlast - What it&#39;s Like (Music Video)' 
             I think that's the apostrophe

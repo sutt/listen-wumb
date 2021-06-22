@@ -29,11 +29,47 @@ Overall ideas:
             - beale street caravan
 6.22
 
+    Plan of Attack:
+     - get proxy-2 setup, and into the pipeline
+     - get this express <-> script.js figured out
+     - then move the searching functionality to server-sdie
+     - from there start building out search caching 
+
+     [x] standup proxy-2 on new port
+     [~] how to switch proxy-2 as enpoint on?
+        - command line arg?
+     [~] research + prototype express <-> js
+     [ ] move search server side
+        [ ] hbs variables attached to params and used server side
+            - since frontend js is based on route
+        [ ] fetch -> node-fetch
+
     [ ] build proxy-2
         [ ] add mongoose + Model
-        [ ] how to lookup previous caches?
-        
         [ ] move scrape api request onto server side
+
+    [ ] Test Deployment
+        [ ] get a new api token
+        [ ] Test Dead
+        [ ] Test Each Alive?
+
+    misc
+        [ ] get actual songs on site mock
+        [ ] autoplay
+        [ ] does embedded player do commercials on incognito?
+        [ ] need to split album from title
+        [ ] better way to handle insertion to js from express
+
+    [ ] add scraping logic and basic player controls
+        [ ] date + time input buttons
+        [ ] tie the parameters of scraper to it
+        [ ] backend logic
+            [ ] parse string times
+            [ ] tie ?d= wumb.org paramter to a particular date
+        [ ] hard code the number of songs to play
+        
+
+
 
 6.21
    
@@ -70,23 +106,21 @@ Overall ideas:
             >heroku create -a wumb-front-v1 
             >git subtree push --prefix frontend heroku master
             >heroku config:set ENV=val --app=wumb-front-v1
+            >heroku create -a wumb-site-mock  --remote heroku-site-mock
 
-        [ ] deploy all three
+        [x] deploy all three
             [x] account signup
             [x] env variables
             [x] frontend/
             [x] proxy-1
             [x] add URL switches
-            [ ] mock-site
+            [x] mock-site
 
-            [ ] test with vids = [] (empty on init)
-            [ ] commit - the test flag changes
-            [ ] push changes to frontend and proxy
+            [x] test with vids = [] (empty on init)
+            [x] commit - the test flag changes
+            [x] push changes to frontend and proxy
         
-        [ ] Test Deployment
-            [ ] get a new api token
-            [ ] Test Dead
-            [ ] Test Each Alive?
+        
             
         [x] How to switch testing action without code control?
             - different urls
@@ -108,23 +142,6 @@ Overall ideas:
         /alllive
             parser   -> heroku-proxy -> wumb
             searcher -> youtube-api
-    
-    misc
-        [ ] get actual songs on site mock
-        [ ] autoplay
-        [ ] does embedded player do commercials on incognito?
-        [ ] need to split album from title
-        [ ] better way to handle insertion to js from express
-
-    [ ] add scraping logic and basic player controls
-        [ ] date + time input buttons
-        [ ] tie the parameters of scraper to it
-        [ ] backend logic
-            [ ] parse string times
-            [ ] tie ?d= wumb.org paramter to a particular date
-        [ ] hard code the number of songs to play
-        
-
 
 6.20
 

@@ -25,7 +25,7 @@ const scraperParam = {{SCRAPER_LIVE}}
 
 const scraperEndpoint = {{PROD_ON}} 
                             ? "https://wumb-proxy-1.herokuapp.com/parse" + scraperParam
-                            : "http://127.0.0.1:3004/parse" + scraperParam
+                            : "http://127.0.0.1:3003/parse" + scraperParam
 
 const bTestingUrl = !{{SEARCHER_LIVE}}
 

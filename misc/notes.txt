@@ -39,26 +39,44 @@ Overall ideas:
      [~] how to switch proxy-2 as enpoint on?
         - command line arg?
      [~] research + prototype express <-> js
-     [ ] move search server side
-        [ ] hbs variables attached to params and used server side
+     [x] move search server side
+        [x] hbs variables attached to params and used server side
             - since frontend js is based on route
-        [ ] fetch -> node-fetch
+        [x] fetch -> node-fetch
 
-    [ ] build proxy-2
-        [ ] add mongoose + Model
-        [ ] move scrape api request onto server side
+    [ ] test the local site dead+alive
+        [ ] how to control TestingSwitches from frontend?
+            - when proxy2-serverside code needs to determine url for search endpoint
 
+    [ ] deploy proxy-2
+        [ ] delete existing app
+        [ ] get current frontend to match
+    
     [ ] Test Deployment
         [ ] get a new api token
         [ ] Test Dead
         [ ] Test Each Alive?
 
-    misc
+    [ ] make site-mock better
         [ ] get actual songs on site mock
-        [ ] autoplay
+        [ ] more pages on page
+
+    [ ] frontend improvements
+        [ ] player autoplay
+        [ ] date + time logic
+        [ ] still load existing playlist
+
+    [ ] prototype the search cache
+        [ ] add mongoose + Model
+        [ ] .find Methods
+
+    misc
+        
         [ ] does embedded player do commercials on incognito?
-        [ ] need to split album from title
+        [x] need to split album from title
         [ ] better way to handle insertion to js from express
+        [ ] we can cache scrapes as well
+        [ ] why doesn't intellisense work well in express workspaces?
 
     [ ] add scraping logic and basic player controls
         [ ] date + time input buttons

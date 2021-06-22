@@ -37,6 +37,8 @@ const bTestingMaxRows = {{TESTING_MAXROWS_OFF}}
 
 const testMaxRows = 5
 
+const playlistDate = "5-22-2021"
+
 
 // video player init
 
@@ -119,35 +121,32 @@ function onPlayerStateChange(event) {
 
 
 // search yt api ----------------------------
-function searchItem(searchStr) {
 
-    const bLog = false
-    const maxResults = 20
-
-    let url = `https://www.googleapis.com/youtube/v3/search`
+function searchItem(playlistObj) {
     
-    if (bTestingUrl) url = ytMockURL
+    const trackInfo = {...playlistObj, date: playlistDate}
     
-    url    += `?part=snippet&maxResults=${maxResults}`
-    url    += `&q=${searchStr}`
-    url    += `&type=video&key={{YT_KEY}}`
+    const params = Object.entries(trackInfo)
+                        .reduce((a,b) => {
+                            return a + b[0] + "=" + encodeURI(b[1]) + "&"
+                        }, "?" )
 
+    const url = "http://localhost:3003/search-yt-api" + params
     try {
         return  fetch(url)
             .then(res => res.json())
             .then(data => {
-                return data.items
+                return data
             })
-            .catch( err => {
-                console.log(`cant search for item: ${err}`)
-            })
+            .catch(err => undefined)
     } catch {
         return
     }
 }
 
 function setElementValue(elem, scrapedObj, maxRes=5) {
-    searchItem(buildSearchStr(scrapedObj))
+    // searchItem(buildSearchStr(scrapedObj))
+    searchItem(scrapedObj)
     .then( data => {
         console.log(data)
         if (data === undefined) {

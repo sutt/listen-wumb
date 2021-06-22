@@ -50,7 +50,7 @@ Overall ideas:
     20 - break
     30 - test + commit
 
-    [ ] Connect the three elements
+    [x] Connect the three elements
         [x] Add Next button to demo
         [x] add currently playing div highlighter
         [x] connect the yt results to vids
@@ -58,24 +58,63 @@ Overall ideas:
         [x] double skip bug
         [x] Test Dead
         [x] Test Live
-        [ ] problem in the order returned
+        [~] problem in the order returned
 
+    [ ] Deploy
+        [x] login to personal
+        
+        [x] how to deploy as subtree?  
+            https://stackoverflow.com/questions/5977234/how-can-i-push-a-part-of-my-git-repo-to-heroku
+
+        [x] how to do this with environmental variables?
+            >heroku create -a wumb-front-v1 
+            >git subtree push --prefix frontend heroku master
+            >heroku config:set ENV=val --app=wumb-front-v1
+
+        [ ] deploy all three
+            [x] account signup
+            [x] env variables
+            [x] frontend/
+            [x] proxy-1
+            [x] add URL switches
+            [ ] mock-site
+
+            [ ] test with vids = [] (empty on init)
+            [ ] commit - the test flag changes
+            [ ] push changes to frontend and proxy
+        
+        [ ] Test Deployment
+            [ ] get a new api token
+            [ ] Test Dead
+            [ ] Test Each Alive?
+            
+        [x] How to switch testing action without code control?
+            - different urls
+
+        Testing Scenarios:
+            
+        /home:
+            parser   -> heroku-proxy -> heroku-site-mock
+            searcher -> heroku-site-mock
+
+        /pagelive
+            parser   -> heroku-proxy -> wumb
+            searcher -> heroku-site-mock
+
+        /searchlive
+            parser   -> heroku-proxy -> heroku-site-mock
+            searcher -> youtube-api
+
+        /alllive
+            parser   -> heroku-proxy -> wumb
+            searcher -> youtube-api
+    
     misc
         [ ] get actual songs on site mock
         [ ] autoplay
-
-    [ ] Deploy
-        [ ] deploy all three
-            [ ] account signup
-            [ ] env variables
-            [ ] frontend/
-            [ ] proxy-1
-            [ ] mock-site
-
-        [ ] How to switch testing action without code control?
-            - different urls
-        [ ] Test Dead
-        [ ] Test Alive?
+        [ ] does embedded player do commercials on incognito?
+        [ ] need to split album from title
+        [ ] better way to handle insertion to js from express
 
     [ ] add scraping logic and basic player controls
         [ ] date + time input buttons

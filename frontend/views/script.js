@@ -1,20 +1,47 @@
 
+/* ==== FLAG VARIABLES =======
+    inserted via handlebars
 
-const scraperEndpoint = "http://127.0.0.1:3004/parse"
+    PROD_ON             - true to point scraper + search to heroku servers
+                          false (default) to point to local servers
 
-// configure testing / dev params
+    SCRAPER_LIVE        - true to tell proxy to scrape from wumb.org
+                          false (default) to tell proxy to scrape from site-mock
+    
+    SEARCHER_LIVE       - true  will point search at youtube-api 
+                          false (default) will point search at site-mock
+    
+    TESTING_MAXROWS_OFF - true (default) only up to 5 rows
+                          false to process/search/view all rows on playlist page
+                          
+    
+    YT_KEY              - api key
 
-const bTestingUrl = true
-//const ytMockURL = "http://127.0.0.1:3005/ytmock"
-const ytMockURL = "http://127.0.0.1:3005/yt-search"
+   =========================== */
 
-const bTestingMaxRows = true
+const scraperParam = {{SCRAPER_LIVE}}
+                        ? "?live=true"
+                        : ""
+
+const scraperEndpoint = {{PROD_ON}} 
+                            ? "https://wumb-proxy-1.herokuapp.com/parse" + scraperParam
+                            : "http://127.0.0.1:3004/parse" + scraperParam
+
+const bTestingUrl = !{{SEARCHER_LIVE}}
+
+const ytMockURL = {{PROD_ON}}
+                    ? "https://wumb-site-mock.herokuapp.com/yt-search"
+                    : "http://127.0.0.1:3005/yt-search"
+
+const bTestingMaxRows = {{TESTING_MAXROWS_OFF}}
+
 const testMaxRows = 5
 
 
 // video player init
 
-var vids = ["kg12uhZu9_o", "OJ1FxBJEoYA", '6HVa4Y-Ymlw']
+// var vids = ["kg12uhZu9_o", "OJ1FxBJEoYA", '6HVa4Y-Ymlw']
+var vids = []
 
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";

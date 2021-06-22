@@ -15,8 +15,14 @@ app.get("/", (req, res) => {
 
 app.get("/parse", (req, res) => {
     
-    // const url = "http://wumb.org/cgi-bin/playlist1.pl"
-    const url = "http://localhost:3005/page"
+    let url = null
+    if (req.query.live !== undefined) {
+        url = "http://wumb.org/cgi-bin/playlist1.pl"
+    } else {
+        url = process.env.NODE_ENV
+                    ? "https://wumb-site-mock.herokuapp.com/page"
+                    : "http://localhost:3005/page"
+    }
 
     fetch(url)
         .then(pageRes => {

@@ -37,11 +37,11 @@ v1 architecture:
 
 The proxy server allows us to get around CORS-error when fetching the html page from wumb domain.
 
-In v2 arch:
+v2 architecture:
 
-- the proxy server will also make the requests to youtube data api to ensure api-rate limiting and use auth to certify api access.
+![arch-v2-diagram](./misc/assets/arch-v2.png)
 
-- a server will store past requests to limit the amount of search-api-requests required to play songs.
+*Access the diagram [here](https://docs.google.com/drawings/d/17WBBhx0i-gKXrqctAnQ2oS2iCDM-sph17uPjn3SG5S4/edit)*
 
 ### Testing Switches
 

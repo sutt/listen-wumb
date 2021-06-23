@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const fetch = require('node-fetch')
@@ -19,7 +20,7 @@ function buildSearchStr(itemObj) {
     return encodeURI(s)
 }
 
-function searchItem(searchStr) {
+function searchItem(searchStr, live=false) {
     /*
         input: uri-encoded string to search
     
@@ -31,9 +32,9 @@ function searchItem(searchStr) {
     const bLog = false
     const maxResults = 20
 
-    let url = `https://www.googleapis.com/youtube/v3/search`
-
-    if (bTestingUrl) url = ytMockURL  // TODO - this needs a value
+    let url = live 
+                ? `https://www.googleapis.com/youtube/v3/search`
+                : ytMockURL
     
     url    += `?part=snippet&maxResults=${maxResults}`
     url    += `&q=${searchStr}`
@@ -43,6 +44,7 @@ function searchItem(searchStr) {
         return  fetch(url)
             .then(res => res.json())
             .then(data => {
+                console.log(url)
                 return data
             })
             .catch( err => {
@@ -61,11 +63,15 @@ app.get('/search-yt-api', (req, res) => {
     const decodeQuery = Object.fromEntries(
         Object.entries(req.query).map(kv => [kv[0], decodeURI(kv[1])])
     )
+
+    const live =  (decodeQuery?.live === 'true') ? true : false
+        
     console.log(decodeQuery)
+    if (live) console.log("running live")
 
     //Stub - Check if Songs is Cached
 
-    searchItem(buildSearchStr(decodeQuery))
+    searchItem(buildSearchStr(decodeQuery), live)
         .then(data => {
             res.json(data.items)
         })

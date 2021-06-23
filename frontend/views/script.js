@@ -24,14 +24,10 @@ const scraperParam = {{SCRAPER_LIVE}}
                         : ""
 
 const scraperEndpoint = {{PROD_ON}} 
-                            ? "https://wumb-proxy-1.herokuapp.com/parse" + scraperParam
+                            ? "https://wumb-proxy-2.herokuapp.com/parse" + scraperParam
                             : "http://127.0.0.1:3003/parse" + scraperParam
 
-const bTestingUrl = !{{SEARCHER_LIVE}}
-
-const ytMockURL = {{PROD_ON}}
-                    ? "https://wumb-site-mock.herokuapp.com/yt-search"
-                    : "http://127.0.0.1:3005/yt-search"
+const bSearcherLive = {{SEARCHER_LIVE}}
 
 const bTestingMaxRows = {{TESTING_MAXROWS_OFF}}
 
@@ -42,7 +38,6 @@ const playlistDate = "5-22-2021"
 
 // video player init
 
-// var vids = ["kg12uhZu9_o", "OJ1FxBJEoYA", '6HVa4Y-Ymlw']
 var vids = []
 
 var tag = document.createElement('script');
@@ -124,14 +119,16 @@ function onPlayerStateChange(event) {
 
 function searchItem(playlistObj) {
     
-    const trackInfo = {...playlistObj, date: playlistDate}
+    const trackInfo = {...playlistObj, date: playlistDate, live: bSearcherLive}
     
     const params = Object.entries(trackInfo)
                         .reduce((a,b) => {
                             return a + b[0] + "=" + encodeURI(b[1]) + "&"
                         }, "?" )
 
-    const url = "http://localhost:3003/search-yt-api" + params
+    const url = {{PROD_ON}} 
+                    ? "http://wumb-proxy-2/search-yt-api" + params
+                    : "http://localhost:3003/search-yt-api" + params
     try {
         return  fetch(url)
             .then(res => res.json())

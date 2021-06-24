@@ -128,7 +128,7 @@ function searchItem(playlistObj) {
                         }, "?" )
 
     const url = {{PROD_ON}} 
-                    ? "http://wumb-proxy-2.herokuapp.com/search-yt-api" + params
+                    ? "https://wumb-proxy-2.herokuapp.com/search-yt-api" + params
                     : "http://localhost:3003/search-yt-api" + params
     try {
         return  fetch(url)

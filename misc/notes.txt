@@ -27,6 +27,12 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+
+6.24
+
+        player api reference
+        https://developers.google.com/youtube/iframe_api_reference#Operations
+
 6.22
 
     Plan of Attack:
@@ -44,31 +50,63 @@ Overall ideas:
             - since frontend js is based on route
         [x] fetch -> node-fetch
 
-    [ ] test the local site dead+alive
-        [ ] how to control TestingSwitches from frontend?
+    [x] test the local site dead+alive
+        [x] how to control TestingSwitches from frontend?
+            - look in to how scrape did ?live
             - when proxy2-serverside code needs to determine url for search endpoint
+            [x] why is key not loading? -> need .dotenv package
+            [x] not getting ?live param stuck on
+                [x] cp script.js
+                [x] why does Aimee Mann keep getting stuck on site-mock?
+                    
+                    -> escape characters:
+                        
+                        actual: Aimee Mann	True Believer (from @#%&*! Smilers)
+                        encoded: &artist=Aimee%20Mann&title=True%20Believer%20(from%20@
 
-    [ ] deploy proxy-2
-        [ ] delete existing app
-        [ ] get current frontend to match
+                        [ ] what is the character preventing this ?
+        
+
+    [x] deploy proxy-2
+        [x] delete existing app
+        [x] get current deploy frontend to match
     
-    [ ] Test Deployment
-        [ ] get a new api token
-        [ ] Test Dead
-        [ ] Test Each Alive?
+    [x] Test Deployment
+        [~] get a new api token
+        [x] Test Dead
+        [x] Test Each Alive?
+    
+    [x] On deployyment, bug: parse?live=true as default
+        [x] is this seen on local as well?
+            -> not on parse
+        [x] verify on deploy
+            -> false alarm
+
+    [ ] deploy version still making search requests to mock-site (instead of proxy-2)
+        [x] verify on local -> correct there
+        [ ] fix and deploy
+            [ ] how to verify if deploy went through?
+
+    [x] autoplay working
+        -> its tough, lookas like there's it depends if user brings focus to the webpage, it will autoplay otherwise notfocus
+        
 
     [ ] make site-mock better
         [ ] get actual songs on site mock
         [ ] more pages on page
 
     [ ] frontend improvements
+        [ ] fix async load out-of-order `vids` bug
         [ ] player autoplay
         [ ] date + time logic
         [ ] still load existing playlist
-
+    
+    
     [ ] prototype the search cache
         [ ] add mongoose + Model
         [ ] .find Methods
+        [ ] add api rate limiting on proxy-2
+            no more than 5 requests in 10 seconds (without override)
 
     misc
         
@@ -77,6 +115,7 @@ Overall ideas:
         [ ] better way to handle insertion to js from express
         [ ] we can cache scrapes as well
         [ ] why doesn't intellisense work well in express workspaces?
+        [ ] each signed-in user has their own api key associated with theri account
 
     [ ] add scraping logic and basic player controls
         [ ] date + time input buttons

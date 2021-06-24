@@ -3,7 +3,7 @@ cd ..
 cd frontend
 start npx nodemon index.js
 cd ..
-cd proxy-1
+cd proxy-2
 start npx nodemon index.js
 cd ..
 cd site-mock

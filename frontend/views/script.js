@@ -38,6 +38,7 @@ const playlistDate = "5-22-2021"
 
 // video player init
 
+// var vids = ["wDk0eA8HaAg"]
 var vids = []
 
 var tag = document.createElement('script');
@@ -52,19 +53,19 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         height: '390',
         width: '640',
-        videoId: vids.pop(),
+        // videoId: vids.pop(),
         // host:"https://youtube.com",
         playerVars: {
-        'playsinline': 1,
         // 'autoplay':1,
+        'playsinline': 1,
         // 'origin': 'http://localhost:4000'
-
         },
         events: {
         'onReady': onPlayerReady,
         'onStateChange': onPlayerStateChange
         }
     });
+    
 }
 
 function nextVideo() {
@@ -127,7 +128,7 @@ function searchItem(playlistObj) {
                         }, "?" )
 
     const url = {{PROD_ON}} 
-                    ? "http://wumb-proxy-2/search-yt-api" + params
+                    ? "http://wumb-proxy-2.herokuapp.com/search-yt-api" + params
                     : "http://localhost:3003/search-yt-api" + params
     try {
         return  fetch(url)
@@ -254,4 +255,3 @@ function displayPlaylistTable(playlist, v1=false) {
 }
 
 scrapeArchive()
-

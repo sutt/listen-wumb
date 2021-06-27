@@ -9,11 +9,25 @@
             background-color:pink;
         }
     </style>
+    <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
     <h3>WUMB Playback</h3>
-    <div id="controlbar">
-        <button onclick="nextVideo()">Next</button>
+    <div id="lookupcontrols" class="controlbar">
+        <span id="lookupPrompt">Chose a time and date for playlist...</span>
+        <form onsubmit="timeForm"><br>
+            <label>time:</label>
+            <input type="text" value="6:00">
+            <label>date:</label>
+            <input type="text" value="5-22-21">
+        </form>
+        <span id="lookupResults"></span>
+    </div>
+    <div id="controlbar" class="controlbar">
+        <button onclick="previousVideo()"> << Prev</button>
+        <button onclick="nextVideo()">Next >> </button>
+        <button onclick="playVideo()">Play</button>
+        <button onclick="pauseVideo()">Pause</button>
     </div>
     <p></p>
     <div id="player"></div>

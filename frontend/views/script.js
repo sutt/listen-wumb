@@ -51,13 +51,14 @@ var currentVidIndex = 0
 
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
-        height: '390',
-        width: '640',
+        height: '130', //'270', //'390',
+        width:  '240', //'480', //'640',
         // videoId: vids.pop(),
         // host:"https://youtube.com",
         playerVars: {
         // 'autoplay':1,
         'playsinline': 1,
+        'controls': 0,
         // 'origin': 'http://localhost:4000'
         },
         events: {
@@ -69,11 +70,36 @@ function onYouTubeIframeAPIReady() {
 }
 
 function nextVideo() {
-    player.loadVideoById(vids.pop())
-    player.playVideo()
     currentVidIndex ++
+    player.loadVideoById(vids[currentVidIndex])
+    player.playVideo()
     setHighlightClass()
 }
+
+function previousVideo() {
+    currentVidIndex -- 
+    player.loadVideoById(vids[currentVidIndex])
+    player.playVideo()
+    setHighlightClass()
+}
+
+function setVideoIndex(index) {
+    currentVidIndex = index
+    player.loadVideoById(vids[currentVidIndex])
+    player.playVideo()
+    setHighlightClass()
+}
+
+function pauseVideo() {
+    player.pauseVideo()
+    console.log("video paused")
+}
+
+function playVideo() {
+    player.playVideo()
+    console.log("video played")
+}
+
 
 function setHighlightClass(v1=false) {
         
@@ -109,9 +135,9 @@ function onPlayerStateChange(event) {
         player.playVideo()
     }
     if (event.data == YT.PlayerState.ENDED) {
-        if (vids.length == 0) return
-        player.loadVideoById(vids.pop())
-        player.playVideo()
+        if (currentVidIndex == vids.length - 1)
+        currentVidIndex = -1
+        nextVideo()
     }
 }
 
@@ -142,7 +168,7 @@ function searchItem(playlistObj) {
     }
 }
 
-function setElementValue(elem, scrapedObj, maxRes=5) {
+function setElementValue(elem, scrapedObj, index, maxRes=5) {
     // searchItem(buildSearchStr(scrapedObj))
     searchItem(scrapedObj)
     .then( data => {
@@ -152,24 +178,20 @@ function setElementValue(elem, scrapedObj, maxRes=5) {
         } else if (data.length < 1) {
             elem.innerHTML = "<span>No Youtube Results Found</span>"
         } else {
-            // list up to 5 possilbe you tube videos
-            const listTag = document.createElement("ul")
-            const ytBaseUrl = `https://youtube.com/watch?v=`
-            for (let i=0; i < Math.min(maxRes, data.length); i++) {
-                const itemTag = document.createElement("li")
-                const linkTag = document.createElement("a")
-                try {
-                    const src = ytBaseUrl + data[i].id.videoId
-                    linkTag.setAttribute("href", src)
-                    linkTag.innerText = src
-                    itemTag.innerHTML = linkTag.outerHTML
-                    listTag.appendChild(itemTag)
-
-                } catch {}
-            }
-            elem.innerHTML = listTag.outerHTML
-            cuePlaylist(data[0])
             
+            const ytBaseUrl = `https://youtube.com/watch?v=`
+            const resultIndex = 0
+            const resultVideoId = data[resultIndex].id.videoId
+
+            const linkTag = document.createElement("a")
+                try {
+                    const src = ytBaseUrl + resultVideoId
+                    linkTag.setAttribute("href", src)
+                    linkTag.innerText = resultVideoId
+                } catch {}
+            
+            elem.innerHTML = linkTag.outerHTML
+            cuePlaylist(data[resultIndex], index)
         }
     })
 }
@@ -208,9 +230,16 @@ function scrapeArchive () {
 }
 
 
-function cuePlaylist(data) {
-    vids.push(data.id.videoId)
+function cuePlaylist(data, index) {
+    vids[index] = data.id.videoId
     console.log(vids)
+    if (index === 0) {
+        setTimeout( () => {
+            player.loadVideoById(vids[0])
+            player.playVideo()
+            setHighlightClass()
+        }, 2000)
+    }
 }
 
 function displayPlaylistTable(playlist, v1=false) {
@@ -220,19 +249,34 @@ function displayPlaylistTable(playlist, v1=false) {
     if (bTestingMaxRows) {
         playlist = playlist.slice(0, testMaxRows)
     }
-    playlist.forEach(item => {
+    playlist.forEach((item, itemIndex) => {
         
         row = document.createElement("tr")
-        for (key of ["time", "artist", "title"]) {
+        row.classList.add("playlist-row")
+
+        col = document.createElement("td")
+        col.classList.add(`playlist-col`)
+        col.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve"><g><path d="M45.563,29.174l-22-15c-0.307-0.208-0.703-0.231-1.031-0.058C22.205,14.289,22,14.629,22,15v30   c0,0.371,0.205,0.711,0.533,0.884C22.679,45.962,22.84,46,23,46c0.197,0,0.394-0.059,0.563-0.174l22-15   C45.836,30.64,46,30.331,46,30S45.836,29.36,45.563,29.174z M24,43.107V16.893L43.225,30L24,43.107z"/><path d="M30,0C13.458,0,0,13.458,0,30s13.458,30,30,30s30-13.458,30-30S46.542,0,30,0z M30,58C14.561,58,2,45.439,2,30   S14.561,2,30,2s28,12.561,28,28S45.439,58,30,58z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>`
+        col.addEventListener('click', () => {setVideoIndex(itemIndex)})
+        row.appendChild(col)
+        
+        const keyNames = ["time", "artist", "title"]
+        for (let i = 0; i < keyNames.length; i++) {
+            
             col = document.createElement("td")
-            col.innerText = item[key]
+            col.classList.add(`playlist-col`)
+            col.classList.add(`playlist-col-${i}`)
+            col.innerText = item[keyNames[i]]
+
             row.appendChild(col)
         }
         
         if (!v1) {
             col = document.createElement("td")
+            col.classList.add(`playlist-col`)
+            col.classList.add(`playlist-col-${keyNames.length}`)
             col.innerText = "loading..."
-            setElementValue(col, item, maxRes=1)
+            setElementValue(col, item, itemIndex, maxRes=1)
             row.appendChild(col)
         }
 
@@ -255,3 +299,4 @@ function displayPlaylistTable(playlist, v1=false) {
 }
 
 scrapeArchive()
+

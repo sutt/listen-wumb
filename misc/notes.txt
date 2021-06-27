@@ -82,26 +82,35 @@ Overall ideas:
         [x] verify on deploy
             -> false alarm
 
-    [ ] deploy version still making search requests to mock-site (instead of proxy-2)
+    [x] deploy version still making search requests to mock-site (instead of proxy-2)
         [x] verify on local -> correct there
-        [ ] fix and deploy
-            [ ] how to verify if deploy went through?
+        [x] fix and deploy
+            [x] how to verify if deploy went through?
+        [x] new error - cors
 
     [x] autoplay working
         -> its tough, lookas like there's it depends if user brings focus to the webpage, it will autoplay otherwise notfocus
-        
+
+    [x] frontend improvements
+        [x] fix async load out-of-order `vids` bug
+        [x] player autoplay -> must bring to focus to page within 2 secs of load
+        [x] date + time logic
 
     [ ] make site-mock better
         [ ] get actual songs on site mock
         [ ] more pages on page
+        [ ] control which page via ?d=21065 parameter
 
-    [ ] frontend improvements
-        [ ] fix async load out-of-order `vids` bug
-        [ ] player autoplay
-        [ ] date + time logic
-        [ ] still load existing playlist
-    
-    
+    [ ] adding the date/time logic
+        [ ] figure out the mapping "actual" Date() <-> wumb's ?d=1234
+        [ ] date logic works with proxy for different pages
+        
+        [ ] time function to get a subset of songs
+        [ ] show that you can grabbed different blocks of songs
+
+    [ ] frontend bug: 
+        clicking songs outof order doesn't hide the previously highlighted song row
+
     [ ] prototype the search cache
         [ ] add mongoose + Model
         [ ] .find Methods

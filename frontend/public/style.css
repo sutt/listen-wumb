@@ -1,0 +1,45 @@
+
+
+.controlbar {
+    border-style: groove;
+    padding: 1em;
+}
+
+#player {
+    padding: 1em;
+}
+
+table {
+    border-style: groove;
+    padding: 1em;
+    background-color: beige;
+    /* border-spacing-bottom: 2em; */
+}
+
+.playlist-col {
+    padding-bottom: 50px;
+    min-width:3em;
+    padding: 0.5em;
+}
+/* .playlist-control-1 {
+    min-width:3em;
+    padding: 2em;
+} */
+
+.playlist-col-0 {
+    max-width: 3em;
+}
+
+.playlist-col-1 {
+    max-width:10em;
+}
+
+.playlist-col-2 {
+    max-width: 18em;
+    
+}
+
+
+
+
+

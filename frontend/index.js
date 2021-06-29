@@ -58,6 +58,7 @@ app.get("/:args", (req, res) => {
 
     } else {
         res.send(`args: ${req.params.args} not recognized`)
+        return
     }
     res.sendFile(
         'index.html',    

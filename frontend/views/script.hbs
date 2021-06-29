@@ -21,7 +21,7 @@
 
 const scraperParam = {{SCRAPER_LIVE}}
                         ? "?live=true"
-                        : ""
+                        : "?live=false"
 
 const scraperEndpoint = {{PROD_ON}} 
                             ? "https://wumb-proxy-2.herokuapp.com/parse" + scraperParam
@@ -35,16 +35,35 @@ const testMaxRows = 5
 
 var playlistDate = "5-22-2021"
 var playlistTime = "1:00 pm"
+var scrapeDate   = "210522"
 
 function timeForm(e) {
     e.preventDefault()
     const elems = e.target.elements
     playlistTime = elems.time.value
     playlistDate = elems.date.value
-    console.log('${playlistTime} | ${playlistDate}')
+    scrapeDate   = cvtDateParam(playlistDate)
+    console.log('${playlistTime} | ${playlistDate} | ${scrapeDate}')
     scrapeArchive()
 }
 
+function cvtDateParam(sUserDate) {    
+
+    function pad(n, amt=2) {
+        return (n.toString().length === amt) ? n: `0${n}`
+    }
+
+    const elems = sUserDate.split("-")
+    if (elems.length !== 3) {
+        console.log('date not properly formatted in three parts')
+    }
+    const attemptCast = new Date(`20${elems[2]}-${pad(elems[0])}-${pad(elems[1])}`)
+    if (attemptCast.toString() === 'Invalid Date') {
+        console.log(`bad date - not able to cast`)
+    }
+
+    return `${elems[2]}${pad(elems[0])}${pad(elems[1])}`
+}
 
 // video player init
 
@@ -216,7 +235,7 @@ function buildSearchStr(itemObj) {
 
 
 function scrapeArchive () {
-    fetch(scraperEndpoint)
+    fetch(scraperEndpoint + `&d=${scrapeDate}`)
     .then(res => {
         res.text()   
             .then(body => {

@@ -84,14 +84,17 @@ app.get('/search-yt-api', (req, res) => {
 app.get("/parse", (req, res) => {
     
     let url = null
-    if (req.query.live !== undefined) {
+    if (req.query.live === 'true') {
         url = "http://wumb.org/cgi-bin/playlist1.pl"
     } else {
         url = process.env.NODE_ENV
                     ? "https://wumb-site-mock.herokuapp.com/page"
                     : "http://localhost:3005/page"
     }
-
+    if (req.query.d !== undefined) {
+        url += `?date=${req.query.d}`
+    }
+    console.log(`url: ${url}`)
     fetch(url)
         .then(pageRes => {
             pageRes.text()
@@ -113,5 +116,5 @@ app.get("/parse", (req, res) => {
 })
 
 app.listen(app.get('port'), () => {
-    console.log(`proxy1 listening on ${app.get('port')}`)
+    console.log(`proxy2 listening on ${app.get('port')}`)
 })

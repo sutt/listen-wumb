@@ -96,7 +96,7 @@ Overall ideas:
         [x] player autoplay -> must bring to focus to page within 2 secs of load
         [x] date + time logic
 
-    [ ] make site-mock better
+    [x] make site-mock better
         [x] get actual songs on site mock
             looks like we just put stuff in yt-mock-data
                 [x] put the api client in the mock directory
@@ -111,13 +111,39 @@ Overall ideas:
 
         [x] control which page via ?d=21065 parameter
 
-        [ ] deploy
+        
 
-    [ ] adding the date/time logic
-        [ ] what forms of string dates work for js?
+    [x] adding the date/time logic
+        [x] what forms of string dates work for js?
         [x] figure out the mapping "actual" Date() <-> wumb's ?d=1234
             -> YYMMDD
-        [ ] date logic works with proxy for different pages
+        [x] add js functionality frontend
+            [x] how to catch new Date() errors for validation?
+        [x] test it works from front end
+        [x] add d= parameter on proxy-2
+        test:
+        [x] date logic works with proxy for different pages
+        [x] date logic works live
+
+    
+    [ ] deploy + test new logic
+
+        [x] locally: test scrape-dead + scrape-live
+            using slug /pagelive
+
+        [x] locally: test search-live 
+            [x] test how well it does -> pretty good!
+        
+        [ ] make it 1:10 for the frontend default
+
+        [ ] site-mock
+        [ ] frontend
+        [ ] proxy2
+
+        [ ] deplyed: test wumb-dead + wumb-live 
+            [x] how do you control it from the frontend?
+                -> via slug
+
         
     [x] time function to get a subset of songs
             [x] implement first five songs after time specified
@@ -134,6 +160,7 @@ Overall ideas:
         error message:
             Video unavailable
             Playback on other websites has been disabled by the video owner.
+            -> occurs on "canned heat, on the road again"
         [ ] frontend logic to check for status
         [ ] check results json for the indicator
         

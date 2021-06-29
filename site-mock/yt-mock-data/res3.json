@@ -1,0 +1,692 @@
+{
+    "kind": "youtube#searchListResponse",
+    "etag": "SftKR1DF6s1ND1WzCcCf3H3QZPI",
+    "nextPageToken": "CBQQAA",
+    "regionCode": "US",
+    "pageInfo": {
+        "totalResults": 1000000,
+        "resultsPerPage": 20
+    },
+    "items": [
+        {
+            "kind": "youtube#searchResult",
+            "etag": "c2bRfOPVtKLIecm12Cb__gviaJg",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "PBHYbeg2nao"
+            },
+            "snippet": {
+                "publishedAt": "2018-10-23T19:55:54Z",
+                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                "title": "The Russians Are Coming! The Russians Are Coming! (1966) - The Norwegians Scene (1/10) | Movieclips",
+                "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/PBHYbeg2nao/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/PBHYbeg2nao/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/PBHYbeg2nao/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Movieclips",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-10-23T19:55:54Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "Waa6j3XHJnz7mArXaWG-Z37_e_c",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "pzqoqzSZkPs"
+            },
+            "snippet": {
+                "publishedAt": "2016-04-27T19:13:32Z",
+                "channelId": "UCSD_HH3Y0akXsTOtaCHoEwA",
+                "title": "VAL BENNETT - The Russians Are Coming [1968]",
+                "description": "LEE'S 7'' (re) Bunny Lee production.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/pzqoqzSZkPs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/pzqoqzSZkPs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/pzqoqzSZkPs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Bionic Dub",
+                "liveBroadcastContent": "none",
+                "publishTime": "2016-04-27T19:13:32Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "r4FbIFc9XT5_w0P8d9MkLDcB090",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "k3TpBfnaEmI"
+            },
+            "snippet": {
+                "publishedAt": "2018-10-23T19:56:08Z",
+                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Under Arrest Scene (10/10) | Movieclips",
+                "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/k3TpBfnaEmI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/k3TpBfnaEmI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/k3TpBfnaEmI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Movieclips",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-10-23T19:56:08Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "VCWkmSSnZVYDbbn5wMtGyLYSZ6A",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "VktjIxVAD1E"
+            },
+            "snippet": {
+                "publishedAt": "2019-06-17T06:25:26Z",
+                "channelId": "UCalmlLqIrJtw7MZTjpgOHLQ",
+                "title": "THE RUSSIANS ARE COMING !THE RUSSIANS ARE COMING !",
+                "description": "clips from \"THE RUSSIANS ARE COMING !THE RUSSIANS ARE COMING !\" (1966)",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/VktjIxVAD1E/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/VktjIxVAD1E/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/VktjIxVAD1E/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "ACER LEE",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-06-17T06:25:26Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "aQOsxE7lo4O-o1v4oWflzllpozY",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "ijBU9q7fb3U"
+            },
+            "snippet": {
+                "publishedAt": "2018-10-23T19:56:01Z",
+                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                "title": "The Russians Are Coming! The Russians Are Coming! (1966) - The Militia Scene (5/10) | Movieclips",
+                "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ijBU9q7fb3U/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ijBU9q7fb3U/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ijBU9q7fb3U/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Movieclips",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-10-23T19:56:01Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "iIcFqwQsZSvK2XkdaGmcaqhH7bs",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "V7jHoqe9mH0"
+            },
+            "snippet": {
+                "publishedAt": "2019-01-28T17:00:04Z",
+                "channelId": "UC084FSD0cO4ZOS5SonULRCQ",
+                "title": "The Russians Are Coming - Parks and Recreation",
+                "description": "Ron: They're coming! They're coming! They're coming! Andy: Who? The Russians? Ron: No, the state auditors. Parks and Recreation. Stream Now On Peacock: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/V7jHoqe9mH0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/V7jHoqe9mH0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/V7jHoqe9mH0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Parks and Recreation",
+                "liveBroadcastContent": "none",
+                "publishTime": "2019-01-28T17:00:04Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "jn_WOz2fCgICJ0AhUNxZjmEmuL8",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "MYErK-XLJv0"
+            },
+            "snippet": {
+                "publishedAt": "2018-10-23T19:56:07Z",
+                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Not Personal Scene (9/10) | Movieclips",
+                "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/MYErK-XLJv0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/MYErK-XLJv0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/MYErK-XLJv0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Movieclips",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-10-23T19:56:07Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "bXpxIZK2YDMiVj6mH6ETOdZrekQ",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "VzXMcMcBwA8"
+            },
+            "snippet": {
+                "publishedAt": "2018-10-23T19:56:06Z",
+                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Down the Stairs Scene (8/10) | Movieclips",
+                "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/VzXMcMcBwA8/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/VzXMcMcBwA8/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/VzXMcMcBwA8/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Movieclips",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-10-23T19:56:06Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "l_lcuEz_FTsOWm-zlUCYZ5QC_9Q",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "jMqI9UV3ob4"
+            },
+            "snippet": {
+                "publishedAt": "2018-10-23T19:56:03Z",
+                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Got to Organize Scene (6/10) | Movieclips",
+                "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/jMqI9UV3ob4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/jMqI9UV3ob4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/jMqI9UV3ob4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Movieclips",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-10-23T19:56:03Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ciUvQwOAluEBsOyrwug6fCULCHw",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "XBOQdkIu6fM"
+            },
+            "snippet": {
+                "publishedAt": "2009-03-24T14:55:43Z",
+                "channelId": "UCo6iTwpTlFbWIhueTM_m80g",
+                "title": "The Russians Are Coming Movie Theme",
+                "description": "(c) Copyright MCMLXV by The Mirisch Corporation of Delaware. I claim no ownership of this video. I'll be glad to remove this clip, if this post infringes any ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/XBOQdkIu6fM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/XBOQdkIu6fM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/XBOQdkIu6fM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Ferdaus Ahmad Zaki",
+                "liveBroadcastContent": "none",
+                "publishTime": "2009-03-24T14:55:43Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "gsikvkhZZaSBGtYiE7imaWIBg44",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "1PRZi8t38OQ"
+            },
+            "snippet": {
+                "publishedAt": "2018-10-23T19:56:04Z",
+                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Trust the Enemy Scene (7/10) | Movieclips",
+                "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/1PRZi8t38OQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/1PRZi8t38OQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/1PRZi8t38OQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Movieclips",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-10-23T19:56:04Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ypKOiM6kGpBouQ7uNElsgyyBwi4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "YmRuVv2V5Go"
+            },
+            "snippet": {
+                "publishedAt": "2018-10-23T19:56:00Z",
+                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Hanging Around Scene (4/10) | Movieclips",
+                "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/YmRuVv2V5Go/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/YmRuVv2V5Go/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/YmRuVv2V5Go/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Movieclips",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-10-23T19:56:00Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "hEmhq1lTX-k0X0Nrm_-C6T3FhsY",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "ILkyIHOOoq4"
+            },
+            "snippet": {
+                "publishedAt": "2018-10-23T19:55:56Z",
+                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Finding the Key Scene (2/10) | Movieclips",
+                "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ILkyIHOOoq4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ILkyIHOOoq4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ILkyIHOOoq4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Movieclips",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-10-23T19:55:56Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "3fF_sfogV0KU04tADg3XyPlsTIg",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "JNcNy7bJxDg"
+            },
+            "snippet": {
+                "publishedAt": "2018-10-23T19:55:58Z",
+                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Arnold Benedict Scene (3/10) | Movieclips",
+                "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/JNcNy7bJxDg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/JNcNy7bJxDg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/JNcNy7bJxDg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Movieclips",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-10-23T19:55:58Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "nNtmJEkVc59CJ9VbVtz033sl89g",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "QGgJPmOUmDU"
+            },
+            "snippet": {
+                "publishedAt": "2018-08-02T19:27:25Z",
+                "channelId": "UCbmK16ZLxxAh8F8Y5HlCD1g",
+                "title": "Emergency! Everybody to Get From Street!",
+                "description": "From the classic 1966 film, \"The Russians Are Coming! The Russians Are Coming!\" My late father's favorite film. **NOTE: If you comment please don't make it ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/QGgJPmOUmDU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/QGgJPmOUmDU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/QGgJPmOUmDU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Vespin Feebler",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-08-02T19:27:25Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "v1T4i17YBZVd_BOwEc_biNm8etg",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "4LnoEke4bvA"
+            },
+            "snippet": {
+                "publishedAt": "2020-01-03T10:50:01Z",
+                "channelId": "UCZ0YeY63VADmSD-tgwqiK-g",
+                "title": "ＳＥＲＢＷＡＶＥ　－　ＲＵＳＳＩＡＮＳ　ＡＲＥ　ＣＯＭＩＮＧ　花憶ぷり医",
+                "description": "This video is a tribute to the Russian VDV soldiers who rushed to get to Kosovo and Metohija from their station in Bosnia. They managed to capture and hold the ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/4LnoEke4bvA/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/4LnoEke4bvA/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/4LnoEke4bvA/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "TheAthelasProject",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-01-03T10:50:01Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "XzxCsR9BZzsBfS_cSqJweQRVGPU",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "ja662T1YROY"
+            },
+            "snippet": {
+                "publishedAt": "2014-11-21T19:18:38Z",
+                "channelId": "UCqbs5WKrML0zHmzAIHhOf5g",
+                "title": "The Russians Are Coming",
+                "description": "Provided to YouTube by The Orchard Enterprises The Russians Are Coming · Val Bennet Val Bennet EP ℗ 2011 Culture Town Released on: 2011-04-18 ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ja662T1YROY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ja662T1YROY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ja662T1YROY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Val Bennet - Topic",
+                "liveBroadcastContent": "none",
+                "publishTime": "2014-11-21T19:18:38Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "bWPf50pqFDq_8jDBMwCC1PMI9ac",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "o0GJFvux7d0"
+            },
+            "snippet": {
+                "publishedAt": "2014-05-01T16:16:10Z",
+                "channelId": "UCJx_GMg45cCW1tKNMJ-3UPA",
+                "title": "A.D.1984 - The Russians Are Coming! (1979)",
+                "description": "A.D.1984 - The Russians Are Coming! (UK 7\" 1979 Voyage International Record LTD)",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/o0GJFvux7d0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/o0GJFvux7d0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/o0GJFvux7d0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "skandal1966",
+                "liveBroadcastContent": "none",
+                "publishTime": "2014-05-01T16:16:10Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "MiXmdpl733v011aZO8HPX3DS82U",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "BMOyTzkam0s"
+            },
+            "snippet": {
+                "publishedAt": "2020-03-17T03:40:56Z",
+                "channelId": "UCBWEbL_4ge4-ov-gyed06RQ",
+                "title": "The Russians are Coming - Emergency!",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/BMOyTzkam0s/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/BMOyTzkam0s/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/BMOyTzkam0s/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "pebey",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-03-17T03:40:56Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "q5I8Dt0O-_pwX6cr0SwKlW9P8XM",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "fjOF_rAZABc"
+            },
+            "snippet": {
+                "publishedAt": "2018-04-28T09:19:27Z",
+                "channelId": "UC85qZLYkcBQxyfhnpqP9WOA",
+                "title": "The Russians Are Coming the Russians Are Coming (1966) title sequence",
+                "description": "Title sequence from The Russians Are Coming the Russians Are Coming (1966) designed by Pablo Ferro Help me make more videos: ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/fjOF_rAZABc/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/fjOF_rAZABc/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/fjOF_rAZABc/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "MovieTitles",
+                "liveBroadcastContent": "none",
+                "publishTime": "2018-04-28T09:19:27Z"
+            }
+        }
+    ]
+}

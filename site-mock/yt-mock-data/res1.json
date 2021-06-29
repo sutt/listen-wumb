@@ -1,691 +1,691 @@
 {
     "kind": "youtube#searchListResponse",
-    "etag": "Lr9oiTgpmpshYHJSWJ4y0rWPS7w",
+    "etag": "LpeX6ppUXb09j2xsP51M6paJo0s",
     "nextPageToken": "CBQQAA",
     "regionCode": "US",
     "pageInfo": {
-        "totalResults": 5371,
+        "totalResults": 18433,
         "resultsPerPage": 20
     },
     "items": [
         {
             "kind": "youtube#searchResult",
-            "etag": "Qg8lrt28IJRh_pWYjbuyuu1olqY",
+            "etag": "olX2fUUpehKdSymZSn_nj9Xvx_w",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "svlmMjMzheY"
+                "videoId": "yFEvdWHK7GA"
             },
             "snippet": {
-                "publishedAt": "2021-03-24T04:00:25Z",
-                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
-                "title": "Charley Crockett - &quot;Midnight Run&quot; (Official Video)",
-                "description": "Written by James Hand Filmed & Edited by Bobby Cochran www.bobbycochranphoto.com https://vimeo.com/movingstillstudios Wardrobe Styling by Taylor ...",
+                "publishedAt": "2008-02-07T13:52:34Z",
+                "channelId": "UCR4qsGjxaJ4w0kU9_qbNaSg",
+                "title": "Barrington LevY-Under Mi Sensi (original version)",
+                "description": "Under Mi Sensi.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/svlmMjMzheY/default.jpg",
+                        "url": "https://i.ytimg.com/vi/yFEvdWHK7GA/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/svlmMjMzheY/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/yFEvdWHK7GA/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/svlmMjMzheY/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/yFEvdWHK7GA/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Charley Crockett",
+                "channelTitle": "Micaah Alina",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-03-24T04:00:25Z"
+                "publishTime": "2008-02-07T13:52:34Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "ZByc9tweMc5CrozSpAFG7VMonQQ",
+            "etag": "6K3BF6eh-gB1DpLNa_twjH-JO_s",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "IbmComyShKM"
+                "videoId": "KNWrzCPkOqc"
             },
             "snippet": {
-                "publishedAt": "2021-03-16T03:18:29Z",
-                "channelId": "UCvlqZwIYH1Mp9Snc-13mjdg",
-                "title": "Charley Crockett - Midnight Run - Houston 2021",
-                "description": "Charley Crockett at Dosey Doe in Houston, Texas playing \"midnight Run\"",
+                "publishedAt": "2015-07-15T22:32:07Z",
+                "channelId": "UChCDNXr_7WGYGcVsk6JuboQ",
+                "title": "Barrington Levy - Unda Mi Sensi",
+                "description": "Official music video for \"Unda Mi Sensi\" by Barrington Levy Download on iTunes: http://radi.al/BLeviUndaMiSense Subscribe: http://bit.ly/QzHcrb Directed and ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/IbmComyShKM/default.jpg",
+                        "url": "https://i.ytimg.com/vi/KNWrzCPkOqc/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/IbmComyShKM/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/KNWrzCPkOqc/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/IbmComyShKM/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/KNWrzCPkOqc/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Sammy Seahawk",
+                "channelTitle": "Radial by The Orchard",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-03-16T03:18:29Z"
+                "publishTime": "2015-07-15T22:32:07Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "6cdn6hz1t7ecdn3eW0T71z_stB4",
+            "etag": "RVHeQIOjnfnehzkG8rW4h5OSp4I",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "r0J5IgaCD4o"
+                "videoId": "EB6IqzfVVC0"
             },
             "snippet": {
-                "publishedAt": "2021-03-08T00:06:52Z",
-                "channelId": "UCUmzTF0S_jkyb2HvodhZ2vw",
-                "title": "Charley Crockett-Midnight Run (James Hand Cover)",
-                "description": "Billy Bobs Texas FWTX Stockyards 3-6-21.",
+                "publishedAt": "2012-01-25T18:28:10Z",
+                "channelId": "UCPpTIBhWlWySJjg7QJUMIsw",
+                "title": "Barrington Levy Under Me Sensi - Live",
+                "description": "Barrington Levy Under Me Sensi - Live Under Mi Sensi.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/r0J5IgaCD4o/default.jpg",
+                        "url": "https://i.ytimg.com/vi/EB6IqzfVVC0/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/r0J5IgaCD4o/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/EB6IqzfVVC0/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/r0J5IgaCD4o/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/EB6IqzfVVC0/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "TonedeafHippie",
+                "channelTitle": "aeon 23",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-03-08T00:06:52Z"
+                "publishTime": "2012-01-25T18:28:10Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "K56rsA-SSVogsXlhPZE02I-YyN0",
+            "etag": "Yal9L12x4URDOXH97GvMc3_9CKI",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "1EU_NzRS3DM"
+                "videoId": "M9C6F3jdZFI"
             },
             "snippet": {
-                "publishedAt": "2021-03-29T07:57:01Z",
-                "channelId": "UCwT0d44JU5cSFcLmMX1qPUA",
-                "title": "FIRST TIME HEARING Charley Crockett - Midnight Run REACTION!!!",
-                "description": "ROAD TO 3000 SUBS*** to Donate using Paypal : https://www.paypal.com/paypalme/HindsightVisionary Contact Me: Instagram: ...",
+                "publishedAt": "2016-08-11T09:21:18Z",
+                "channelId": "UC_C0ybxpgF4XaXHx11AEWOg",
+                "title": "Barrington Levy - Under Mi Sensi - 80&#39;s Reggae Dancehall Classic",
+                "description": "Official audio for 'Under Mi Sensi' by Barrington Levy, released on Jet Star Records. Subscribe to the official Jet Star channel for more reggae classics, lost gems ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/1EU_NzRS3DM/default.jpg",
+                        "url": "https://i.ytimg.com/vi/M9C6F3jdZFI/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/1EU_NzRS3DM/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/M9C6F3jdZFI/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/1EU_NzRS3DM/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/M9C6F3jdZFI/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Highly Combustible Reacts",
+                "channelTitle": "Jet Star Music",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-03-29T07:57:01Z"
+                "publishTime": "2016-08-11T09:21:18Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "vpzIvTyu0M_v0Sl6bbLNnCXHvZQ",
+            "etag": "bSKHAOx5Mvk6EZ4ps1mS2dksqRw",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "zvie5df0SP8"
+                "videoId": "i5_Rz_ysD0c"
             },
             "snippet": {
-                "publishedAt": "2020-05-27T13:53:00Z",
-                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
-                "title": "Charley Crockett - &quot;Welcome To Hard Times&quot; (Official Video)",
-                "description": "\"Welcome To Hard Times” from the album 'Welcome To Hard Times'— now available! https://orcd.co/welcometohardtimes Follow Charley Crockett: ...",
+                "publishedAt": "2009-12-21T10:41:15Z",
+                "channelId": "UCPFIKRrwPQRW2_HzLHYV9XQ",
+                "title": "barrington levy - under mi sensi",
+                "description": "barrington levy - under mi sensi jah.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/zvie5df0SP8/default.jpg",
+                        "url": "https://i.ytimg.com/vi/i5_Rz_ysD0c/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/zvie5df0SP8/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/i5_Rz_ysD0c/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/zvie5df0SP8/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/i5_Rz_ysD0c/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Charley Crockett",
+                "channelTitle": "11natural11",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-05-27T13:53:00Z"
+                "publishTime": "2009-12-21T10:41:15Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "ZsyhezqxC1Yg-S3WXqj-rTdZIIc",
+            "etag": "bdqva19MNZt4rH27OQemIi2wVnU",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "Kv6mIBCK30I"
+                "videoId": "k3O2lOtpPw0"
             },
             "snippet": {
-                "publishedAt": "2021-04-08T18:21:33Z",
-                "channelId": "UCvlqZwIYH1Mp9Snc-13mjdg",
-                "title": "Charley Crockett - Midnight Run - 2021",
-                "description": "Charley Crockett at 2920 Roadhouse on 4-3-2021 playing \"Midnight Run\" and \"Lesson in Depression\"",
+                "publishedAt": "2014-11-09T03:03:27Z",
+                "channelId": "UCwbJQdLZcDj8UADN49nc5OQ",
+                "title": "Under Me Sensi",
+                "description": "Provided to YouTube by VP Records Under Me Sensi · Barrington Levy Reggae Anthology: Sweet Reggae Music (1979-84) ℗ 2008 Greensleeves Records ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/Kv6mIBCK30I/default.jpg",
+                        "url": "https://i.ytimg.com/vi/k3O2lOtpPw0/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/Kv6mIBCK30I/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/k3O2lOtpPw0/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/Kv6mIBCK30I/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/k3O2lOtpPw0/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Sammy Seahawk",
+                "channelTitle": "Barrington Levy - Topic",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-04-08T18:21:33Z"
+                "publishTime": "2014-11-09T03:03:27Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "R_So1rIbBND2FBfILsBMA8Di-zQ",
+            "etag": "U0ERHw3b3mTgWnpz48UEVOs5D18",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "NR5HkaRABAU"
+                "videoId": "9x163xToWWg"
             },
             "snippet": {
-                "publishedAt": "2020-06-30T14:00:05Z",
-                "channelId": "UCdIYexPlB0PmnVpTTFxX6dg",
-                "title": "Charley Crockett - Run Horse Run (Official Video)",
-                "description": "\"Run Horse Run\" from the album 'Welcome To Hard Times'— available July 31st 2020 https://orcd.co/welcometohardtimes Follow Charley Crockett: ...",
+                "publishedAt": "2019-09-24T17:37:36Z",
+                "channelId": "UC1H10_sBLFoix0xf_B2mKyg",
+                "title": "Barrington Levy - Under Mi Sensi (FULL LYRICS) Here I Come Album 1985",
+                "description": "UNDER MI SENSI BARRINGTON LEVY.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/NR5HkaRABAU/default.jpg",
+                        "url": "https://i.ytimg.com/vi/9x163xToWWg/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/NR5HkaRABAU/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/9x163xToWWg/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/NR5HkaRABAU/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/9x163xToWWg/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "CharleyCrockettVEVO",
+                "channelTitle": "Brandon Chviek",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-06-30T14:00:05Z"
+                "publishTime": "2019-09-24T17:37:36Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "heA_gfrSD6AWbfSnNeG_f4kEU3w",
+            "etag": "fRxQo2Q4gf0RuMIJW0roDFngL3U",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "3qj92EUfVM4"
+                "videoId": "nXSRKR582fM"
             },
             "snippet": {
-                "publishedAt": "2021-05-24T16:46:02Z",
-                "channelId": "UC1BKJ1Nqd15v5krBnnQkisQ",
-                "title": "Charley Crockett - Midnight Run",
+                "publishedAt": "2016-07-21T13:29:11Z",
+                "channelId": "UC1g8kQCmvaZvuzqF1-CxvfA",
+                "title": "Jah Trouble - Under Mi Sensi [Official Video 2016]",
+                "description": "Musically & Graphically Directed by Romain Sherkhan Chiffre for Tiger Records and Raatid Magic films.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/nXSRKR582fM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/nXSRKR582fM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/nXSRKR582fM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Reggaeville",
+                "liveBroadcastContent": "none",
+                "publishTime": "2016-07-21T13:29:11Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "ZZTs-Scy44kxKHLOqtP0UUclWjI",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "Q2F5BIPzDME"
+            },
+            "snippet": {
+                "publishedAt": "2014-04-06T14:56:06Z",
+                "channelId": "UCzUwyTYseEhVDowpFUPKukA",
+                "title": "Barrington Levy &amp; Beenie Man - Under mi sensi",
+                "description": "Beskrivning.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Q2F5BIPzDME/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Q2F5BIPzDME/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Q2F5BIPzDME/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Kangalija",
+                "liveBroadcastContent": "none",
+                "publishTime": "2014-04-06T14:56:06Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "oXKlkLEU_2kRmsLns0-3Z7gh5Ao",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "bmQmmZgSPFs"
+            },
+            "snippet": {
+                "publishedAt": "2017-02-10T03:50:23Z",
+                "channelId": "UCwbJQdLZcDj8UADN49nc5OQ",
+                "title": "Under Mi Sensi",
+                "description": "Provided to YouTube by Greensleeves Records Under Mi Sensi · Barrington Levy DJ Andy Smith: Greensleeves Document ℗ 2008 Greensleeves Records ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/bmQmmZgSPFs/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/bmQmmZgSPFs/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/bmQmmZgSPFs/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Barrington Levy - Topic",
+                "liveBroadcastContent": "none",
+                "publishTime": "2017-02-10T03:50:23Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "VBHxSQuOJ_aHSw-CgvPjtXXsqv4",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "qPAZcT33pmQ"
+            },
+            "snippet": {
+                "publishedAt": "2014-03-17T20:21:48Z",
+                "channelId": "UCD6PJH_RiJJ-m7P5jeANoVg",
+                "title": "Barrington Levy - Under Mi Sensi",
+                "description": "Hi Grade Ganja Anthems.",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/qPAZcT33pmQ/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/qPAZcT33pmQ/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/qPAZcT33pmQ/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "Rastafari",
+                "liveBroadcastContent": "none",
+                "publishTime": "2014-03-17T20:21:48Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "B9fnHAPNJYZHpd5BSe4hAmmRN9k",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "5XF6VAZsD2Y"
+            },
+            "snippet": {
+                "publishedAt": "2020-02-24T03:51:04Z",
+                "channelId": "UCzwlriz56pXf7-qZfdX2uZg",
+                "title": "Barrington Levy - Under Mi Sensi (Live at O2 Academy Brixton 2020)",
+                "description": "Barrington Levy performing Under Mi Sensi at O2 Academy Brixton in 2020                    ! Please Don't Forget to Like, Share this Video & Subscribe to My ...",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/5XF6VAZsD2Y/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/5XF6VAZsD2Y/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/5XF6VAZsD2Y/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    }
+                },
+                "channelTitle": "SlimSouljahTV",
+                "liveBroadcastContent": "none",
+                "publishTime": "2020-02-24T03:51:04Z"
+            }
+        },
+        {
+            "kind": "youtube#searchResult",
+            "etag": "F9u_q0v4cK0QxvKK4F-q_BB-Aig",
+            "id": {
+                "kind": "youtube#video",
+                "videoId": "QPkbzmewENo"
+            },
+            "snippet": {
+                "publishedAt": "2018-04-19T19:11:04Z",
+                "channelId": "UC6aJ2CGHVLKRoRH5_WwbeAg",
+                "title": "Barrington Levy    Under Me Sensi  1985",
                 "description": "",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/3qj92EUfVM4/default.jpg",
+                        "url": "https://i.ytimg.com/vi/QPkbzmewENo/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/3qj92EUfVM4/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/QPkbzmewENo/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/3qj92EUfVM4/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/QPkbzmewENo/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Todd H.",
+                "channelTitle": "zuluonedrop B",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-05-24T16:46:02Z"
+                "publishTime": "2018-04-19T19:11:04Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "nmsQEqFsFnN-E_hby1XUKGre-sQ",
+            "etag": "549BQNxW438lW9JLZ-w9GhZFwMg",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "sMkIrrv-c5c"
+                "videoId": "IVnbg7KLupc"
             },
             "snippet": {
-                "publishedAt": "2021-02-19T05:00:43Z",
-                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
-                "title": "Charley Crockett - &quot;Lesson In Depression&quot; (Official Video)",
-                "description": "Written by James Hand Filmed & Edited by Bobby Cochran www.bobbycochranphoto.com https://vimeo.com/movingstillstudios Wardrobe Styling by Taylor ...",
+                "publishedAt": "2011-11-19T20:04:40Z",
+                "channelId": "UCSyUAIboeeBzTTkJ0SC-x9g",
+                "title": "Barrington Levy - Under me Sensi (Original)",
+                "description": "Early Dancehall 7\" (P) 1985 Time One Int. Jamaica.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/sMkIrrv-c5c/default.jpg",
+                        "url": "https://i.ytimg.com/vi/IVnbg7KLupc/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/sMkIrrv-c5c/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/IVnbg7KLupc/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/sMkIrrv-c5c/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/IVnbg7KLupc/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Charley Crockett",
+                "channelTitle": "Luigi TuneIn",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-02-19T05:00:43Z"
+                "publishTime": "2011-11-19T20:04:40Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "DgBvISsqB_TWhIBTIYmkJI3-g1o",
+            "etag": "6dw4U_xnBA3Zhjxtbu5XbEuoDB8",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "IZGLZ9WZYoQ"
+                "videoId": "1h54uUM8zzY"
             },
             "snippet": {
-                "publishedAt": "2020-02-27T22:49:17Z",
-                "channelId": "UCBQ8NG_fqzmAmGEriQW1XZQ",
-                "title": "Charley Crockett - Full Performance | OurVinyl Sessions",
-                "description": "0:00 The Valley 2:57 Banjo Pickin' Man 5:27 9 LB Hammer 8:00 Single Girl Follow OurVinyl: Facebook: https://www.facebook.com/ourvinyl Twitter: ...",
+                "publishedAt": "2008-01-23T22:08:35Z",
+                "channelId": "UCwrQdej_aqVBRW6pNnSZ4uQ",
+                "title": "Barrington Levy LIVE , under mi sensi (Good Quality)",
+                "description": "Belly up aspen Colorado dec 07.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/IZGLZ9WZYoQ/default.jpg",
+                        "url": "https://i.ytimg.com/vi/1h54uUM8zzY/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/IZGLZ9WZYoQ/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/1h54uUM8zzY/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/IZGLZ9WZYoQ/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/1h54uUM8zzY/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "OurVinyl",
+                "channelTitle": "jrgongras",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-02-27T22:49:17Z"
+                "publishTime": "2008-01-23T22:08:35Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "enPlqe_JBsukOGot_NbASpeVHLY",
+            "etag": "8Rewrmj96nDvw_CBPcVTDkoQTRg",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "CRpHrMKjnd8"
+                "videoId": "GOEi6WoQ-oY"
             },
             "snippet": {
-                "publishedAt": "2020-11-16T16:55:16Z",
-                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
-                "title": "Charley Crockett - An Evening with Charley Crockett",
-                "description": "Live Audio by David Wilson Wardrobe Styling by Taylor Grace Additional Production by Kat Trujillo Follow Charley Crockett: http://charleycrockett.com ...",
+                "publishedAt": "2013-01-21T15:35:15Z",
+                "channelId": "UC87l-Gf1o2b2tXNegfCuiwQ",
+                "title": "JAH SCREW - DUB VERSION (TIME ONE) Barrington Levy - Under Me Sensi Dub",
+                "description": "dub from the roots.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/CRpHrMKjnd8/default.jpg",
+                        "url": "https://i.ytimg.com/vi/GOEi6WoQ-oY/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/CRpHrMKjnd8/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/GOEi6WoQ-oY/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/CRpHrMKjnd8/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/GOEi6WoQ-oY/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Charley Crockett",
+                "channelTitle": "im junglist",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-11-16T16:55:16Z"
+                "publishTime": "2013-01-21T15:35:15Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "P6CXNupag1kmHOXQeAQ9IC8qXmE",
+            "etag": "mDzU8cf6Pj0D6DshEss4qb3GHE4",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "f-AxhM_glDU"
+                "videoId": "e8VGsd8YgwM"
             },
             "snippet": {
-                "publishedAt": "2019-07-25T16:13:01Z",
-                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
-                "title": "Charley Crockett-- &quot;Borrowed Time&quot; (Official Video)",
-                "description": "\"Borrowed Time” taken from the album 'The Valley'—Out now Follow Charley Crockett: http://charleycrockett.com http://facebook.com/charleycrockettmusic ...",
+                "publishedAt": "2008-09-15T00:23:58Z",
+                "channelId": "UCjo7Uix6YMfMalMQK7s6xew",
+                "title": "Barrington Levy - Under Me Sensi Live",
+                "description": "Barrington Levy performing Under Me Sensi in AnfiteatroTito Puente Puerto Rico on 5/26/2007.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/f-AxhM_glDU/default.jpg",
+                        "url": "https://i.ytimg.com/vi/e8VGsd8YgwM/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/f-AxhM_glDU/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/e8VGsd8YgwM/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/f-AxhM_glDU/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/e8VGsd8YgwM/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Charley Crockett",
+                "channelTitle": "Miguel Gandia",
                 "liveBroadcastContent": "none",
-                "publishTime": "2019-07-25T16:13:01Z"
+                "publishTime": "2008-09-15T00:23:58Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "Wa55cSgPHtIs-PF5TksKkebPRmE",
+            "etag": "g8qQLDARwcJUBNYEMNKhBhG7twM",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "lnRHnCM3jBA"
+                "videoId": "kGjGro5DzFc"
             },
             "snippet": {
-                "publishedAt": "2018-01-02T18:30:38Z",
-                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
-                "title": "Charley Crockett - &quot;Jamestown Ferry&quot; (Official Video)",
-                "description": "From the 2017 album, “Charley Crockett Presents: Lil' G.L.'s Honky Tonk Jubilee”. Music video written and Directed by Charley Crockett and Lyza Renee.",
+                "publishedAt": "2017-02-05T07:31:19Z",
+                "channelId": "UCHRQwI5NEmWULm382dVoeHQ",
+                "title": "Barrington Levy - Under Mi Sensi (original version)",
+                "description": "Barrington Levy - Under Me Sensi 1993.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/lnRHnCM3jBA/default.jpg",
+                        "url": "https://i.ytimg.com/vi/kGjGro5DzFc/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/lnRHnCM3jBA/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/kGjGro5DzFc/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/lnRHnCM3jBA/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/kGjGro5DzFc/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Charley Crockett",
+                "channelTitle": "PositiveReggaeVibes",
                 "liveBroadcastContent": "none",
-                "publishTime": "2018-01-02T18:30:38Z"
+                "publishTime": "2017-02-05T07:31:19Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "5cqmeCkIg97ZTB_gePouDgsMxUM",
+            "etag": "JOaKw-neagXbJn7BWdE-Q_EOy9k",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "5Ud_aX1De_Q"
+                "videoId": "Uh4CaTAtntI"
             },
             "snippet": {
-                "publishedAt": "2021-04-18T18:30:19Z",
-                "channelId": "UCT026-V-yydceXZSN-P_eMA",
-                "title": "Charlie Crockett - Run Horse Run live from Haute Spot 4/17/21",
-                "description": "Charlie Crockett - Run Horse Run live from Haute Spot Venue, Cedar Park, TX 4/17/21.",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/5Ud_aX1De_Q/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/5Ud_aX1De_Q/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/5Ud_aX1De_Q/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "Tom Spano",
-                "liveBroadcastContent": "none",
-                "publishTime": "2021-04-18T18:30:19Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "ZwnGx3ZenVUahxoMZ8LaAdlHwKw",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "C2-NBAzLNEI"
-            },
-            "snippet": {
-                "publishedAt": "2021-01-20T01:00:15Z",
-                "channelId": "UCMtOu74eKZGWdewUmTWIU-Q",
-                "title": "Charley Crockett Live At The Lonesome Lounge Sessions",
-                "description": "On March 3, 2020 We held our last in-person Lonesome Lounge Session before the COVID-19 pandemic shut down stages across the world. Lucky for us, we ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/C2-NBAzLNEI/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/C2-NBAzLNEI/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/C2-NBAzLNEI/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "TexasPublicRadio",
-                "liveBroadcastContent": "none",
-                "publishTime": "2021-01-20T01:00:15Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "oPvhPDo_yOzsC95begU5HtqedY8",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "PoOgmxDOPUQ"
-            },
-            "snippet": {
-                "publishedAt": "2021-02-21T02:33:33Z",
-                "channelId": "UC6lMcENwFyLcvO46RPvRIlg",
-                "title": "Round This World - Charley Crockett Cover",
+                "publishedAt": "2013-04-24T12:08:23Z",
+                "channelId": "UCIkFYWE2wwk_XaKHSVOjl2g",
+                "title": "Barrington Levy - Under Mi Sensi (Original)",
                 "description": "",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/PoOgmxDOPUQ/default.jpg",
+                        "url": "https://i.ytimg.com/vi/Uh4CaTAtntI/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/PoOgmxDOPUQ/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/Uh4CaTAtntI/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/PoOgmxDOPUQ/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/Uh4CaTAtntI/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Ariela Wiles",
+                "channelTitle": "Docteur Rasboule",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-02-21T02:33:33Z"
+                "publishTime": "2013-04-24T12:08:23Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "tErnhNYIj7Ypa3Giyv9QYYkI2sQ",
+            "etag": "C3HmfHy-EjaPg4OIBm2i_tNRrCg",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "aRyYkI8asjU"
+                "videoId": "eGGRfojxqLI"
             },
             "snippet": {
-                "publishedAt": "2021-02-26T05:01:01Z",
-                "channelId": "UCL_xM7HCmc1_aw66yNcdlbg",
-                "title": "Over There That&#39;s Frank",
-                "description": "Provided to YouTube by The Orchard Enterprises Over There That's Frank · Charley Crockett · James Edward Hand Jr 10 for Slim: Charley Crockett Sings James ...",
+                "publishedAt": "2013-04-24T19:42:11Z",
+                "channelId": "UChmHh7M8YXkbAKAa-HDUhTA",
+                "title": "Barrington Levy - Under mi sensi",
+                "description": "3ª canción del álbum de Barrington Levy \"Here I come\" (1985)",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/aRyYkI8asjU/default.jpg",
+                        "url": "https://i.ytimg.com/vi/eGGRfojxqLI/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/aRyYkI8asjU/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/eGGRfojxqLI/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/aRyYkI8asjU/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/eGGRfojxqLI/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Charley Crockett - Topic",
+                "channelTitle": "DavidTheMusicLover",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-02-26T05:01:01Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "NPpO4cGh9uyB0iW81fDzAe6fKLo",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "abf8hijakx8"
-            },
-            "snippet": {
-                "publishedAt": "2020-07-30T10:01:59Z",
-                "channelId": "UCL_xM7HCmc1_aw66yNcdlbg",
-                "title": "Paint It Blue",
-                "description": "Provided to YouTube by The Orchard Enterprises Paint It Blue · Charley Crockett Welcome to Hard Times ℗ 2020 Son of Davy marketed and distributed by Thirty ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/abf8hijakx8/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/abf8hijakx8/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/abf8hijakx8/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "Charley Crockett - Topic",
-                "liveBroadcastContent": "none",
-                "publishTime": "2020-07-30T10:01:59Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "xxQK9hytVgOVFZxGi0iqpKdbz_k",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "LuTVNMu9prw"
-            },
-            "snippet": {
-                "publishedAt": "2017-09-07T15:03:54Z",
-                "channelId": "UCL_xM7HCmc1_aw66yNcdlbg",
-                "title": "Night Train to Memphis",
-                "description": "Provided to YouTube by The Orchard Enterprises Night Train to Memphis · Charley Crockett · William Owen Bradley · Beasley Smith · Marvin Hughes Lil G.L.'s ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/LuTVNMu9prw/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/LuTVNMu9prw/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/LuTVNMu9prw/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "Charley Crockett - Topic",
-                "liveBroadcastContent": "none",
-                "publishTime": "2017-09-07T15:03:54Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
-            "etag": "rel_AyqfZCpdSVz_jIv8OD6a0OE",
-            "id": {
-                "kind": "youtube#video",
-                "videoId": "30q8sn9ZjUE"
-            },
-            "snippet": {
-                "publishedAt": "2019-10-03T15:00:30Z",
-                "channelId": "UC0N2JCPta-vcvfffDZRTykw",
-                "title": "Charley Crockett | My Opry Debut | Opry",
-                "description": "Charley Crockett went from playing the streets to playing the Grand Ole Opry Stage. In this episode of My Opry Debut, we get a glimpse into Charley's journey of ...",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://i.ytimg.com/vi/30q8sn9ZjUE/default.jpg",
-                        "width": 120,
-                        "height": 90
-                    },
-                    "medium": {
-                        "url": "https://i.ytimg.com/vi/30q8sn9ZjUE/mqdefault.jpg",
-                        "width": 320,
-                        "height": 180
-                    },
-                    "high": {
-                        "url": "https://i.ytimg.com/vi/30q8sn9ZjUE/hqdefault.jpg",
-                        "width": 480,
-                        "height": 360
-                    }
-                },
-                "channelTitle": "Grand Ole Opry",
-                "liveBroadcastContent": "none",
-                "publishTime": "2019-10-03T15:00:30Z"
+                "publishTime": "2013-04-24T19:42:11Z"
             }
         }
     ]

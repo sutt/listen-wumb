@@ -1,691 +1,691 @@
 {
     "kind": "youtube#searchListResponse",
-    "etag": "CCZU1E2ArX84qTn9hkRhCyyu3Lg",
+    "etag": "18_PmW6f60SMVVxRExSIVhjv3eo",
     "nextPageToken": "CBQQAA",
     "regionCode": "US",
     "pageInfo": {
-        "totalResults": 1000000,
+        "totalResults": 141940,
         "resultsPerPage": 20
     },
     "items": [
         {
             "kind": "youtube#searchResult",
-            "etag": "-_gPzOmYdMtd7rKV0pN75lE4SgA",
+            "etag": "nmsQEqFsFnN-E_hby1XUKGre-sQ",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "Vr_n-79Q50Q"
+                "videoId": "sMkIrrv-c5c"
             },
             "snippet": {
-                "publishedAt": "2020-04-01T14:43:56Z",
-                "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
-                "title": "Cats (2019) - The Old Gumbie Cat Scene (2/10) | Movieclips",
-                "description": "FILM DESCRIPTION: A tribe of cats must decide yearly which one will ascend to the Heaviside Layer and come back to a new life. CREDITS: TM & © Universal ...",
+                "publishedAt": "2021-02-19T05:00:43Z",
+                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
+                "title": "Charley Crockett - &quot;Lesson In Depression&quot; (Official Video)",
+                "description": "Written by James Hand Filmed & Edited by Bobby Cochran www.bobbycochranphoto.com https://vimeo.com/movingstillstudios Wardrobe Styling by Taylor ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/Vr_n-79Q50Q/default.jpg",
+                        "url": "https://i.ytimg.com/vi/sMkIrrv-c5c/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/Vr_n-79Q50Q/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/sMkIrrv-c5c/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/Vr_n-79Q50Q/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/sMkIrrv-c5c/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Movieclips",
+                "channelTitle": "Charley Crockett",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-04-01T14:43:56Z"
+                "publishTime": "2021-02-19T05:00:43Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "_fJPkhqUQLNbSLlygfrn-nMpQXw",
+            "etag": "zcQn8tYcbAZT4a6QJSjPi1mvP0o",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "udUTaTt0Iac"
+                "videoId": "f-AxhM_glDU"
             },
             "snippet": {
-                "publishedAt": "2019-04-24T18:29:50Z",
-                "channelId": "UCvmijL-eepDVHYSJHDY3d6w",
-                "title": "10 Funny Cat Clips That Will Make You Laugh!",
-                "description": "These Cole, Marmalade, Jugg and Zig Zag clips should make you laugh :) Subscribe: http://bit.ly/SubToColeAndMarmalade Purrlease support our channel ...",
+                "publishedAt": "2019-07-25T16:13:01Z",
+                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
+                "title": "Charley Crockett-- &quot;Borrowed Time&quot; (Official Video)",
+                "description": "\"Borrowed Time” taken from the album 'The Valley'—Out now Follow Charley Crockett: http://charleycrockett.com http://facebook.com/charleycrockettmusic ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/udUTaTt0Iac/default.jpg",
+                        "url": "https://i.ytimg.com/vi/f-AxhM_glDU/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/udUTaTt0Iac/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/f-AxhM_glDU/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/udUTaTt0Iac/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/f-AxhM_glDU/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Cole and Marmalade",
+                "channelTitle": "Charley Crockett",
                 "liveBroadcastContent": "none",
-                "publishTime": "2019-04-24T18:29:50Z"
+                "publishTime": "2019-07-25T16:13:01Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "UROwjGoJ_1uWNaNlPV1-zkJD3Kg",
+            "etag": "n_GWr9gWEEt456aW9PfGqACRNn8",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "rlEMV7YwMtk"
+                "videoId": "t7qh_4NvvM4"
             },
             "snippet": {
-                "publishedAt": "2018-01-15T06:05:06Z",
-                "channelId": "UCFPCOY6xYd38wg9SyKFhsQQ",
-                "title": "hd clips of cat valentine part 2",
-                "description": "1080p clips/videos and scene finder for happy cat valentine! (pt 2) if you use your own clips to edit, this is just a scene finder - but feel free to download this video ...",
+                "publishedAt": "2020-08-27T14:02:30Z",
+                "channelId": "UCjvO9OjMSsaZxVKhMwVCpiQ",
+                "title": "Charley Crockett | &quot;Blackjack County Chain&quot; | Western AF",
+                "description": "Charley Crockett gives a damn fine rendition of Red Lane's \"Blackjack County Chain.\" Here's the last of our Fort Collins vidjas shot at Cloverlick Banjo Shop.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/rlEMV7YwMtk/default.jpg",
+                        "url": "https://i.ytimg.com/vi/t7qh_4NvvM4/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/rlEMV7YwMtk/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/t7qh_4NvvM4/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/rlEMV7YwMtk/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/t7qh_4NvvM4/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "editsbysarahx",
+                "channelTitle": "Western AF",
                 "liveBroadcastContent": "none",
-                "publishTime": "2018-01-15T06:05:06Z"
+                "publishTime": "2020-08-27T14:02:30Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "dY76-ytAqAtjIJVotDR2-_lfcmk",
+            "etag": "R_So1rIbBND2FBfILsBMA8Di-zQ",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "5se-S1oTKVU"
+                "videoId": "NR5HkaRABAU"
             },
             "snippet": {
-                "publishedAt": "2020-08-02T03:53:53Z",
-                "channelId": "UCFPCOY6xYd38wg9SyKFhsQQ",
-                "title": "hd clips of cat and jade part 3",
-                "description": "1080p clips/videos and scene finder for jade west and cat valentine! (part 3) if you use your own clips to edit, this is just a scene finder - but feel free to download ...",
+                "publishedAt": "2020-06-30T14:00:05Z",
+                "channelId": "UCdIYexPlB0PmnVpTTFxX6dg",
+                "title": "Charley Crockett - Run Horse Run (Official Video)",
+                "description": "\"Run Horse Run\" from the album 'Welcome To Hard Times'— available July 31st 2020 https://orcd.co/welcometohardtimes Follow Charley Crockett: ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/5se-S1oTKVU/default.jpg",
+                        "url": "https://i.ytimg.com/vi/NR5HkaRABAU/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/5se-S1oTKVU/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/NR5HkaRABAU/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/5se-S1oTKVU/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/NR5HkaRABAU/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "editsbysarahx",
+                "channelTitle": "CharleyCrockettVEVO",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-08-02T03:53:53Z"
+                "publishTime": "2020-06-30T14:00:05Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "zyeHK_UPCgp909pZg1Roe0rmhqw",
+            "etag": "GepGK-RyfwkW74WJJwo6-MDNZko",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "rCMlf7Zm6UA"
+                "videoId": "7FDL149H3TI"
             },
             "snippet": {
-                "publishedAt": "2018-01-02T17:17:23Z",
-                "channelId": "UCKJsZ_LAc06FbbA4zw1vZZQ",
-                "title": "Cat Valentine clips for edits ☾♡",
-                "description": "sorry if some of the clips are ghosty its because i screen recorded them so it has rendered weirdly but they are still 1080p and edit worthy and useful for editing ...",
+                "publishedAt": "2019-04-15T15:07:22Z",
+                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
+                "title": "Charley Crockett-- &quot;That&#39;s How I Got to Memphis&quot; (Official Video)",
+                "description": "\"That's How I Got To Memphis” taken from the album “Charley Crockett Presents: Lil' G.L.'s Blue Bonanza”—Out Now Starring Honky Tonk legend James \"Slim\" ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/rCMlf7Zm6UA/default.jpg",
+                        "url": "https://i.ytimg.com/vi/7FDL149H3TI/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/rCMlf7Zm6UA/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/7FDL149H3TI/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/rCMlf7Zm6UA/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/7FDL149H3TI/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "xlaursedits",
+                "channelTitle": "Charley Crockett",
                 "liveBroadcastContent": "none",
-                "publishTime": "2018-01-02T17:17:23Z"
+                "publishTime": "2019-04-15T15:07:22Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "sR1VtATpMxo0vzWUTBxPu2uIN4M",
+            "etag": "kkxxLoPBYdE2UYJLj0zy9xTx7Ss",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "IKNOVQFSyGk"
+                "videoId": "jVu_8mF9fUg"
             },
             "snippet": {
-                "publishedAt": "2018-01-16T06:55:42Z",
-                "channelId": "UCFPCOY6xYd38wg9SyKFhsQQ",
-                "title": "hd clips of beck and cat",
-                "description": "1080p clips/videos and scene finder for beck oliver and cat valentine! if you use your own clips to edit, this is just a scene finder - but feel free to download this ...",
+                "publishedAt": "2020-02-27T16:59:21Z",
+                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
+                "title": "Charley Crockett-- &quot;The Valley&quot; (Official Video)",
+                "description": "\"The Valley” taken from the album 'The Valley' — Out now Stay tuned for “The Valley” Short Film Release on March 2, 2020 ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/IKNOVQFSyGk/default.jpg",
+                        "url": "https://i.ytimg.com/vi/jVu_8mF9fUg/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/IKNOVQFSyGk/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/jVu_8mF9fUg/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/IKNOVQFSyGk/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/jVu_8mF9fUg/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "editsbysarahx",
+                "channelTitle": "Charley Crockett",
                 "liveBroadcastContent": "none",
-                "publishTime": "2018-01-16T06:55:42Z"
+                "publishTime": "2020-02-27T16:59:21Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "orvFI2MeTtZsyoWOgOyHGbfcOqc",
+            "etag": "Yw7gquh126Yjx7YTwcdSAWOMJaM",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "dI3xkL7qUAc"
+                "videoId": "FwinvCBqkOg"
             },
             "snippet": {
-                "publishedAt": "2021-06-11T14:00:11Z",
-                "channelId": "UCpTaAz_BxtkUB1qc8JTU_7g",
-                "title": "Doja Cat - Need To Know (Official Video)",
-                "description": "Cast Featured Friend - Grimes Featured Friend - Jazelle Straka-Braxton Featured Friend - Josephine Pearl Lee Featured Friend - Ryan Destiny Lead Male ...",
+                "publishedAt": "2016-06-07T22:21:45Z",
+                "channelId": "UCgzSqecAuzaAIc965pH5lRw",
+                "title": "Charley Crockett - &quot;I Am Not Afraid&quot; - KXT Live Sessions",
+                "description": "Dallas's Charley Crockett's artful blend of blues, R&B, Zydeco and honky tonk is the centerpiece of both his new album In The Night, and in this KXT Live ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/dI3xkL7qUAc/default.jpg",
+                        "url": "https://i.ytimg.com/vi/FwinvCBqkOg/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/dI3xkL7qUAc/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/FwinvCBqkOg/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/dI3xkL7qUAc/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/FwinvCBqkOg/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "dojacatVEVO",
+                "channelTitle": "kxtradio",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-06-11T14:00:11Z"
+                "publishTime": "2016-06-07T22:21:45Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "PJ7oF9VwdXnDXtKvphHbkIQzMQ4",
+            "etag": "nmqNjW9yI9iqUC_Eb_BESJlWjTM",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "l1ajrZUeqGw"
+                "videoId": "HER-cPV5RJ0"
             },
             "snippet": {
-                "publishedAt": "2018-02-26T01:38:29Z",
-                "channelId": "UCFPCOY6xYd38wg9SyKFhsQQ",
-                "title": "hd clips of cat and andre",
-                "description": "1080p clips/videos and scene finder for cat valentine and andre harris! if you use your own clips to edit, this is just a scene finder - but feel free to download this ...",
+                "publishedAt": "2019-02-15T15:08:16Z",
+                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
+                "title": "Charley Crockett - &quot;Good Time Charley&#39;s Got The Blues&quot; (Official Video)",
+                "description": "\"Good Time Charley's Got The Blues\" written by Danny O'Keefe 1968 Taken from the new album Charley Crockett Presents: \"Lil' G.L.'s Blue Bonanza\"--Out Now ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/l1ajrZUeqGw/default.jpg",
+                        "url": "https://i.ytimg.com/vi/HER-cPV5RJ0/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/l1ajrZUeqGw/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/HER-cPV5RJ0/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/l1ajrZUeqGw/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/HER-cPV5RJ0/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "editsbysarahx",
+                "channelTitle": "Charley Crockett",
                 "liveBroadcastContent": "none",
-                "publishTime": "2018-02-26T01:38:29Z"
+                "publishTime": "2019-02-15T15:08:16Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "-PEX9UrTQ61SW19SkpG4WT6Ked8",
+            "etag": "HyUNlloH7ZUOz50Gkne04Pxy0c0",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "43896Ek4ipI"
+                "videoId": "fRsDgoGwOYc"
             },
             "snippet": {
-                "publishedAt": "2020-08-02T03:43:22Z",
-                "channelId": "UCFPCOY6xYd38wg9SyKFhsQQ",
-                "title": "hd clips of cat and jade part 2",
-                "description": "1080p clips/videos and scene finder for jade west and cat valentine! (part 2) if you use your own clips to edit, this is just a scene finder - but feel free to download ...",
+                "publishedAt": "2021-04-26T20:08:07Z",
+                "channelId": "UCLiWQk8JzhNRcNiDKk4dpaw",
+                "title": "Texas singer Charley Crockett is lucky to be alive and still singing the blues",
+                "description": "Texas country-blues singer Charley Crockett wrote “How Long Will I Last” about an uncertain love affair. Little did he know the song title would also apply to his ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/43896Ek4ipI/default.jpg",
+                        "url": "https://i.ytimg.com/vi/fRsDgoGwOYc/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/43896Ek4ipI/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/fRsDgoGwOYc/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/43896Ek4ipI/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/fRsDgoGwOYc/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "editsbysarahx",
+                "channelTitle": "American Heart Association",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-08-02T03:43:22Z"
+                "publishTime": "2021-04-26T20:08:07Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "J-9BobTamnWI0VJIr8w1OmqjsmM",
+            "etag": "Z1EmIhwMfJYXqFynMg-_5S6WLOc",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "W1St7sRFEEE"
+                "videoId": "tvSI1FrSgss"
             },
             "snippet": {
-                "publishedAt": "2010-02-23T16:57:05Z",
-                "channelId": "UCQphRgAhj5UxktrQNP3WF5g",
-                "title": "Alice In Wonderland - Cheshire Cat Clip (HQ)",
-                "description": "From Walt Disney Pictures and visionary director Tim Burton comes an epic fantasy adventure ALICE IN WONDERLAND, a magical and imaginative twist on ...",
+                "publishedAt": "2019-09-03T15:07:08Z",
+                "channelId": "UCBQ8NG_fqzmAmGEriQW1XZQ",
+                "title": "Charley Crockett - 9 LB Hammer | OurVinyl Sessions",
+                "description": "About Charley Crockett: Charley Crockett, a true descendant of Davy Crockett, was born in a poor town in deep South Texas. His early years were spent ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/W1St7sRFEEE/default.jpg",
+                        "url": "https://i.ytimg.com/vi/tvSI1FrSgss/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/W1St7sRFEEE/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/tvSI1FrSgss/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/W1St7sRFEEE/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/tvSI1FrSgss/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Disney UK",
+                "channelTitle": "OurVinyl",
                 "liveBroadcastContent": "none",
-                "publishTime": "2010-02-23T16:57:05Z"
+                "publishTime": "2019-09-03T15:07:08Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "JfwaFZ1TBgU5AIW87tMVvzD62Yk",
+            "etag": "jY1OxDym5fVxhozt15ugY8O6TIk",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "EeejaMRU7w8"
+                "videoId": "vWtasjIdSjY"
             },
             "snippet": {
-                "publishedAt": "2020-08-02T03:33:42Z",
-                "channelId": "UCFPCOY6xYd38wg9SyKFhsQQ",
-                "title": "hd clips of cat and jade part 1",
-                "description": "1080p clips/videos and scene finder for jade west and cat valentine! (part 1) if you use your own clips to edit, this is just a scene finder - but feel free to download ...",
+                "publishedAt": "2020-09-28T22:00:10Z",
+                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
+                "title": "Charley Crockett - &quot;Wreck Me&quot; (Official Live Video)",
+                "description": "Written by Charley Crockett & Taylor Grace Directed & Edited by Kevin J. Hamm https://www.blueletterfilms.com/ Live Audio by David Wilson Wardrobe Styling ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/EeejaMRU7w8/default.jpg",
+                        "url": "https://i.ytimg.com/vi/vWtasjIdSjY/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/EeejaMRU7w8/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/vWtasjIdSjY/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/EeejaMRU7w8/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/vWtasjIdSjY/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "editsbysarahx",
+                "channelTitle": "Charley Crockett",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-08-02T03:33:42Z"
+                "publishTime": "2020-09-28T22:00:10Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "ekDnJ7SnWBCqDRBGHqjLQjmFBVc",
+            "etag": "Tq0AE9lvxot9FGU4_-MFRuj0QLc",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "6iuctWusJ7w"
+                "videoId": "DKLpiyRB4PA"
             },
             "snippet": {
-                "publishedAt": "2016-11-09T19:57:47Z",
-                "channelId": "UCbJrZj4fduTTbWvRVh25RJQ",
-                "title": "LOL FUNNY CAT VIDEOS COMPILATION | 10 Funny Cat Video Clips",
-                "description": "Cats just being cats...that will make you laugh! cats will always cheer you up. Watch this funny & cute cats in this compilation video. Keeping Up With The ...",
+                "publishedAt": "2020-05-06T15:08:28Z",
+                "channelId": "UCjvO9OjMSsaZxVKhMwVCpiQ",
+                "title": "Charley Crockett | &quot;Round This World&quot; | Western AF",
+                "description": "A few months back we spent some time with Charley Crockett in Fort Collins, Colorado. He joined us at Cloverlick Banjo Shop (thanks Rooster) to share this ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/6iuctWusJ7w/default.jpg",
+                        "url": "https://i.ytimg.com/vi/DKLpiyRB4PA/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/6iuctWusJ7w/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/DKLpiyRB4PA/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/6iuctWusJ7w/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/DKLpiyRB4PA/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Keeping Up With The Kitdashians",
+                "channelTitle": "Western AF",
                 "liveBroadcastContent": "none",
-                "publishTime": "2016-11-09T19:57:47Z"
+                "publishTime": "2020-05-06T15:08:28Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "P_HjNOwCvMSVKRTgOKtzEZ0vdOM",
+            "etag": "R0y-I5JHYeJmvjbckx2urTsC62M",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "hSaLK_vpVXs"
+                "videoId": "qXNVxu67yMM"
             },
             "snippet": {
-                "publishedAt": "2020-08-02T04:00:07Z",
-                "channelId": "UCFPCOY6xYd38wg9SyKFhsQQ",
-                "title": "hd clips of cat and jade part 4",
-                "description": "1080p clips/videos and scene finder for jade west and cat valentine! (part 4) if you use your own clips to edit, this is just a scene finder - but feel free to download ...",
+                "publishedAt": "2017-08-02T17:22:56Z",
+                "channelId": "UCiiiNujtnT1ULcEXCWIFjQw",
+                "title": "Charley Crockett, &quot;Driving Nails In My Coffin&quot; - Skyline Sessions",
+                "description": "",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/hSaLK_vpVXs/default.jpg",
+                        "url": "https://i.ytimg.com/vi/qXNVxu67yMM/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/hSaLK_vpVXs/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/qXNVxu67yMM/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/hSaLK_vpVXs/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/qXNVxu67yMM/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "editsbysarahx",
+                "channelTitle": "Houston Public Media",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-08-02T04:00:07Z"
+                "publishTime": "2017-08-02T17:22:56Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "9xEYGn-9oulGr9os1zMPtDS6rjg",
+            "etag": "vOaBHo0ILBYqrIBYWCjUw-xw6og",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "TFvAKPPLPkQ"
+                "videoId": "zSwHbcP-Iag"
             },
             "snippet": {
-                "publishedAt": "2021-05-13T23:29:16Z",
-                "channelId": "UCq9afLlPsI_lDkXBDuuOE4Q",
-                "title": "Cat Valentine Twixtor Editing Clips! [1080p]",
-                "description": "catvalentine #victorious #editingclips You've entered glowing grande's channel! ⋘ ────── ∗ ⋅  ⋅ ∗ ───── ⋙ social media ...",
+                "publishedAt": "2018-03-15T23:26:09Z",
+                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
+                "title": "Charley Crockett - &quot;Lil&#39; Girls Name&quot; (Official Video)",
+                "description": "Tour dates and more info at CharleyCrockett.com.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/TFvAKPPLPkQ/default.jpg",
+                        "url": "https://i.ytimg.com/vi/zSwHbcP-Iag/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/TFvAKPPLPkQ/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/zSwHbcP-Iag/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/TFvAKPPLPkQ/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/zSwHbcP-Iag/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Glowing Grande",
+                "channelTitle": "Charley Crockett",
                 "liveBroadcastContent": "none",
-                "publishTime": "2021-05-13T23:29:16Z"
+                "publishTime": "2018-03-15T23:26:09Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "Xt-8h9XBfVArOJnfzeafAQxVobg",
+            "etag": "7aGG5_C_yrHFKLrDmR8Qf1nBZ2k",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "5wXtHR5I7fg"
+                "videoId": "ThRmtFmy4TE"
             },
             "snippet": {
-                "publishedAt": "2018-11-27T14:27:01Z",
-                "channelId": "UCPQSVmzeEg9pBdrB2udaT1w",
-                "title": "Cats And Kittens - Cutest Random Clips",
-                "description": "Enjoy the sweetest clips! ✌ ▸ Videos from TikTok (Douyin), Owners: Unknown Subscribe For Your Daily Dose Of Cuteness: ...",
+                "publishedAt": "2020-09-03T05:00:05Z",
+                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
+                "title": "Charley Crockett - &quot;Lily My Dear&quot; (Official Live Video)",
+                "description": "Written by Charley Crockett, Vincent Neil Emerson, Colin Colby, & Tyler Heiser Directed & Edited by Kevin J. Hamm https://www.blueletterfilms.com/ Live Audio ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/5wXtHR5I7fg/default.jpg",
+                        "url": "https://i.ytimg.com/vi/ThRmtFmy4TE/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/5wXtHR5I7fg/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/ThRmtFmy4TE/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/5wXtHR5I7fg/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/ThRmtFmy4TE/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Viral Paws",
+                "channelTitle": "Charley Crockett",
                 "liveBroadcastContent": "none",
-                "publishTime": "2018-11-27T14:27:01Z"
+                "publishTime": "2020-09-03T05:00:05Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "Kmc3X5RY5q5iUdIKROsEVOk5YAs",
+            "etag": "ujN8QfpLW6vfncfHNQ-bDVIh4KE",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "is89N6flmqE"
+                "videoId": "sMzHc1X93Sk"
             },
             "snippet": {
-                "publishedAt": "2008-10-05T15:38:26Z",
-                "channelId": "UCXU8eRIdXSKBpRq7iNEkQRA",
-                "title": "Funny Cat Clips - With Added Sound Effects!",
-                "description": "A video Compilation of the funnyest ca clips! with added dramatic sound effects.",
+                "publishedAt": "2021-02-26T05:01:01Z",
+                "channelId": "UCL_xM7HCmc1_aw66yNcdlbg",
+                "title": "Midnight Run",
+                "description": "Provided to YouTube by The Orchard Enterprises Midnight Run · Charley Crockett · James Edward Hand Jr 10 for Slim: Charley Crockett Sings James Hand ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/is89N6flmqE/default.jpg",
+                        "url": "https://i.ytimg.com/vi/sMzHc1X93Sk/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/is89N6flmqE/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/sMzHc1X93Sk/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/is89N6flmqE/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/sMzHc1X93Sk/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "funnyrandomidiots",
+                "channelTitle": "Charley Crockett - Topic",
                 "liveBroadcastContent": "none",
-                "publishTime": "2008-10-05T15:38:26Z"
+                "publishTime": "2021-02-26T05:01:01Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "sx90joHs960VGqOiuqj4gznIu5U",
+            "etag": "bhX3dS96prZiF4DnZMLxPD2lbv4",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "_zqPZ13gI4k"
+                "videoId": "F349EQQwanc"
             },
             "snippet": {
-                "publishedAt": "2020-03-02T11:00:08Z",
-                "channelId": "UC6zbH1Z4G32bBV9wyK6ikPA",
-                "title": "Is Your Cat Upset? Bring Some Clips And Try This Way To Calm Your Cat | Kritter Klub",
-                "description": "Please don't forget to hit the CC button for Subtitles* There are three fierce cat rascals who seriously fight each other and mess up their house everyday.",
+                "publishedAt": "2020-10-26T12:59:33Z",
+                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
+                "title": "Charley Crockett - &quot;The Man That Time Forgot&quot; (Official Live Video)",
+                "description": "Written by Charley Crockett & Mark Neill Directed & Edited by Kevin J. Hamm https://www.blueletterfilms.com/ Live Audio by David Wilson Wardrobe Styling by ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/_zqPZ13gI4k/default.jpg",
+                        "url": "https://i.ytimg.com/vi/F349EQQwanc/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/_zqPZ13gI4k/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/F349EQQwanc/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/_zqPZ13gI4k/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/F349EQQwanc/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Kritter Klub",
+                "channelTitle": "Charley Crockett",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-03-02T11:00:08Z"
+                "publishTime": "2020-10-26T12:59:33Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "jYMExE1RpsSGYvhEbmttf3aIFc0",
+            "etag": "XnxQDLJqJFKIt2iV1MhbJ-_qSVw",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "D6JQV7z02RA"
+                "videoId": "XlbJ_HyGRvg"
             },
             "snippet": {
-                "publishedAt": "2020-11-17T13:11:34Z",
-                "channelId": "UCG7wwMN21oikOM3lKKARPFw",
-                "title": "All the clips of Bingus that I could find",
-                "description": "BINGUS IS Y E S    bingus discord server:https://discord.gg/GPceEBsQ song:https://youtu.be/qH5hM1ILuFQ.",
+                "publishedAt": "2018-02-28T21:40:33Z",
+                "channelId": "UCfS0_RlajN4KRnUlPA7WJyg",
+                "title": "Charley Crockett - &quot;I Wanna Cry&quot; (Official Video)",
+                "description": "The song \"I Wanna Cry\" appears on the 2018 album Lonesome As A Shadow. This film uses documentary footage from David Hoffman's 1964 film “Bluegrass ...",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/D6JQV7z02RA/default.jpg",
+                        "url": "https://i.ytimg.com/vi/XlbJ_HyGRvg/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/D6JQV7z02RA/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/XlbJ_HyGRvg/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/D6JQV7z02RA/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/XlbJ_HyGRvg/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "GamerCat",
+                "channelTitle": "Charley Crockett",
                 "liveBroadcastContent": "none",
-                "publishTime": "2020-11-17T13:11:34Z"
+                "publishTime": "2018-02-28T21:40:33Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "ea6IhHui5D1OqUHPjBtfYSlyJFY",
+            "etag": "6W364raaj5xqi0ZxND8EAAX5H4c",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "_snwJjSkyEE"
+                "videoId": "cO2dG8gZKZQ"
             },
             "snippet": {
-                "publishedAt": "2009-07-13T16:10:03Z",
-                "channelId": "UCvYeWNlO4vCxdTgKxCQAuGA",
-                "title": "New Years Surprise -- Cat Clips #35",
-                "description": "In this episode of CAT CLIPS: While Trey (the male cat) and Honey (the female cat) are lounging on the landing, Trey suggests they make some New Years ...",
+                "publishedAt": "2021-01-07T10:01:39Z",
+                "channelId": "UCL_xM7HCmc1_aw66yNcdlbg",
+                "title": "I Can Help",
+                "description": "Provided to YouTube by TuneCore I Can Help · Charley Crockett I Can Help ℗ 2021 The Next Waltz Released on: 2021-01-08 Auto-generated by YouTube.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/_snwJjSkyEE/default.jpg",
+                        "url": "https://i.ytimg.com/vi/cO2dG8gZKZQ/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/_snwJjSkyEE/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/cO2dG8gZKZQ/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/_snwJjSkyEE/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/cO2dG8gZKZQ/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "ScoobyHubby",
+                "channelTitle": "Charley Crockett - Topic",
                 "liveBroadcastContent": "none",
-                "publishTime": "2009-07-13T16:10:03Z"
+                "publishTime": "2021-01-07T10:01:39Z"
             }
         },
         {
             "kind": "youtube#searchResult",
-            "etag": "C25WxfMUyJJrwdKNmEF0sC8OTuw",
+            "etag": "9Ng6OEbedNyo1yVejzZiyZd-40U",
             "id": {
                 "kind": "youtube#video",
-                "videoId": "rMnRPd98Cko"
+                "videoId": "Q9skLgVqPD0"
             },
             "snippet": {
-                "publishedAt": "2016-12-17T12:37:23Z",
-                "channelId": "UCiMtmC4wfKVXVEjuCdS8RDg",
-                "title": "Epic Kittens Funny Video Clips 2017 collection - 1 Minute videos",
-                "description": "Epic Kittens videos, Funny Cats videos, videos humor, funny cat, cat fails, funny videos , funny cats, cat video funny videos, funny cat, funny fail videos, cat funny ...",
+                "publishedAt": "2021-05-30T07:10:08Z",
+                "channelId": "UCpMA9Yhg2M-sror-raGIyQQ",
+                "title": "Charley Crockett - Paint it Blue (Live)",
+                "description": "Charley Crockett Live at The Grain Drafthouse & Eatery Hamilton, Texas 05/29/2021.",
                 "thumbnails": {
                     "default": {
-                        "url": "https://i.ytimg.com/vi/rMnRPd98Cko/default.jpg",
+                        "url": "https://i.ytimg.com/vi/Q9skLgVqPD0/default.jpg",
                         "width": 120,
                         "height": 90
                     },
                     "medium": {
-                        "url": "https://i.ytimg.com/vi/rMnRPd98Cko/mqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/Q9skLgVqPD0/mqdefault.jpg",
                         "width": 320,
                         "height": 180
                     },
                     "high": {
-                        "url": "https://i.ytimg.com/vi/rMnRPd98Cko/hqdefault.jpg",
+                        "url": "https://i.ytimg.com/vi/Q9skLgVqPD0/hqdefault.jpg",
                         "width": 480,
                         "height": 360
                     }
                 },
-                "channelTitle": "Healing Meditation Music",
+                "channelTitle": "Vegan Police",
                 "liveBroadcastContent": "none",
-                "publishTime": "2016-12-17T12:37:23Z"
+                "publishTime": "2021-05-30T07:10:08Z"
             }
         }
     ]

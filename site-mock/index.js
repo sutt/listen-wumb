@@ -19,9 +19,17 @@ jsonFiles.forEach( fn => {
 const N_DATA = YT_DATA.length
 
 app.get("/page", (req, res) => {
+    
+    const dParam = req.query?.d
+    const availablePages = ['210521', '210522', '210529']
+    
+    const fn = availablePages.includes(dParam)
+                ? `${dParam}.html`
+                : `210522.html`
+    
     res.sendFile(
-        'playlist1.html',
-        {root: __dirname}
+        fn,
+        {root: __dirname + '/wumb-pages/'}
     )
 })
 

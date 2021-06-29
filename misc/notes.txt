@@ -97,13 +97,26 @@ Overall ideas:
         [x] date + time logic
 
     [ ] make site-mock better
-        [ ] get actual songs on site mock
-        [ ] more pages on page
-        [ ] control which page via ?d=21065 parameter
+        [x] get actual songs on site mock
+            looks like we just put stuff in yt-mock-data
+                [x] put the api client in the mock directory
+                [x] add api key
+                [x] fire it
+                [x] get it to write to a file
+
+        [x] more pages on page
+            [x] move html file into a directory
+            [x] add query param check
+            [x] add the query logic to front
+
+        [x] control which page via ?d=21065 parameter
+
+        [ ] deploy
 
     [ ] adding the date/time logic
         [ ] what forms of string dates work for js?
-        [ ] figure out the mapping "actual" Date() <-> wumb's ?d=1234
+        [x] figure out the mapping "actual" Date() <-> wumb's ?d=1234
+            -> YYMMDD
         [ ] date logic works with proxy for different pages
         
     [x] time function to get a subset of songs
@@ -115,6 +128,15 @@ Overall ideas:
     [ ] frontend bug: 
         clicking songs outof order doesn't hide the previously highlighted song row
         also occurs when doing "<< prev" button
+
+    [ ] frontend logic: song not externally playable, 
+        should skip songs / seek different videoid item in the results
+        error message:
+            Video unavailable
+            Playback on other websites has been disabled by the video owner.
+        [ ] frontend logic to check for status
+        [ ] check results json for the indicator
+        
 
     [ ] need better refresh playlist logic
         - just calling scrapeArchive() in timeForm is duplicating a lot of DOM creation
@@ -136,6 +158,7 @@ Overall ideas:
         [ ] we can cache scrapes as well
         [ ] why doesn't intellisense work well in express workspaces?
         [ ] each signed-in user has their own api key associated with theri account
+        [ ] url bar should contain params to share the playlist with others
 
     [ ] add scraping logic and basic player controls
         [ ] date + time input buttons

@@ -15,11 +15,12 @@
     <h3>WUMB Playback</h3>
     <div id="lookupcontrols" class="controlbar">
         <span id="lookupPrompt">Chose a time and date for playlist...</span>
-        <form onsubmit="timeForm"><br>
+        <form onsubmit="return timeForm(event)"><br>
             <label>time:</label>
-            <input type="text" value="6:00">
+            <input type="text" name="time" value="6:00 pm">
             <label>date:</label>
-            <input type="text" value="5-22-21">
+            <input type="text" name="date" value="5-22-21">
+            <input type="submit" value="get playlist">
         </form>
         <span id="lookupResults"></span>
     </div>

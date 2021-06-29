@@ -33,10 +33,22 @@ const bTestingMaxRows = {{TESTING_MAXROWS_OFF}}
 
 const testMaxRows = 5
 
-const playlistDate = "5-22-2021"
+var playlistDate = "5-22-2021"
+var playlistTime = "1:00 pm"
+
+function timeForm(e) {
+    e.preventDefault()
+    const elems = e.target.elements
+    playlistTime = elems.time.value
+    playlistDate = elems.date.value
+    console.log('${playlistTime} | ${playlistDate}')
+    scrapeArchive()
+}
 
 
 // video player init
+
+
 
 // var vids = ["wDk0eA8HaAg"]
 var vids = []
@@ -242,13 +254,46 @@ function cuePlaylist(data, index) {
     }
 }
 
+function timeDiff(t0, t1) {
+    
+    const baseDate = "2000 january 1"
+    const d0 = new Date(`${baseDate} ${t0}`)
+    const d1 = new Date(`${baseDate} ${t1}`)
+    
+    const deltaMs = d1 - d0
+    const deltaMins = deltaMs / (1e3 * 60)
+    
+    return deltaMins
+}
+
+function sliceByTime(playlist, sStartTime) {
+
+    const tmp = playlist.map(item => {
+        return {...item, minsAfter: timeDiff(sStartTime, item.time) }
+        })
+        .filter(item => item.minsAfter > 0 )
+        .sort((a,b) => a.minsAfter - b.minsAfter)
+    
+    // console.log(tmp)
+
+    return tmp
+}
+
 function displayPlaylistTable(playlist, v1=false) {
     const table = document.createElement("table")
     let row     = null
     let col     = null
-    if (bTestingMaxRows) {
-        playlist = playlist.slice(0, testMaxRows)
+    
+    // const bTimeLogic = false
+    const bTimeLogic = true
+    if (bTimeLogic) {
+        playlist = sliceByTime(playlist, playlistTime )
     }
+    
+    if (bTestingMaxRows) {
+        playlist = playlist.slice(0, Math.min(playlist.length, testMaxRows))
+    }
+    
     playlist.forEach((item, itemIndex) => {
         
         row = document.createElement("tr")
@@ -292,6 +337,7 @@ function displayPlaylistTable(playlist, v1=false) {
         }
     })
     const div = document.getElementById("playlistMain")
+    div.innerHTML = ''
     div.appendChild(table)
     setHighlightClass(v1=v1)
     

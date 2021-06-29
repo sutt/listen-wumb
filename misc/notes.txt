@@ -102,14 +102,25 @@ Overall ideas:
         [ ] control which page via ?d=21065 parameter
 
     [ ] adding the date/time logic
+        [ ] what forms of string dates work for js?
         [ ] figure out the mapping "actual" Date() <-> wumb's ?d=1234
         [ ] date logic works with proxy for different pages
         
-        [ ] time function to get a subset of songs
-        [ ] show that you can grabbed different blocks of songs
+    [x] time function to get a subset of songs
+            [x] implement first five songs after time specified
+            [x] allow form submission to control
+            [x] get it to overwrite existing html playlist
+        [x] show that you can grabbed different blocks of songs
 
     [ ] frontend bug: 
         clicking songs outof order doesn't hide the previously highlighted song row
+        also occurs when doing "<< prev" button
+
+    [ ] need better refresh playlist logic
+        - just calling scrapeArchive() in timeForm is duplicating a lot of DOM creation
+        - we want to preserve the currently playing playlist before accepting the new one
+        - what about global variables like:
+            playlist?
 
     [ ] prototype the search cache
         [ ] add mongoose + Model

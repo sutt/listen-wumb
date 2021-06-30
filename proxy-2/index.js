@@ -2,13 +2,18 @@ require('dotenv').config()
 const express = require('express')
 const cors = require('cors')
 const fetch = require('node-fetch')
+const SearchReq = require('./models/search-req')
+
 const app = express()
 
-const bLog = true
+// const bLog = []
+// const bLog = ['testswitch']
+// const bLog = ['mockgoose']
+const bLog = ['all']
+
 app.use(cors())
 app.set('port', process.env.PORT || 3003 )
 
-const bTestingUrl = true
 const ytMockURL = (process.env.NODE_ENV == 'prod')
                     ? "https://wumb-site-mock.herokuapp.com/yt-search"
                     : "http://127.0.0.1:3005/yt-search"
@@ -29,7 +34,6 @@ function searchItem(searchStr, live=false) {
             - undefined if fails
     */
 
-    const bLog = false
     const maxResults = 20
 
     let url = live 
@@ -44,7 +48,7 @@ function searchItem(searchStr, live=false) {
         return  fetch(url)
             .then(res => res.json())
             .then(data => {
-                console.log(url)
+                if (bLog.includes("all")) console.log(url)
                 return data
             })
             .catch( err => {
@@ -66,19 +70,103 @@ app.get('/search-yt-api', (req, res) => {
 
     const live =  (decodeQuery?.live === 'true') ? true : false
         
-    console.log(decodeQuery)
-    if (live) console.log("running live")
+    if (bLog.includes("all")) {
+        console.log(decodeQuery)
+    }
+    if (bLog.includes("testswitch")) {
+        console.log(`running /search-yt-api ${live ? 'live' : 'dead'}`)
+    }
 
-    //Stub - Check if Songs is Cached
+    //Check if Songs is Cached
+    //pattern:  - must pass multiple checks - to return cached result
+    function checkCached() {
+        let cachedFound = false
+        SearchReq.find({songTitle: decodeQuery.title, songArtist })
+        // SearchReq.find({scrapeDateTime: concatQueryDateTime(decodeQuery.time, decodeQuery.date) })
+            .then((reqResults) => {  
+                
+                // TODO - check if reqResults.length > 0
+                // TODO - check if `requestResponseValid` is true
+                
+                if (reqResults) {
+                    
+                    // attempt to return cached results
 
-    searchItem(buildSearchStr(decodeQuery), live)
-        .then(data => {
-            res.json(data.items)
-        })
-        .catch(err => {
-            console.log(err)
-            res.json([])
-        })
+                    if (bLog.includes("mockgoose")) console.log(`reqResults: ${reqResults}`)
+
+                    const linkedResponseId = reqResults[0]?.requestResponse?._id
+                    if (linkedResponseId) {
+                        SearchRes.findById(linkedResponseId)
+                            .then((resResults) => {
+                                if (resResults) {     // TODO - check if resResults.length > 0
+                                    
+                                    // all checks pass - return cached result
+                                    cachedFound = true
+
+                                    if (bLog.includes("mockgoose")) {
+                                        console.log(`returning cahced response: ${resResponse[0]}`)
+                                    }
+
+                                    res.json(resResponse[0].items)
+                                }
+                            })
+                            .catch(err => {
+                                if (bLog.includes("mockgoose")) {
+                                    console.log(`err on SearchRes lookup for id: ${linkedResponseId}\n${err}`)
+                                    //TODO - return an error here to hit finally?
+                                }
+                            })
+                    }
+                }
+            })
+            .catch(err => {
+                if (bLog.includes("mockgoose")) {
+                    console.log(`err on SearchReq lookup for query: ${decodeQuery.toString()}\n${err}`)
+                }
+            }) 
+            .finally(() => {
+                if (!cachedFound) {
+                    
+                    // cahced response not found: some condition above failed, 
+                    // do an external resource lookup
+                    // and return that result, or an error if it fails
+
+                    if (bLog.includes("mockgoose")) { 
+                        console.log("making external resource request")
+                    }
+                    externalSearch()
+                }
+            })
+            
+            
+    }
+
+    function externalSearch() {
+        let bSuccess = false
+        searchItem(buildSearchStr(decodeQuery), live)
+            .then(data => {
+                res.json(data.items)
+                bSuccess = true
+                return data
+            })
+            .catch(err => {
+                console.log(`err in exteralSearch of yt-search-api. live: ${live}\nquery: ${decodeQuery}\nerr: ${err}`)
+                res.json([])
+            })
+            .finally((data) => {
+                // does this hit from each branch?
+                //TODO - add database write here for result
+                if (bSuccess) {
+                // SearchRes.create()
+                // SearchReq.create()
+                }
+
+            })
+
+    }
+
+    if (false) checkCached()        //TODO - enable when ready
+    if (true)  externalSearch()     //TODO - disable when ready
 })
 
 app.get("/parse", (req, res) => {
@@ -94,22 +182,23 @@ app.get("/parse", (req, res) => {
     if (req.query.d !== undefined) {
         url += `?date=${req.query.d}`
     }
-    console.log(`url: ${url}`)
+    
+    if (bLog.includes("testswitch")) console.log(`fetching parse from ${url}`)
+    
+
     fetch(url)
         .then(pageRes => {
-            pageRes.text()
+            pageRes.text()      // TODO - no return statement?
                 .then(body => {
                     res.send(body)
-                    if (bLog) console.log("success server side")
                 })
         })
         .catch(err => {
         
             let msg = `error fetching page on proxy\n`
             msg += err
-            res.status(404).send(msg)
-            
-            if (bLog) console.log("error server side")
+            res.status(404).send(msg)       
+            console.log(`error server side on /parse: ${err}`)
         
         })
 

@@ -28,6 +28,15 @@ Overall ideas:
         - associated websites:
             - beale street caravan
 
+6.29
+
+    to move to a frontenv-v2, need to:
+        - factor out util functions into a utils.js
+            - how to import export?
+            -> then use this to drop into a front-v2 react app
+        - develop a js strategy for inserting info from the route?
+
+
 6.24
 
         player api reference
@@ -126,7 +135,7 @@ Overall ideas:
         [x] date logic works live
 
     
-    [ ] deploy + test new logic
+    [x] deploy + test new logic
 
         [x] locally: test scrape-dead + scrape-live
             using slug /pagelive
@@ -134,13 +143,22 @@ Overall ideas:
         [x] locally: test search-live 
             [x] test how well it does -> pretty good!
         
-        [ ] make it 1:10 for the frontend default
+        [x] make it 1:10 for the frontend default
 
-        [ ] site-mock
-        [ ] frontend
-        [ ] proxy2
+        [x] site-mock
+        [x] frontend
+        [x] proxy2
 
-        [ ] deplyed: test wumb-dead + wumb-live 
+        [x] frontend bug:
+            script.js 146 - setHighlighClass() breaks execution before new playlist loads
+            [x] what lines fail? hypothesis holds?
+                -> note: 6/2/21 has a page with no songs listed
+            [x] replicate locally
+                  -> not a perfect replication because we don't recover on deployed app, whereas we do locally
+            [x] add try / catch
+            [x] push remotely
+
+        [x] deplyed: test wumb-dead + wumb-live 
             [x] how do you control it from the frontend?
                 -> via slug
 
@@ -163,7 +181,26 @@ Overall ideas:
             -> occurs on "canned heat, on the road again"
         [ ] frontend logic to check for status
         [ ] check results json for the indicator
-        
+
+    [ ] frontend bug: player loses ability to do "Next Song" on playlist refresh
+
+    [ ] frontend bug: alert when no playlist items found    
+        - informative: are there songs at the time before it?
+                        or are there no songs for that day
+                        print out existing input time and wumb link
+
+    [ ] frontend bug: if the 0th song never returns api results we should play the 1th, etc,
+        as it stands the user will have to click next
+
+    [ ] frontend bug: new playlist load causes pink select of 1th new song but loads 0th new song,
+                        then "next >>" skips the 1th song
+
+    [ ] frontend logic: skip songs without a clear artist and title
+        e.g. artist: "", title: "SON18-99"
+
+    [ ] frontend logic: 
+        - show a loading element while scrape loads
+        - show a message on what playlist is loading by default
 
     [ ] need better refresh playlist logic
         - just calling scrapeArchive() in timeForm is duplicating a lot of DOM creation
@@ -172,10 +209,43 @@ Overall ideas:
             playlist?
 
     [ ] prototype the search cache
-        [ ] add mongoose + Model
+        [x] check that new function returns the same thing
+            [x] on dead
+            [x] check logging
+        [x] add mongoose + Model
+            [x] demonstrate loading the SearchReq model in node REPL
+        [x] add logging specific to this unit
+            [x] turn off exisitng logic
+        
+        tech details:
+            [ ] how does mongoose handle consuming nested json? auto fields?
+            [ ] how does mongoose handle a query that fails
+            [ ] how do promise then/catch/finally work for each branch
+        
+        [ ] convert the seeding code from example
+            [ ] seed the db with site-mock/yt-mock-data
+            
         [ ] .find Methods
-        [ ] add api rate limiting on proxy-2
-            no more than 5 requests in 10 seconds (without override)
+            [ ] what can we lookup for index 
+                - a songArtist && songTitle match
+                - a songArtist && songTitle && songAlbum match
+                - a DateTime match
+                - a fuzzy match
+                - we can use normalizedTitle etc
+            
+            [ ] how to string multiple promise db lookups together
+                and resolve only when all return empty
+
+        [ ] need extra fields
+            - time + date string?
+            - last lookup time
+        
+        [ ] results field
+            [ ] how to link?
+        
+    
+    [ ] add api rate limiting on proxy-2
+        no more than 5 requests in 10 seconds (without override)
 
     misc
         
@@ -191,6 +261,11 @@ Overall ideas:
             - will a default playlist load up?
             - show the already searched time blocks?
         [ ] just show the tile image instead of the player itself
+        [ ] add video description as optional 
+            - also add in getDuration() result from player
+        [ ] show user yt quota on page
+        [ ] add a liked song functionality
+        [ ] test perf on local + atlasdb - bigO / queryTime for N documents
 
 
     [ ] add scraping logic and basic player controls
@@ -238,6 +313,8 @@ Overall ideas:
         [x] how to do this with environmental variables?
             >heroku create -a wumb-front-v1 
             >git subtree push --prefix frontend heroku master
+                >git subtree push --prefix proxy-2 heroku-proxy2 master
+                >git subtree push --prefix site-mock heroku-site-mock master
             >heroku config:set ENV=val --app=wumb-front-v1
             >heroku create -a wumb-site-mock  --remote heroku-site-mock
 

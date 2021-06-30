@@ -43,7 +43,7 @@ function timeForm(e) {
     playlistTime = elems.time.value
     playlistDate = elems.date.value
     scrapeDate   = cvtDateParam(playlistDate)
-    console.log('${playlistTime} | ${playlistDate} | ${scrapeDate}')
+    console.log(`${playlistTime} | ${playlistDate} | ${scrapeDate}`)
     scrapeArchive()
 }
 
@@ -141,10 +141,13 @@ function setHighlightClass(v1=false) {
     
     const newInd = v1 ? currentVidIndex * 2 : currentVidIndex
     const oldInd = Math.max(-1, (v1 ? (currentVidIndex-1) * 2 : currentVidIndex - 1))
-    console.log(newInd, oldInd)
     
-    trs[newInd].classList.add("current")
-    if (oldInd >= 0) trs[oldInd].classList.remove("current")
+    try {
+        trs[newInd].classList.add("current")
+        if (oldInd >= 0) trs[oldInd].classList.remove("current")
+    } catch {
+        console.log(`not able to update highlightClass for index: ${newInd}`)
+    }
 }
 
 function onPlayerReady(event) {

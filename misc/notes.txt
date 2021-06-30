@@ -186,6 +186,12 @@ Overall ideas:
         [ ] why doesn't intellisense work well in express workspaces?
         [ ] each signed-in user has their own api key associated with theri account
         [ ] url bar should contain params to share the playlist with others
+        [ ] if playedDuration > listed duration -> skip rest of song
+        [ ] need better landing page logic: what will happen automatically on load?
+            - will a default playlist load up?
+            - show the already searched time blocks?
+        [ ] just show the tile image instead of the player itself
+
 
     [ ] add scraping logic and basic player controls
         [ ] date + time input buttons

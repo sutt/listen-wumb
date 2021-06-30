@@ -34,7 +34,7 @@ const bTestingMaxRows = {{TESTING_MAXROWS_OFF}}
 const testMaxRows = 5
 
 var playlistDate = "5-22-2021"
-var playlistTime = "1:00 pm"
+var playlistTime = "1:12 pm"
 var scrapeDate   = "210522"
 
 function timeForm(e) {

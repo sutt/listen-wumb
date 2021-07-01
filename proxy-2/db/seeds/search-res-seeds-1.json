@@ -1,0 +1,3477 @@
+[
+    {
+        "response": {
+            "kind": "youtube#searchListResponse",
+            "etag": "SftKR1DF6s1ND1WzCcCf3H3QZPI",
+            "nextPageToken": "CBQQAA",
+            "regionCode": "US",
+            "pageInfo": {
+                "totalResults": 1000000,
+                "resultsPerPage": 20
+            },
+            "items": [
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "c2bRfOPVtKLIecm12Cb__gviaJg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "PBHYbeg2nao"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:55:54Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - The Norwegians Scene (1/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/PBHYbeg2nao/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/PBHYbeg2nao/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/PBHYbeg2nao/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:55:54Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "Waa6j3XHJnz7mArXaWG-Z37_e_c",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "pzqoqzSZkPs"
+                    },
+                    "snippet": {
+                        "publishedAt": "2016-04-27T19:13:32Z",
+                        "channelId": "UCSD_HH3Y0akXsTOtaCHoEwA",
+                        "title": "VAL BENNETT - The Russians Are Coming [1968]",
+                        "description": "LEE'S 7'' (re) Bunny Lee production.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/pzqoqzSZkPs/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/pzqoqzSZkPs/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/pzqoqzSZkPs/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Bionic Dub",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2016-04-27T19:13:32Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "r4FbIFc9XT5_w0P8d9MkLDcB090",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "k3TpBfnaEmI"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:08Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Under Arrest Scene (10/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/k3TpBfnaEmI/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/k3TpBfnaEmI/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/k3TpBfnaEmI/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:08Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "VCWkmSSnZVYDbbn5wMtGyLYSZ6A",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "VktjIxVAD1E"
+                    },
+                    "snippet": {
+                        "publishedAt": "2019-06-17T06:25:26Z",
+                        "channelId": "UCalmlLqIrJtw7MZTjpgOHLQ",
+                        "title": "THE RUSSIANS ARE COMING !THE RUSSIANS ARE COMING !",
+                        "description": "clips from \"THE RUSSIANS ARE COMING !THE RUSSIANS ARE COMING !\" (1966)",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/VktjIxVAD1E/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/VktjIxVAD1E/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/VktjIxVAD1E/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "ACER LEE",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2019-06-17T06:25:26Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "aQOsxE7lo4O-o1v4oWflzllpozY",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "ijBU9q7fb3U"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:01Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - The Militia Scene (5/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/ijBU9q7fb3U/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/ijBU9q7fb3U/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/ijBU9q7fb3U/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:01Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "iIcFqwQsZSvK2XkdaGmcaqhH7bs",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "V7jHoqe9mH0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2019-01-28T17:00:04Z",
+                        "channelId": "UC084FSD0cO4ZOS5SonULRCQ",
+                        "title": "The Russians Are Coming - Parks and Recreation",
+                        "description": "Ron: They're coming! They're coming! They're coming! Andy: Who? The Russians? Ron: No, the state auditors. Parks and Recreation. Stream Now On Peacock: ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/V7jHoqe9mH0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/V7jHoqe9mH0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/V7jHoqe9mH0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Parks and Recreation",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2019-01-28T17:00:04Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "jn_WOz2fCgICJ0AhUNxZjmEmuL8",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "MYErK-XLJv0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:07Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Not Personal Scene (9/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/MYErK-XLJv0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/MYErK-XLJv0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/MYErK-XLJv0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:07Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "bXpxIZK2YDMiVj6mH6ETOdZrekQ",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "VzXMcMcBwA8"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:06Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Down the Stairs Scene (8/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/VzXMcMcBwA8/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/VzXMcMcBwA8/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/VzXMcMcBwA8/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:06Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "l_lcuEz_FTsOWm-zlUCYZ5QC_9Q",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "jMqI9UV3ob4"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:03Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Got to Organize Scene (6/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/jMqI9UV3ob4/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/jMqI9UV3ob4/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/jMqI9UV3ob4/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:03Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "ciUvQwOAluEBsOyrwug6fCULCHw",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "XBOQdkIu6fM"
+                    },
+                    "snippet": {
+                        "publishedAt": "2009-03-24T14:55:43Z",
+                        "channelId": "UCo6iTwpTlFbWIhueTM_m80g",
+                        "title": "The Russians Are Coming Movie Theme",
+                        "description": "(c) Copyright MCMLXV by The Mirisch Corporation of Delaware. I claim no ownership of this video. I'll be glad to remove this clip, if this post infringes any ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/XBOQdkIu6fM/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/XBOQdkIu6fM/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/XBOQdkIu6fM/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Ferdaus Ahmad Zaki",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2009-03-24T14:55:43Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "gsikvkhZZaSBGtYiE7imaWIBg44",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "1PRZi8t38OQ"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:04Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Trust the Enemy Scene (7/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/1PRZi8t38OQ/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/1PRZi8t38OQ/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/1PRZi8t38OQ/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:04Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "ypKOiM6kGpBouQ7uNElsgyyBwi4",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "YmRuVv2V5Go"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:00Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Hanging Around Scene (4/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/YmRuVv2V5Go/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/YmRuVv2V5Go/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/YmRuVv2V5Go/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:00Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "hEmhq1lTX-k0X0Nrm_-C6T3FhsY",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "ILkyIHOOoq4"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:55:56Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Finding the Key Scene (2/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/ILkyIHOOoq4/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/ILkyIHOOoq4/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/ILkyIHOOoq4/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:55:56Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "3fF_sfogV0KU04tADg3XyPlsTIg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "JNcNy7bJxDg"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:55:58Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Arnold Benedict Scene (3/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/JNcNy7bJxDg/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/JNcNy7bJxDg/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/JNcNy7bJxDg/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:55:58Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "nNtmJEkVc59CJ9VbVtz033sl89g",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "QGgJPmOUmDU"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-08-02T19:27:25Z",
+                        "channelId": "UCbmK16ZLxxAh8F8Y5HlCD1g",
+                        "title": "Emergency! Everybody to Get From Street!",
+                        "description": "From the classic 1966 film, \"The Russians Are Coming! The Russians Are Coming!\" My late father's favorite film. **NOTE: If you comment please don't make it ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/QGgJPmOUmDU/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/QGgJPmOUmDU/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/QGgJPmOUmDU/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Vespin Feebler",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-08-02T19:27:25Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "v1T4i17YBZVd_BOwEc_biNm8etg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "4LnoEke4bvA"
+                    },
+                    "snippet": {
+                        "publishedAt": "2020-01-03T10:50:01Z",
+                        "channelId": "UCZ0YeY63VADmSD-tgwqiK-g",
+                        "title": "ＳＥＲＢＷＡＶＥ　－　ＲＵＳＳＩＡＮＳ　ＡＲＥ　ＣＯＭＩＮＧ　花憶ぷり医",
+                        "description": "This video is a tribute to the Russian VDV soldiers who rushed to get to Kosovo and Metohija from their station in Bosnia. They managed to capture and hold the ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/4LnoEke4bvA/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/4LnoEke4bvA/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/4LnoEke4bvA/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "TheAthelasProject",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2020-01-03T10:50:01Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "XzxCsR9BZzsBfS_cSqJweQRVGPU",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "ja662T1YROY"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-11-21T19:18:38Z",
+                        "channelId": "UCqbs5WKrML0zHmzAIHhOf5g",
+                        "title": "The Russians Are Coming",
+                        "description": "Provided to YouTube by The Orchard Enterprises The Russians Are Coming · Val Bennet Val Bennet EP ℗ 2011 Culture Town Released on: 2011-04-18 ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/ja662T1YROY/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/ja662T1YROY/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/ja662T1YROY/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Val Bennet - Topic",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-11-21T19:18:38Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "bWPf50pqFDq_8jDBMwCC1PMI9ac",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "o0GJFvux7d0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-05-01T16:16:10Z",
+                        "channelId": "UCJx_GMg45cCW1tKNMJ-3UPA",
+                        "title": "A.D.1984 - The Russians Are Coming! (1979)",
+                        "description": "A.D.1984 - The Russians Are Coming! (UK 7\" 1979 Voyage International Record LTD)",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/o0GJFvux7d0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/o0GJFvux7d0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/o0GJFvux7d0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "skandal1966",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-05-01T16:16:10Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "MiXmdpl733v011aZO8HPX3DS82U",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "BMOyTzkam0s"
+                    },
+                    "snippet": {
+                        "publishedAt": "2020-03-17T03:40:56Z",
+                        "channelId": "UCBWEbL_4ge4-ov-gyed06RQ",
+                        "title": "The Russians are Coming - Emergency!",
+                        "description": "",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/BMOyTzkam0s/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/BMOyTzkam0s/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/BMOyTzkam0s/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "pebey",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2020-03-17T03:40:56Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "q5I8Dt0O-_pwX6cr0SwKlW9P8XM",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "fjOF_rAZABc"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-04-28T09:19:27Z",
+                        "channelId": "UC85qZLYkcBQxyfhnpqP9WOA",
+                        "title": "The Russians Are Coming the Russians Are Coming (1966) title sequence",
+                        "description": "Title sequence from The Russians Are Coming the Russians Are Coming (1966) designed by Pablo Ferro Help me make more videos: ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/fjOF_rAZABc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/fjOF_rAZABc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/fjOF_rAZABc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "MovieTitles",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-04-28T09:19:27Z"
+                    }
+                }
+            ]
+        },
+        "__v": 0
+    },
+    {
+        "response": {
+            "kind": "youtube#searchListResponse",
+            "etag": "LpeX6ppUXb09j2xsP51M6paJo0s",
+            "nextPageToken": "CBQQAA",
+            "regionCode": "US",
+            "pageInfo": {
+                "totalResults": 18433,
+                "resultsPerPage": 20
+            },
+            "items": [
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "olX2fUUpehKdSymZSn_nj9Xvx_w",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "yFEvdWHK7GA"
+                    },
+                    "snippet": {
+                        "publishedAt": "2008-02-07T13:52:34Z",
+                        "channelId": "UCR4qsGjxaJ4w0kU9_qbNaSg",
+                        "title": "Barrington LevY-Under Mi Sensi (original version)",
+                        "description": "Under Mi Sensi.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/yFEvdWHK7GA/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/yFEvdWHK7GA/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/yFEvdWHK7GA/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Micaah Alina",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2008-02-07T13:52:34Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "6K3BF6eh-gB1DpLNa_twjH-JO_s",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "KNWrzCPkOqc"
+                    },
+                    "snippet": {
+                        "publishedAt": "2015-07-15T22:32:07Z",
+                        "channelId": "UChCDNXr_7WGYGcVsk6JuboQ",
+                        "title": "Barrington Levy - Unda Mi Sensi",
+                        "description": "Official music video for \"Unda Mi Sensi\" by Barrington Levy Download on iTunes: http://radi.al/BLeviUndaMiSense Subscribe: http://bit.ly/QzHcrb Directed and ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/KNWrzCPkOqc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/KNWrzCPkOqc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/KNWrzCPkOqc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Radial by The Orchard",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2015-07-15T22:32:07Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "RVHeQIOjnfnehzkG8rW4h5OSp4I",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "EB6IqzfVVC0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2012-01-25T18:28:10Z",
+                        "channelId": "UCPpTIBhWlWySJjg7QJUMIsw",
+                        "title": "Barrington Levy Under Me Sensi - Live",
+                        "description": "Barrington Levy Under Me Sensi - Live Under Mi Sensi.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/EB6IqzfVVC0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/EB6IqzfVVC0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/EB6IqzfVVC0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "aeon 23",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2012-01-25T18:28:10Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "Yal9L12x4URDOXH97GvMc3_9CKI",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "M9C6F3jdZFI"
+                    },
+                    "snippet": {
+                        "publishedAt": "2016-08-11T09:21:18Z",
+                        "channelId": "UC_C0ybxpgF4XaXHx11AEWOg",
+                        "title": "Barrington Levy - Under Mi Sensi - 80&#39;s Reggae Dancehall Classic",
+                        "description": "Official audio for 'Under Mi Sensi' by Barrington Levy, released on Jet Star Records. Subscribe to the official Jet Star channel for more reggae classics, lost gems ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/M9C6F3jdZFI/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/M9C6F3jdZFI/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/M9C6F3jdZFI/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Jet Star Music",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2016-08-11T09:21:18Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "bSKHAOx5Mvk6EZ4ps1mS2dksqRw",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "i5_Rz_ysD0c"
+                    },
+                    "snippet": {
+                        "publishedAt": "2009-12-21T10:41:15Z",
+                        "channelId": "UCPFIKRrwPQRW2_HzLHYV9XQ",
+                        "title": "barrington levy - under mi sensi",
+                        "description": "barrington levy - under mi sensi jah.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/i5_Rz_ysD0c/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/i5_Rz_ysD0c/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/i5_Rz_ysD0c/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "11natural11",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2009-12-21T10:41:15Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "bdqva19MNZt4rH27OQemIi2wVnU",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "k3O2lOtpPw0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-11-09T03:03:27Z",
+                        "channelId": "UCwbJQdLZcDj8UADN49nc5OQ",
+                        "title": "Under Me Sensi",
+                        "description": "Provided to YouTube by VP Records Under Me Sensi · Barrington Levy Reggae Anthology: Sweet Reggae Music (1979-84) ℗ 2008 Greensleeves Records ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/k3O2lOtpPw0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/k3O2lOtpPw0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/k3O2lOtpPw0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Barrington Levy - Topic",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-11-09T03:03:27Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "U0ERHw3b3mTgWnpz48UEVOs5D18",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "9x163xToWWg"
+                    },
+                    "snippet": {
+                        "publishedAt": "2019-09-24T17:37:36Z",
+                        "channelId": "UC1H10_sBLFoix0xf_B2mKyg",
+                        "title": "Barrington Levy - Under Mi Sensi (FULL LYRICS) Here I Come Album 1985",
+                        "description": "UNDER MI SENSI BARRINGTON LEVY.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/9x163xToWWg/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/9x163xToWWg/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/9x163xToWWg/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Brandon Chviek",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2019-09-24T17:37:36Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "fRxQo2Q4gf0RuMIJW0roDFngL3U",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "nXSRKR582fM"
+                    },
+                    "snippet": {
+                        "publishedAt": "2016-07-21T13:29:11Z",
+                        "channelId": "UC1g8kQCmvaZvuzqF1-CxvfA",
+                        "title": "Jah Trouble - Under Mi Sensi [Official Video 2016]",
+                        "description": "Musically & Graphically Directed by Romain Sherkhan Chiffre for Tiger Records and Raatid Magic films.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/nXSRKR582fM/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/nXSRKR582fM/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/nXSRKR582fM/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Reggaeville",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2016-07-21T13:29:11Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "ZZTs-Scy44kxKHLOqtP0UUclWjI",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "Q2F5BIPzDME"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-04-06T14:56:06Z",
+                        "channelId": "UCzUwyTYseEhVDowpFUPKukA",
+                        "title": "Barrington Levy &amp; Beenie Man - Under mi sensi",
+                        "description": "Beskrivning.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/Q2F5BIPzDME/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/Q2F5BIPzDME/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/Q2F5BIPzDME/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Kangalija",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-04-06T14:56:06Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "oXKlkLEU_2kRmsLns0-3Z7gh5Ao",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "bmQmmZgSPFs"
+                    },
+                    "snippet": {
+                        "publishedAt": "2017-02-10T03:50:23Z",
+                        "channelId": "UCwbJQdLZcDj8UADN49nc5OQ",
+                        "title": "Under Mi Sensi",
+                        "description": "Provided to YouTube by Greensleeves Records Under Mi Sensi · Barrington Levy DJ Andy Smith: Greensleeves Document ℗ 2008 Greensleeves Records ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/bmQmmZgSPFs/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/bmQmmZgSPFs/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/bmQmmZgSPFs/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Barrington Levy - Topic",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2017-02-10T03:50:23Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "VBHxSQuOJ_aHSw-CgvPjtXXsqv4",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "qPAZcT33pmQ"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-03-17T20:21:48Z",
+                        "channelId": "UCD6PJH_RiJJ-m7P5jeANoVg",
+                        "title": "Barrington Levy - Under Mi Sensi",
+                        "description": "Hi Grade Ganja Anthems.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/qPAZcT33pmQ/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/qPAZcT33pmQ/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/qPAZcT33pmQ/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Rastafari",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-03-17T20:21:48Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "B9fnHAPNJYZHpd5BSe4hAmmRN9k",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "5XF6VAZsD2Y"
+                    },
+                    "snippet": {
+                        "publishedAt": "2020-02-24T03:51:04Z",
+                        "channelId": "UCzwlriz56pXf7-qZfdX2uZg",
+                        "title": "Barrington Levy - Under Mi Sensi (Live at O2 Academy Brixton 2020)",
+                        "description": "Barrington Levy performing Under Mi Sensi at O2 Academy Brixton in 2020                    ! Please Don't Forget to Like, Share this Video & Subscribe to My ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/5XF6VAZsD2Y/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/5XF6VAZsD2Y/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/5XF6VAZsD2Y/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "SlimSouljahTV",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2020-02-24T03:51:04Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "F9u_q0v4cK0QxvKK4F-q_BB-Aig",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "QPkbzmewENo"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-04-19T19:11:04Z",
+                        "channelId": "UC6aJ2CGHVLKRoRH5_WwbeAg",
+                        "title": "Barrington Levy    Under Me Sensi  1985",
+                        "description": "",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/QPkbzmewENo/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/QPkbzmewENo/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/QPkbzmewENo/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "zuluonedrop B",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-04-19T19:11:04Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "549BQNxW438lW9JLZ-w9GhZFwMg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "IVnbg7KLupc"
+                    },
+                    "snippet": {
+                        "publishedAt": "2011-11-19T20:04:40Z",
+                        "channelId": "UCSyUAIboeeBzTTkJ0SC-x9g",
+                        "title": "Barrington Levy - Under me Sensi (Original)",
+                        "description": "Early Dancehall 7\" (P) 1985 Time One Int. Jamaica.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/IVnbg7KLupc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/IVnbg7KLupc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/IVnbg7KLupc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Luigi TuneIn",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2011-11-19T20:04:40Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "6dw4U_xnBA3Zhjxtbu5XbEuoDB8",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "1h54uUM8zzY"
+                    },
+                    "snippet": {
+                        "publishedAt": "2008-01-23T22:08:35Z",
+                        "channelId": "UCwrQdej_aqVBRW6pNnSZ4uQ",
+                        "title": "Barrington Levy LIVE , under mi sensi (Good Quality)",
+                        "description": "Belly up aspen Colorado dec 07.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/1h54uUM8zzY/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/1h54uUM8zzY/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/1h54uUM8zzY/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "jrgongras",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2008-01-23T22:08:35Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "8Rewrmj96nDvw_CBPcVTDkoQTRg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "GOEi6WoQ-oY"
+                    },
+                    "snippet": {
+                        "publishedAt": "2013-01-21T15:35:15Z",
+                        "channelId": "UC87l-Gf1o2b2tXNegfCuiwQ",
+                        "title": "JAH SCREW - DUB VERSION (TIME ONE) Barrington Levy - Under Me Sensi Dub",
+                        "description": "dub from the roots.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/GOEi6WoQ-oY/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/GOEi6WoQ-oY/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/GOEi6WoQ-oY/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "im junglist",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2013-01-21T15:35:15Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "mDzU8cf6Pj0D6DshEss4qb3GHE4",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "e8VGsd8YgwM"
+                    },
+                    "snippet": {
+                        "publishedAt": "2008-09-15T00:23:58Z",
+                        "channelId": "UCjo7Uix6YMfMalMQK7s6xew",
+                        "title": "Barrington Levy - Under Me Sensi Live",
+                        "description": "Barrington Levy performing Under Me Sensi in AnfiteatroTito Puente Puerto Rico on 5/26/2007.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/e8VGsd8YgwM/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/e8VGsd8YgwM/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/e8VGsd8YgwM/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Miguel Gandia",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2008-09-15T00:23:58Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "g8qQLDARwcJUBNYEMNKhBhG7twM",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "kGjGro5DzFc"
+                    },
+                    "snippet": {
+                        "publishedAt": "2017-02-05T07:31:19Z",
+                        "channelId": "UCHRQwI5NEmWULm382dVoeHQ",
+                        "title": "Barrington Levy - Under Mi Sensi (original version)",
+                        "description": "Barrington Levy - Under Me Sensi 1993.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/kGjGro5DzFc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/kGjGro5DzFc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/kGjGro5DzFc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "PositiveReggaeVibes",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2017-02-05T07:31:19Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "JOaKw-neagXbJn7BWdE-Q_EOy9k",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "Uh4CaTAtntI"
+                    },
+                    "snippet": {
+                        "publishedAt": "2013-04-24T12:08:23Z",
+                        "channelId": "UCIkFYWE2wwk_XaKHSVOjl2g",
+                        "title": "Barrington Levy - Under Mi Sensi (Original)",
+                        "description": "",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/Uh4CaTAtntI/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/Uh4CaTAtntI/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/Uh4CaTAtntI/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Docteur Rasboule",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2013-04-24T12:08:23Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "C3HmfHy-EjaPg4OIBm2i_tNRrCg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "eGGRfojxqLI"
+                    },
+                    "snippet": {
+                        "publishedAt": "2013-04-24T19:42:11Z",
+                        "channelId": "UChmHh7M8YXkbAKAa-HDUhTA",
+                        "title": "Barrington Levy - Under mi sensi",
+                        "description": "3ª canción del álbum de Barrington Levy \"Here I come\" (1985)",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/eGGRfojxqLI/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/eGGRfojxqLI/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/eGGRfojxqLI/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "DavidTheMusicLover",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2013-04-24T19:42:11Z"
+                    }
+                }
+            ]
+        },
+        "__v": 0
+    },
+    {
+        "response": {
+            "kind": "youtube#searchListResponse",
+            "etag": "kPyiIb3u_WY-2I9qlQ9Libn8DGQ",
+            "nextPageToken": "CBQQAA",
+            "regionCode": "US",
+            "pageInfo": {
+                "totalResults": 13911,
+                "resultsPerPage": 20
+            },
+            "items": [
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "040NAI0cdmjCx0n_O1T8fh2MwnE",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "nlaoR5m4L80"
+                    },
+                    "snippet": {
+                        "publishedAt": "2008-11-15T12:47:30Z",
+                        "channelId": "UCGGbHEhOeGbKs6xY3IBgdAQ",
+                        "title": "Let The Mystery Be - Iris DeMent  H.Q.",
+                        "description": "Iris Dement - vocals & guitar Russ Barenberg - guitar Jay Ungar - fiddle Molly Mason - bass Donal Lunny - bouzouki.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/nlaoR5m4L80/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/nlaoR5m4L80/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/nlaoR5m4L80/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "tomtscotland",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2008-11-15T12:47:30Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "kiZ1R8x1On5Bo8wy38FmY5okOh0",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "0gQVS2fCsek"
+                    },
+                    "snippet": {
+                        "publishedAt": "2020-01-10T04:21:55Z",
+                        "channelId": "UCgmdHohUx8lZLx4f_uSY6rA",
+                        "title": "Let the Mystery Be",
+                        "description": "Provided to YouTube by Redeye Worldwide Let the Mystery Be · Iris DeMent Infamous Angel ℗ Songs of Iris/Forerunner Music, Inc. (ASCAP) Released on: ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/0gQVS2fCsek/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/0gQVS2fCsek/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/0gQVS2fCsek/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Iris DeMent - Topic",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2020-01-10T04:21:55Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "zOYSaVWLy7LhJlhhu2Ct9WSNvO0",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "jP9LT5HuzrE"
+                    },
+                    "snippet": {
+                        "publishedAt": "2012-08-08T07:33:56Z",
+                        "channelId": "UCUgeZoAOBB5OK8whxhxvEtw",
+                        "title": "Iris DeMent - Let The Mystery Be",
+                        "description": "From \"Infamous Angel\" (1992)",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/jP9LT5HuzrE/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/jP9LT5HuzrE/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/jP9LT5HuzrE/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "scarecrow3666",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2012-08-08T07:33:56Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "iEuhFLh5eJDji4MxzxCcoNQBDlw",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "awmgpZFXHfk"
+                    },
+                    "snippet": {
+                        "publishedAt": "2009-02-12T12:01:24Z",
+                        "channelId": "UC_HWIuGU-Dk_lJUMtpAQlwQ",
+                        "title": "Iris Dement - Let the Mystery Be ...  Live",
+                        "description": "",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/awmgpZFXHfk/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/awmgpZFXHfk/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/awmgpZFXHfk/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Alison Wearn",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2009-02-12T12:01:24Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "GCA_hdg1rjrXIuYAywlF_z15iG0",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "i9JLWqsMj-I"
+                    },
+                    "snippet": {
+                        "publishedAt": "2020-02-03T14:36:02Z",
+                        "channelId": "UCglhYtuxtjonGCGc2CQKCgQ",
+                        "title": "Iris DeMent &quot;Let The Mystery Be&quot; @ Eddie Owen Presents",
+                        "description": "Recorded live @ Red Clay Music Foundry 10/5/18 http://www.eddieowenpresents.com https://irisdement.com Executive Producer: Eddie Owen Producer: Corey ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/i9JLWqsMj-I/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/i9JLWqsMj-I/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/i9JLWqsMj-I/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "EOP Live",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2020-02-03T14:36:02Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "uYHAqS29oGQoYQpsapQfPbn4b1Y",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "yoXWUK7zOrE"
+                    },
+                    "snippet": {
+                        "publishedAt": "2013-01-21T22:14:20Z",
+                        "channelId": "UCS-cKHD1R9cW4BkuzrSKw6w",
+                        "title": "Iris DeMent   Let the Mystery Be   BBC2   The Late Show",
+                        "description": "This performance was broadcast on BBC2's 'The Late Show' in the early 90's. Found on an old VHS LP recorded tape, so the quality isn't great. I couldn't find ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/yoXWUK7zOrE/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/yoXWUK7zOrE/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/yoXWUK7zOrE/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "release7826",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2013-01-21T22:14:20Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "xMOlJz2s-5okjRUsj_tHC1fxJcI",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "9Gk8JJTinUI"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-06-16T22:30:09Z",
+                        "channelId": "UC-xTVl97pv9ftbOu8UfVy_Q",
+                        "title": "Natalie Merchant - Let the Mystery Be",
+                        "description": "From the 10000 Maniacs MTV Unplugged concert. David Byrne makes a special guest appearance on this Iris Dement song.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/9Gk8JJTinUI/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/9Gk8JJTinUI/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/9Gk8JJTinUI/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "NatalieMerchantVideo",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-06-16T22:30:09Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "ZUAezJojymbTSd11VFXE_5Wfjlc",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "3ixGxnfCYIc"
+                    },
+                    "snippet": {
+                        "publishedAt": "2015-09-03T05:09:39Z",
+                        "channelId": "UCxYQylu1qOdeU53IkJfizOA",
+                        "title": "Iris DeMent ~ Let The Mystery Be",
+                        "description": "Country Music From the 1992 Philo CD Infamous Angel.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/3ixGxnfCYIc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/3ixGxnfCYIc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/3ixGxnfCYIc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "john sandiford",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2015-09-03T05:09:39Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "P9_s43PfaEnj__t-T0GmE8c-FPE",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "1Y4unZvLQ-0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2016-02-02T23:07:19Z",
+                        "channelId": "UCTPZRV6YMcPXatZN8mt3Qog",
+                        "title": "Let The Mystery Be by Iris Dement",
+                        "description": "The Home Cookin' Choir Sings 'Let The Mystery Be' by Iris Dement Conducted by Tom Arntzen.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/1Y4unZvLQ-0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/1Y4unZvLQ-0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/1Y4unZvLQ-0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Robert Hubele",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2016-02-02T23:07:19Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "0CFkWKc2yjWkBW-NmLMf2f8Vkpw",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "O9nAhyPZKys"
+                    },
+                    "snippet": {
+                        "publishedAt": "2012-01-19T05:36:09Z",
+                        "channelId": "UCy3_Rdf7ulSVg3CBNJJ_pgg",
+                        "title": "Let The Mystery Be by Iris DeMent",
+                        "description": "Recorded on October 15, 2010 in Houston, Texas.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/O9nAhyPZKys/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/O9nAhyPZKys/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/O9nAhyPZKys/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Chris Sweeney",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2012-01-19T05:36:09Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "fuibdtjw_uzGRomfKxrtJXK-jpY",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "xhbWZ8vzSEM"
+                    },
+                    "snippet": {
+                        "publishedAt": "2017-06-11T17:05:18Z",
+                        "channelId": "UCXtNIMrCs1FxSJgZWuTSLYQ",
+                        "title": "Let The Mystery Be - Pomme (cover)",
+                        "description": "",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/xhbWZ8vzSEM/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/xhbWZ8vzSEM/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/xhbWZ8vzSEM/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Sophie Tabatadze",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2017-06-11T17:05:18Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "sRdgw6Shs3xzCZ_7tG8OpTYSSc0",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "rLSH-81yT7s"
+                    },
+                    "snippet": {
+                        "publishedAt": "2015-10-02T20:07:03Z",
+                        "channelId": "UCVTQuK2CaWaTgSsoNkn5AiQ",
+                        "title": "The Leftovers Season 2: Opening Credits (HBO)",
+                        "description": "Pack your bags. Season 2 of The Leftovers premieres Sunday, October 4 at 9. Connect with HBO Online The Leftovers on Facebook: ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/rLSH-81yT7s/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/rLSH-81yT7s/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/rLSH-81yT7s/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "HBO",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2015-10-02T20:07:03Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "XMBBjibPFl_lL7CLe0j-Fk4dhfc",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "sW9IfHLieQU"
+                    },
+                    "snippet": {
+                        "publishedAt": "2011-09-19T02:07:22Z",
+                        "channelId": "UCWt5QgTkSAFl8GTScDAbNYA",
+                        "title": "Let the mystery be - Iris DeMent",
+                        "description": "This is from the CD: \"Infamous Angel\". The song is written and performed by Iris.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/sW9IfHLieQU/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/sW9IfHLieQU/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/sW9IfHLieQU/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Sunsong23",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2011-09-19T02:07:22Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "-pkb74FZlbaaLcLInobKLR1El60",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "tDGuu1x6U_w"
+                    },
+                    "snippet": {
+                        "publishedAt": "2021-03-01T17:00:16Z",
+                        "channelId": "UCjI7TEV4o-mrozJqp9Ltb2A",
+                        "title": "Let the Mystery Be by Iris DeMent play along with scrolling guitar chords and lyrics",
+                        "description": "Welcome to Joanne Cooper's official YouTube channel! On this channel, you'll find a variety of play-along, karaoke and sing along videos with lyrics and ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/tDGuu1x6U_w/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/tDGuu1x6U_w/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/tDGuu1x6U_w/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Joanne Cooper",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2021-03-01T17:00:16Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "DNjLTOCTJrCy2GHbgQUtE1hf1AI",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "kSt5aXjGi1M"
+                    },
+                    "snippet": {
+                        "publishedAt": "2009-05-09T16:04:05Z",
+                        "channelId": "UCNTK_KvEAJvGhwXYcPv2D9Q",
+                        "title": "Iris Dement - Let the Mystery Be",
+                        "description": "4/23/09 Mucky Duck Houston, TX.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/kSt5aXjGi1M/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/kSt5aXjGi1M/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/kSt5aXjGi1M/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "kimwood1",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2009-05-09T16:04:05Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "rUHL5T2YyLlojtNym3dSHhPq4tA",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "io3Aa32NkzE"
+                    },
+                    "snippet": {
+                        "publishedAt": "2017-07-07T23:25:43Z",
+                        "channelId": "UC2QbGRFNTZZ4x6AVXH6GiPA",
+                        "title": "Let the mistery be  - The Leftovers soundtrack (Iris DeMent) (Lyrics)",
+                        "description": "[Chorus] Everybody's wondering what and where They all came from Everybody's worrying about where they're going to go When the whole thing's done But no ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/io3Aa32NkzE/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/io3Aa32NkzE/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/io3Aa32NkzE/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Music Therapy",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2017-07-07T23:25:43Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "iaM7RsqvmMOUb2mP5GxKbOCVn3U",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "OafIDsCAiGg"
+                    },
+                    "snippet": {
+                        "publishedAt": "2015-11-17T01:18:49Z",
+                        "channelId": "UCcBC0-Q5txCwVh8ukyVhtXA",
+                        "title": "Let the Mystery Be (Iris DeMent *Leftovers Season 2 Theme* cover) - Kim Boyko [64]",
+                        "description": "How about last night's episode?!?! I love The Leftovers sooooo much, even though the writers torture me! I also love how perfect their musical selections are, like ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/OafIDsCAiGg/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/OafIDsCAiGg/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/OafIDsCAiGg/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Kim Boyko Music",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2015-11-17T01:18:49Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "0i7QrRyMVtvl0qjJ97QEDKN35qY",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "97b1RA_Vz10"
+                    },
+                    "snippet": {
+                        "publishedAt": "2017-09-12T15:33:36Z",
+                        "channelId": "UCOqgr0jpWq55SG-TeOHCwhw",
+                        "title": "Iris Dement - Let The Mystery Be Lyrics",
+                        "description": "Iris Dement - Let The Mystery Be Lyrics.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/97b1RA_Vz10/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/97b1RA_Vz10/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/97b1RA_Vz10/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Elina Lafon",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2017-09-12T15:33:36Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "PHZL-bOxVZida51Pz6-t79WYQvk",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "WKarP6nsfqA"
+                    },
+                    "snippet": {
+                        "publishedAt": "2021-04-13T01:03:21Z",
+                        "channelId": "UCzxcR9sL5540u5WSlBPLpjw",
+                        "title": "Let The Mystery Be (live on TV) - Iris DeMent",
+                        "description": "",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/WKarP6nsfqA/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/WKarP6nsfqA/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/WKarP6nsfqA/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Mark Graves",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2021-04-13T01:03:21Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "DQPeD7XBwx55JkCXsXPGQHUkAT0",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "fRyirVgs1yc"
+                    },
+                    "snippet": {
+                        "publishedAt": "2015-10-05T16:07:44Z",
+                        "channelId": "UCcecyDKEmRcxFXSZgwSXIDg",
+                        "title": "The Leftovers Season 2 Intro HD 1080p",
+                        "description": "The Leftovers Season 2 Intro HD 1080p.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/fRyirVgs1yc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/fRyirVgs1yc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/fRyirVgs1yc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Daniel Karwala",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2015-10-05T16:07:44Z"
+                    }
+                }
+            ]
+        },
+        "__v": 0
+    },
+    {
+        "response": {
+            "kind": "youtube#searchListResponse",
+            "etag": "LpeX6ppUXb09j2xsP51M6paJo0s",
+            "nextPageToken": "CBQQAA",
+            "regionCode": "US",
+            "pageInfo": {
+                "totalResults": 18433,
+                "resultsPerPage": 20
+            },
+            "items": [
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "olX2fUUpehKdSymZSn_nj9Xvx_w",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "yFEvdWHK7GA"
+                    },
+                    "snippet": {
+                        "publishedAt": "2008-02-07T13:52:34Z",
+                        "channelId": "UCR4qsGjxaJ4w0kU9_qbNaSg",
+                        "title": "Barrington LevY-Under Mi Sensi (original version)",
+                        "description": "Under Mi Sensi.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/yFEvdWHK7GA/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/yFEvdWHK7GA/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/yFEvdWHK7GA/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Micaah Alina",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2008-02-07T13:52:34Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "6K3BF6eh-gB1DpLNa_twjH-JO_s",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "KNWrzCPkOqc"
+                    },
+                    "snippet": {
+                        "publishedAt": "2015-07-15T22:32:07Z",
+                        "channelId": "UChCDNXr_7WGYGcVsk6JuboQ",
+                        "title": "Barrington Levy - Unda Mi Sensi",
+                        "description": "Official music video for \"Unda Mi Sensi\" by Barrington Levy Download on iTunes: http://radi.al/BLeviUndaMiSense Subscribe: http://bit.ly/QzHcrb Directed and ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/KNWrzCPkOqc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/KNWrzCPkOqc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/KNWrzCPkOqc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Radial by The Orchard",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2015-07-15T22:32:07Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "RVHeQIOjnfnehzkG8rW4h5OSp4I",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "EB6IqzfVVC0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2012-01-25T18:28:10Z",
+                        "channelId": "UCPpTIBhWlWySJjg7QJUMIsw",
+                        "title": "Barrington Levy Under Me Sensi - Live",
+                        "description": "Barrington Levy Under Me Sensi - Live Under Mi Sensi.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/EB6IqzfVVC0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/EB6IqzfVVC0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/EB6IqzfVVC0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "aeon 23",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2012-01-25T18:28:10Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "Yal9L12x4URDOXH97GvMc3_9CKI",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "M9C6F3jdZFI"
+                    },
+                    "snippet": {
+                        "publishedAt": "2016-08-11T09:21:18Z",
+                        "channelId": "UC_C0ybxpgF4XaXHx11AEWOg",
+                        "title": "Barrington Levy - Under Mi Sensi - 80&#39;s Reggae Dancehall Classic",
+                        "description": "Official audio for 'Under Mi Sensi' by Barrington Levy, released on Jet Star Records. Subscribe to the official Jet Star channel for more reggae classics, lost gems ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/M9C6F3jdZFI/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/M9C6F3jdZFI/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/M9C6F3jdZFI/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Jet Star Music",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2016-08-11T09:21:18Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "bSKHAOx5Mvk6EZ4ps1mS2dksqRw",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "i5_Rz_ysD0c"
+                    },
+                    "snippet": {
+                        "publishedAt": "2009-12-21T10:41:15Z",
+                        "channelId": "UCPFIKRrwPQRW2_HzLHYV9XQ",
+                        "title": "barrington levy - under mi sensi",
+                        "description": "barrington levy - under mi sensi jah.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/i5_Rz_ysD0c/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/i5_Rz_ysD0c/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/i5_Rz_ysD0c/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "11natural11",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2009-12-21T10:41:15Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "bdqva19MNZt4rH27OQemIi2wVnU",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "k3O2lOtpPw0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-11-09T03:03:27Z",
+                        "channelId": "UCwbJQdLZcDj8UADN49nc5OQ",
+                        "title": "Under Me Sensi",
+                        "description": "Provided to YouTube by VP Records Under Me Sensi · Barrington Levy Reggae Anthology: Sweet Reggae Music (1979-84) ℗ 2008 Greensleeves Records ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/k3O2lOtpPw0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/k3O2lOtpPw0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/k3O2lOtpPw0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Barrington Levy - Topic",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-11-09T03:03:27Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "U0ERHw3b3mTgWnpz48UEVOs5D18",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "9x163xToWWg"
+                    },
+                    "snippet": {
+                        "publishedAt": "2019-09-24T17:37:36Z",
+                        "channelId": "UC1H10_sBLFoix0xf_B2mKyg",
+                        "title": "Barrington Levy - Under Mi Sensi (FULL LYRICS) Here I Come Album 1985",
+                        "description": "UNDER MI SENSI BARRINGTON LEVY.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/9x163xToWWg/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/9x163xToWWg/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/9x163xToWWg/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Brandon Chviek",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2019-09-24T17:37:36Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "fRxQo2Q4gf0RuMIJW0roDFngL3U",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "nXSRKR582fM"
+                    },
+                    "snippet": {
+                        "publishedAt": "2016-07-21T13:29:11Z",
+                        "channelId": "UC1g8kQCmvaZvuzqF1-CxvfA",
+                        "title": "Jah Trouble - Under Mi Sensi [Official Video 2016]",
+                        "description": "Musically & Graphically Directed by Romain Sherkhan Chiffre for Tiger Records and Raatid Magic films.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/nXSRKR582fM/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/nXSRKR582fM/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/nXSRKR582fM/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Reggaeville",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2016-07-21T13:29:11Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "ZZTs-Scy44kxKHLOqtP0UUclWjI",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "Q2F5BIPzDME"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-04-06T14:56:06Z",
+                        "channelId": "UCzUwyTYseEhVDowpFUPKukA",
+                        "title": "Barrington Levy &amp; Beenie Man - Under mi sensi",
+                        "description": "Beskrivning.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/Q2F5BIPzDME/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/Q2F5BIPzDME/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/Q2F5BIPzDME/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Kangalija",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-04-06T14:56:06Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "oXKlkLEU_2kRmsLns0-3Z7gh5Ao",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "bmQmmZgSPFs"
+                    },
+                    "snippet": {
+                        "publishedAt": "2017-02-10T03:50:23Z",
+                        "channelId": "UCwbJQdLZcDj8UADN49nc5OQ",
+                        "title": "Under Mi Sensi",
+                        "description": "Provided to YouTube by Greensleeves Records Under Mi Sensi · Barrington Levy DJ Andy Smith: Greensleeves Document ℗ 2008 Greensleeves Records ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/bmQmmZgSPFs/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/bmQmmZgSPFs/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/bmQmmZgSPFs/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Barrington Levy - Topic",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2017-02-10T03:50:23Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "VBHxSQuOJ_aHSw-CgvPjtXXsqv4",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "qPAZcT33pmQ"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-03-17T20:21:48Z",
+                        "channelId": "UCD6PJH_RiJJ-m7P5jeANoVg",
+                        "title": "Barrington Levy - Under Mi Sensi",
+                        "description": "Hi Grade Ganja Anthems.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/qPAZcT33pmQ/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/qPAZcT33pmQ/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/qPAZcT33pmQ/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Rastafari",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-03-17T20:21:48Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "B9fnHAPNJYZHpd5BSe4hAmmRN9k",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "5XF6VAZsD2Y"
+                    },
+                    "snippet": {
+                        "publishedAt": "2020-02-24T03:51:04Z",
+                        "channelId": "UCzwlriz56pXf7-qZfdX2uZg",
+                        "title": "Barrington Levy - Under Mi Sensi (Live at O2 Academy Brixton 2020)",
+                        "description": "Barrington Levy performing Under Mi Sensi at O2 Academy Brixton in 2020                    ! Please Don't Forget to Like, Share this Video & Subscribe to My ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/5XF6VAZsD2Y/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/5XF6VAZsD2Y/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/5XF6VAZsD2Y/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "SlimSouljahTV",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2020-02-24T03:51:04Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "F9u_q0v4cK0QxvKK4F-q_BB-Aig",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "QPkbzmewENo"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-04-19T19:11:04Z",
+                        "channelId": "UC6aJ2CGHVLKRoRH5_WwbeAg",
+                        "title": "Barrington Levy    Under Me Sensi  1985",
+                        "description": "",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/QPkbzmewENo/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/QPkbzmewENo/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/QPkbzmewENo/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "zuluonedrop B",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-04-19T19:11:04Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "549BQNxW438lW9JLZ-w9GhZFwMg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "IVnbg7KLupc"
+                    },
+                    "snippet": {
+                        "publishedAt": "2011-11-19T20:04:40Z",
+                        "channelId": "UCSyUAIboeeBzTTkJ0SC-x9g",
+                        "title": "Barrington Levy - Under me Sensi (Original)",
+                        "description": "Early Dancehall 7\" (P) 1985 Time One Int. Jamaica.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/IVnbg7KLupc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/IVnbg7KLupc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/IVnbg7KLupc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Luigi TuneIn",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2011-11-19T20:04:40Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "6dw4U_xnBA3Zhjxtbu5XbEuoDB8",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "1h54uUM8zzY"
+                    },
+                    "snippet": {
+                        "publishedAt": "2008-01-23T22:08:35Z",
+                        "channelId": "UCwrQdej_aqVBRW6pNnSZ4uQ",
+                        "title": "Barrington Levy LIVE , under mi sensi (Good Quality)",
+                        "description": "Belly up aspen Colorado dec 07.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/1h54uUM8zzY/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/1h54uUM8zzY/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/1h54uUM8zzY/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "jrgongras",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2008-01-23T22:08:35Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "8Rewrmj96nDvw_CBPcVTDkoQTRg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "GOEi6WoQ-oY"
+                    },
+                    "snippet": {
+                        "publishedAt": "2013-01-21T15:35:15Z",
+                        "channelId": "UC87l-Gf1o2b2tXNegfCuiwQ",
+                        "title": "JAH SCREW - DUB VERSION (TIME ONE) Barrington Levy - Under Me Sensi Dub",
+                        "description": "dub from the roots.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/GOEi6WoQ-oY/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/GOEi6WoQ-oY/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/GOEi6WoQ-oY/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "im junglist",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2013-01-21T15:35:15Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "mDzU8cf6Pj0D6DshEss4qb3GHE4",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "e8VGsd8YgwM"
+                    },
+                    "snippet": {
+                        "publishedAt": "2008-09-15T00:23:58Z",
+                        "channelId": "UCjo7Uix6YMfMalMQK7s6xew",
+                        "title": "Barrington Levy - Under Me Sensi Live",
+                        "description": "Barrington Levy performing Under Me Sensi in AnfiteatroTito Puente Puerto Rico on 5/26/2007.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/e8VGsd8YgwM/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/e8VGsd8YgwM/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/e8VGsd8YgwM/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Miguel Gandia",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2008-09-15T00:23:58Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "g8qQLDARwcJUBNYEMNKhBhG7twM",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "kGjGro5DzFc"
+                    },
+                    "snippet": {
+                        "publishedAt": "2017-02-05T07:31:19Z",
+                        "channelId": "UCHRQwI5NEmWULm382dVoeHQ",
+                        "title": "Barrington Levy - Under Mi Sensi (original version)",
+                        "description": "Barrington Levy - Under Me Sensi 1993.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/kGjGro5DzFc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/kGjGro5DzFc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/kGjGro5DzFc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "PositiveReggaeVibes",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2017-02-05T07:31:19Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "JOaKw-neagXbJn7BWdE-Q_EOy9k",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "Uh4CaTAtntI"
+                    },
+                    "snippet": {
+                        "publishedAt": "2013-04-24T12:08:23Z",
+                        "channelId": "UCIkFYWE2wwk_XaKHSVOjl2g",
+                        "title": "Barrington Levy - Under Mi Sensi (Original)",
+                        "description": "",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/Uh4CaTAtntI/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/Uh4CaTAtntI/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/Uh4CaTAtntI/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Docteur Rasboule",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2013-04-24T12:08:23Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "C3HmfHy-EjaPg4OIBm2i_tNRrCg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "eGGRfojxqLI"
+                    },
+                    "snippet": {
+                        "publishedAt": "2013-04-24T19:42:11Z",
+                        "channelId": "UChmHh7M8YXkbAKAa-HDUhTA",
+                        "title": "Barrington Levy - Under mi sensi",
+                        "description": "3ª canción del álbum de Barrington Levy \"Here I come\" (1985)",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/eGGRfojxqLI/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/eGGRfojxqLI/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/eGGRfojxqLI/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "DavidTheMusicLover",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2013-04-24T19:42:11Z"
+                    }
+                }
+            ]
+        },
+        "__v": 0
+    },
+    {
+        "response": {
+            "kind": "youtube#searchListResponse",
+            "etag": "SftKR1DF6s1ND1WzCcCf3H3QZPI",
+            "nextPageToken": "CBQQAA",
+            "regionCode": "US",
+            "pageInfo": {
+                "totalResults": 1000000,
+                "resultsPerPage": 20
+            },
+            "items": [
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "c2bRfOPVtKLIecm12Cb__gviaJg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "PBHYbeg2nao"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:55:54Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - The Norwegians Scene (1/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/PBHYbeg2nao/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/PBHYbeg2nao/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/PBHYbeg2nao/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:55:54Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "Waa6j3XHJnz7mArXaWG-Z37_e_c",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "pzqoqzSZkPs"
+                    },
+                    "snippet": {
+                        "publishedAt": "2016-04-27T19:13:32Z",
+                        "channelId": "UCSD_HH3Y0akXsTOtaCHoEwA",
+                        "title": "VAL BENNETT - The Russians Are Coming [1968]",
+                        "description": "LEE'S 7'' (re) Bunny Lee production.",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/pzqoqzSZkPs/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/pzqoqzSZkPs/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/pzqoqzSZkPs/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Bionic Dub",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2016-04-27T19:13:32Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "r4FbIFc9XT5_w0P8d9MkLDcB090",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "k3TpBfnaEmI"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:08Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Under Arrest Scene (10/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/k3TpBfnaEmI/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/k3TpBfnaEmI/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/k3TpBfnaEmI/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:08Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "VCWkmSSnZVYDbbn5wMtGyLYSZ6A",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "VktjIxVAD1E"
+                    },
+                    "snippet": {
+                        "publishedAt": "2019-06-17T06:25:26Z",
+                        "channelId": "UCalmlLqIrJtw7MZTjpgOHLQ",
+                        "title": "THE RUSSIANS ARE COMING !THE RUSSIANS ARE COMING !",
+                        "description": "clips from \"THE RUSSIANS ARE COMING !THE RUSSIANS ARE COMING !\" (1966)",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/VktjIxVAD1E/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/VktjIxVAD1E/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/VktjIxVAD1E/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "ACER LEE",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2019-06-17T06:25:26Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "aQOsxE7lo4O-o1v4oWflzllpozY",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "ijBU9q7fb3U"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:01Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - The Militia Scene (5/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/ijBU9q7fb3U/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/ijBU9q7fb3U/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/ijBU9q7fb3U/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:01Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "iIcFqwQsZSvK2XkdaGmcaqhH7bs",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "V7jHoqe9mH0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2019-01-28T17:00:04Z",
+                        "channelId": "UC084FSD0cO4ZOS5SonULRCQ",
+                        "title": "The Russians Are Coming - Parks and Recreation",
+                        "description": "Ron: They're coming! They're coming! They're coming! Andy: Who? The Russians? Ron: No, the state auditors. Parks and Recreation. Stream Now On Peacock: ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/V7jHoqe9mH0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/V7jHoqe9mH0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/V7jHoqe9mH0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Parks and Recreation",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2019-01-28T17:00:04Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "jn_WOz2fCgICJ0AhUNxZjmEmuL8",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "MYErK-XLJv0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:07Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Not Personal Scene (9/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/MYErK-XLJv0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/MYErK-XLJv0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/MYErK-XLJv0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:07Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "bXpxIZK2YDMiVj6mH6ETOdZrekQ",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "VzXMcMcBwA8"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:06Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Down the Stairs Scene (8/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/VzXMcMcBwA8/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/VzXMcMcBwA8/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/VzXMcMcBwA8/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:06Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "l_lcuEz_FTsOWm-zlUCYZ5QC_9Q",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "jMqI9UV3ob4"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:03Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Got to Organize Scene (6/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/jMqI9UV3ob4/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/jMqI9UV3ob4/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/jMqI9UV3ob4/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:03Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "ciUvQwOAluEBsOyrwug6fCULCHw",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "XBOQdkIu6fM"
+                    },
+                    "snippet": {
+                        "publishedAt": "2009-03-24T14:55:43Z",
+                        "channelId": "UCo6iTwpTlFbWIhueTM_m80g",
+                        "title": "The Russians Are Coming Movie Theme",
+                        "description": "(c) Copyright MCMLXV by The Mirisch Corporation of Delaware. I claim no ownership of this video. I'll be glad to remove this clip, if this post infringes any ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/XBOQdkIu6fM/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/XBOQdkIu6fM/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/XBOQdkIu6fM/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Ferdaus Ahmad Zaki",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2009-03-24T14:55:43Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "gsikvkhZZaSBGtYiE7imaWIBg44",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "1PRZi8t38OQ"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:04Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Trust the Enemy Scene (7/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/1PRZi8t38OQ/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/1PRZi8t38OQ/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/1PRZi8t38OQ/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:04Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "ypKOiM6kGpBouQ7uNElsgyyBwi4",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "YmRuVv2V5Go"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:56:00Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Hanging Around Scene (4/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/YmRuVv2V5Go/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/YmRuVv2V5Go/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/YmRuVv2V5Go/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:56:00Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "hEmhq1lTX-k0X0Nrm_-C6T3FhsY",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "ILkyIHOOoq4"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:55:56Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Finding the Key Scene (2/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/ILkyIHOOoq4/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/ILkyIHOOoq4/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/ILkyIHOOoq4/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:55:56Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "3fF_sfogV0KU04tADg3XyPlsTIg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "JNcNy7bJxDg"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-10-23T19:55:58Z",
+                        "channelId": "UC3gNmTGu-TTbFPpfSs5kNkg",
+                        "title": "The Russians Are Coming! The Russians Are Coming! (1966) - Arnold Benedict Scene (3/10) | Movieclips",
+                        "description": "FILM DESCRIPTION: When a Soviet submarine gets stuck on a sandbar off the coast of a New England island, its commander (Theodore Bikel) orders his ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/JNcNy7bJxDg/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/JNcNy7bJxDg/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/JNcNy7bJxDg/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Movieclips",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-10-23T19:55:58Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "nNtmJEkVc59CJ9VbVtz033sl89g",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "QGgJPmOUmDU"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-08-02T19:27:25Z",
+                        "channelId": "UCbmK16ZLxxAh8F8Y5HlCD1g",
+                        "title": "Emergency! Everybody to Get From Street!",
+                        "description": "From the classic 1966 film, \"The Russians Are Coming! The Russians Are Coming!\" My late father's favorite film. **NOTE: If you comment please don't make it ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/QGgJPmOUmDU/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/QGgJPmOUmDU/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/QGgJPmOUmDU/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Vespin Feebler",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-08-02T19:27:25Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "v1T4i17YBZVd_BOwEc_biNm8etg",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "4LnoEke4bvA"
+                    },
+                    "snippet": {
+                        "publishedAt": "2020-01-03T10:50:01Z",
+                        "channelId": "UCZ0YeY63VADmSD-tgwqiK-g",
+                        "title": "ＳＥＲＢＷＡＶＥ　－　ＲＵＳＳＩＡＮＳ　ＡＲＥ　ＣＯＭＩＮＧ　花憶ぷり医",
+                        "description": "This video is a tribute to the Russian VDV soldiers who rushed to get to Kosovo and Metohija from their station in Bosnia. They managed to capture and hold the ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/4LnoEke4bvA/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/4LnoEke4bvA/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/4LnoEke4bvA/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "TheAthelasProject",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2020-01-03T10:50:01Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "XzxCsR9BZzsBfS_cSqJweQRVGPU",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "ja662T1YROY"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-11-21T19:18:38Z",
+                        "channelId": "UCqbs5WKrML0zHmzAIHhOf5g",
+                        "title": "The Russians Are Coming",
+                        "description": "Provided to YouTube by The Orchard Enterprises The Russians Are Coming · Val Bennet Val Bennet EP ℗ 2011 Culture Town Released on: 2011-04-18 ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/ja662T1YROY/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/ja662T1YROY/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/ja662T1YROY/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "Val Bennet - Topic",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-11-21T19:18:38Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "bWPf50pqFDq_8jDBMwCC1PMI9ac",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "o0GJFvux7d0"
+                    },
+                    "snippet": {
+                        "publishedAt": "2014-05-01T16:16:10Z",
+                        "channelId": "UCJx_GMg45cCW1tKNMJ-3UPA",
+                        "title": "A.D.1984 - The Russians Are Coming! (1979)",
+                        "description": "A.D.1984 - The Russians Are Coming! (UK 7\" 1979 Voyage International Record LTD)",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/o0GJFvux7d0/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/o0GJFvux7d0/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/o0GJFvux7d0/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "skandal1966",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2014-05-01T16:16:10Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "MiXmdpl733v011aZO8HPX3DS82U",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "BMOyTzkam0s"
+                    },
+                    "snippet": {
+                        "publishedAt": "2020-03-17T03:40:56Z",
+                        "channelId": "UCBWEbL_4ge4-ov-gyed06RQ",
+                        "title": "The Russians are Coming - Emergency!",
+                        "description": "",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/BMOyTzkam0s/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/BMOyTzkam0s/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/BMOyTzkam0s/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "pebey",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2020-03-17T03:40:56Z"
+                    }
+                },
+                {
+                    "kind": "youtube#searchResult",
+                    "etag": "q5I8Dt0O-_pwX6cr0SwKlW9P8XM",
+                    "id": {
+                        "kind": "youtube#video",
+                        "videoId": "fjOF_rAZABc"
+                    },
+                    "snippet": {
+                        "publishedAt": "2018-04-28T09:19:27Z",
+                        "channelId": "UC85qZLYkcBQxyfhnpqP9WOA",
+                        "title": "The Russians Are Coming the Russians Are Coming (1966) title sequence",
+                        "description": "Title sequence from The Russians Are Coming the Russians Are Coming (1966) designed by Pablo Ferro Help me make more videos: ...",
+                        "thumbnails": {
+                            "default": {
+                                "url": "https://i.ytimg.com/vi/fjOF_rAZABc/default.jpg",
+                                "width": 120,
+                                "height": 90
+                            },
+                            "medium": {
+                                "url": "https://i.ytimg.com/vi/fjOF_rAZABc/mqdefault.jpg",
+                                "width": 320,
+                                "height": 180
+                            },
+                            "high": {
+                                "url": "https://i.ytimg.com/vi/fjOF_rAZABc/hqdefault.jpg",
+                                "width": 480,
+                                "height": 360
+                            }
+                        },
+                        "channelTitle": "MovieTitles",
+                        "liveBroadcastContent": "none",
+                        "publishTime": "2018-04-28T09:19:27Z"
+                    }
+                }
+            ]
+        },
+        "__v": 0
+    }
+]

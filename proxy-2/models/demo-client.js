@@ -16,7 +16,9 @@ const DemoSchema = new mongoose.Schema(
         c: {type: Boolean},
         d: {type: mongoose.Schema.Types.ObjectId,
             ref: 'DemoRef',
-        }
+        },
+        e: {type: Number},
+        f: {type: mongoose.Schema.Types.Date},
     }
 )
 
@@ -27,16 +29,24 @@ const demoSeeds = [
     {
         a:"apple",
         b:"brianna",
+        e:22,
+        f: new Date('2000-1-1 1:00 pm')
     },
     {
         a:"apple",
         b:"butter",
+        e: 33, 
+        f: new Date('2000-1-1 2:00 pm')
     },
     {
         a:"apple",
+        e:10,
+        f: new Date('2000-1-1 10:00 am')
     },
     {
+        a:"korea",
         c:true,
+        e:99,
     }
 ]
 
@@ -60,9 +70,9 @@ const demoRefSeeds = [
         z: true,
     },
     {
-        x:"Ref2",
-        y:"ff116609",
-        z:false,
+        x: "Ref2",
+        y: "ff116609",
+        z: false,
     },
 ]
 
@@ -97,9 +107,23 @@ function seedPartTwo(refSeedsArr) {
                 .then((output) => {
                     const arrIds = output.map(item => item._id).slice(0,2)
                     const findCondition = {_id: {"$in": arrIds}}
-                    return Demo.find(findCondition)
+                    return Demo.aggregate([
+                        {$group: {
+                            _id: "$a", 
+                            
+                            minE:  {$min: "$e"},
+                            maxE:  {$max: "$e"},
+                            sumE:  {$sum: "$e"},
+
+                            minF:  {$min: "$f"},
+                            maxF:  {$max: "$f"},
+
+                            count: {$sum: 1},
+                        }}
+                        ])
                         .then((results) => {
                             console.log(`find for ${prt(findCondition)}:\n${prty(results)}\n`)
+                            console.log(results[1].maxF.getTime())
                         })
                 })
                 .then(() => {

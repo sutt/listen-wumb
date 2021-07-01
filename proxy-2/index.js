@@ -4,30 +4,19 @@ const cors = require('cors')
 const fetch = require('node-fetch')
 const SearchReq = require('./models/search-req')
 const SearchRes = require('./models/search-res')
+const cacheStatsRouter = require('./controllers/cache-stats')
+const prt = require('./utils/prt')
 
 const app = express()
 
 // const bLog = []
-// const bLog = ['testswitch']
-// const bLog = ['all']
 const bLog = ['all', 'mockgoose', 'shortprint']
-const maxOutputChars = 300
-
-const prt = (o) => {
-    if (!bLog.includes("shortprint")) {
-        return o
-    } else {
-        if (typeof o === 'object') {
-            return JSON.stringify(o, null, 4).slice(0, maxOutputChars)
-        } else {
-            return o.slice(0, maxOutputChars)
-        }
-    }
-}
 
 
 app.use(cors())
 app.set('port', process.env.PORT || 3003 )
+app.use('/cacheStats', cacheStatsRouter)
+
 
 const ytMockURL = (process.env.NODE_ENV == 'prod')
                     ? "https://wumb-site-mock.herokuapp.com/yt-search"

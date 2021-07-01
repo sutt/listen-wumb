@@ -12,14 +12,14 @@
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
-    <h3>WUMB Playback</h3>
+    <h3>WUMB Playback v2</h3>
     <div id="lookupcontrols" class="controlbar">
         <span id="lookupPrompt">Chose a time and date for playlist...</span>
         <form onsubmit="return timeForm(event)"><br>
             <label>time:</label>
-            <input type="text" name="time" id="playlistFormTime" value="1:12 pm">
+            <input type="text" name="time" id="playlistFormTime" value="{{paramTime}}">
             <label>date:</label>
-            <input type="text" name="date" id="playlistFormDate" value="5-22-21">
+            <input type="text" name="date" id="playlistFormDate" value="{{paramDate}}">
             <input type="submit" value="get playlist">
         </form>
         <span id="lookupResults"></span>

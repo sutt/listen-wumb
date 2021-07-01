@@ -33,9 +33,9 @@ const bTestingMaxRows = {{TESTING_MAXROWS_OFF}}
 
 const testMaxRows = 5
 
-var playlistDate = "5-22-2021"
-var playlistTime = "1:12 pm"
-var scrapeDate   = "210522"
+var playlistDate = document.getElementById("playlistFormDate").value
+var playlistTime = document.getElementById("playlistFormTime").value
+var scrapeDate   = cvtDateParam(playlistDate)
 
 function timeForm(e) {
     e.preventDefault()
@@ -293,7 +293,7 @@ function sliceByTime(playlist, sStartTime) {
     const tmp = playlist.map(item => {
         return {...item, minsAfter: timeDiff(sStartTime, item.time) }
         })
-        .filter(item => item.minsAfter > 0 )
+        .filter(item => item.minsAfter >= 0 )
         .sort((a,b) => a.minsAfter - b.minsAfter)
     
     // console.log(tmp)

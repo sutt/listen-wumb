@@ -3,6 +3,10 @@ const express = require('express')
 const app = express()
 
 const bLog = true
+
+const defaultTime = "1:12 pm"
+const defaultDate = "5-22-21"
+
 app.use(express.static('public'))
 app.set('view engine', 'hbs')
 app.set('port', process.env.PORT || 4000 )
@@ -34,6 +38,20 @@ app.get("/script.js", (req, res) => {
     res.render('script.hbs', args)
 })
 
+app.get('/blocks-script.js', (req, res) => {
+    res.sendFile('blocks-script.js',
+                {root: __dirname + '/static/'}
+    )
+})
+
+app.get('/blocks', (req,res) => {
+    
+    res.sendFile(
+        'blocks.html',    
+        {root: __dirname + '/static/'}
+    )
+})
+
 app.get("/:args", (req, res) => {
     
     if (req.params.args == "home") {
@@ -60,10 +78,18 @@ app.get("/:args", (req, res) => {
         res.send(`args: ${req.params.args} not recognized`)
         return
     }
-    res.sendFile(
-        'index.html',    
-        {root: __dirname + '/static/'}
+    
+    
+    const q = Object.fromEntries(
+        Object.entries(req.query).map(kv => [kv[0], decodeURI(kv[1])])
     )
+    
+    const args = {
+        paramTime: q.time || defaultTime,  
+        paramDate: q.date || defaultDate
+    }
+    
+    res.render('player.hbs', args)
 })
 
 app.listen(app.get('port'), () => {

@@ -28,6 +28,191 @@ Overall ideas:
         - associated websites:
             - beale street caravan
 
+7.3
+
+    
+    [ ] should have chromecast option
+
+    [ ] prevent trying to play nonEmbeddable videos
+        [ ] test this on canned heat example to see if it works
+
+    [ ] Build a dummy user signed-in/out for frontend behavior
+        [ ] signed out user sees the cached blocks as choices
+        [ ] signed user sees calendar selection
+
+    [ ] deploy + test new features
+        [ ] proxy-2
+        [ ] front-end
+
+    [ ] build a client to pull and cache blocks of songs 
+        - without going thru frontend itself
+
+    [ ] allow frontend to play new songs (after first five)
+        [ ] but this also requires changing the 
+
+    [ ] add api rate limiting on proxy-2
+        no more than 5 requests in 10 seconds (without override)
+
+7.1
+
+    [x] Build a cached-block frontend and have that apply to 
+
+        [x] request query params choses the variables on playlist load:
+            ?time=1:14pm&date=5-22-21            
+
+            [x] add in a url fork option
+                this is in blocks-script.js
+                just check the page's / window's urlbar
+                window.location.href
+
+            [x] move index.html into views
+
+            [x] move the decodeQuery function into utils
+            
+            [x] test it
+        
+        [x] add a frontend page
+            [x] display blocks in a crude style
+            [x] these blocks make requests to main page with params
+
+
+7.1
+    
+    [ ] why is there a different size in the same requests (in Network tab)?
+        - the initial request is 100x larger
+        - 16,000 bytes vs 240 bytes
+        - but they appear the same length ?
+        - must be compression or encoding ?
+        [ ] check the response code
+    
+    [ ] weird deploy issue on cors
+
+        Access to fetch at 'https://wumb-proxy-2.herokuapp.com/parse?live=true&d=210522' 
+        from origin 'https://wumb-front-v1.herokuapp.com' 
+        has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header 
+        is present on the requested resource. 
+        If an opaque response serves your needs, 
+        set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+
+    [ ] long wait time for updating playlist ...(3-5 seconds for parse to return)
+        - investigate why?
+        - maybe it's because limited incoming/outgoing bandwith on heroku server?
+        [ ] compared against page load time on browser
+        [ ] time it server side
+            
+
+    [x] investigate secondary info from api we can add:
+
+        info on api params:
+        https://developers.google.com/youtube/v3/docs/search/list?apix_params=%7B%22part%22%3A%22snippet%22%2C%22order%22%3A%22viewCount%22%2C%22q%22%3A%22skateboarding%20dog%22%2C%22type%22%3A%22video%22%2C%22videoDefinition%22%3A%22high%22%7D
+
+            videoEmbeddable: true
+
+                "If you specify a value for this parameter, you must also set the type parameter's value to video."
+
+        https://developers.google.com/youtube/v3/docs/videos
+
+            [x] how much does this resource cost in quota?
+                -> 1 point
+            [x] does multiple videoIds cost more?
+                -> apparently not
+
+                all quotas
+                https://console.cloud.google.com/iam-admin/quotas?service=youtube.googleapis.com&project=listen-wumb
+                
+                main impactful quota
+                https://console.cloud.google.com/iam-admin/quotas/details;servicem=youtube.googleapis.com;metricm=youtube.googleapis.com%2Fdefault;limitIdm=1%2Fd%2F%7Bproject%7D?project=listen-wumb
+
+                [x] figure out how long it takes for quota to be visible?
+                    -> ~10 minutes
+                    [x] wait for a plateau
+                    [x] send one request, wait for it to apply to quota
+                [x] then test a request with 1 vs 3 ids
+
+
+            https://youtube.googleapis.com/youtube/v3/videos?
+                part=snippet%2CcontentDetails%2Cstatistics
+                &id=Ks-_Mh1QhMc%2Cc0KYU2j0TM4%2CeIho2S0ZahI
+                &key=[YOUR_API_KEY]
+
+                - there are three video id's
+
+                - part=suggestions doesnt appear to work (?)
+
+
+
+    [x] move print functions into utils/, fix its references
+            
+    [ ] get mock db setup
+        - this will use mock videos to connect with actual song-titles
+        - this can preserve the real database to have the correct songs
+        [ ] how to switch the behavior between the two modes? 
+            -environmental var?
+
+    [x] commit and deploy cache
+        [x] add in an atlasdb cluster
+            -> 
+            Org: listen-wumb
+            Project: wumb1
+            Cluster: Cluster0
+            DB:   wumbBackend1   
+            user: admin
+            pass: see todos-6.28.txt
+
+            type: M0 Sandbox max 512 MB 
+                -> 3,500 - 15,000 total tracks
+
+        [x] link to proxy-2 server
+            [x] check local printouts for sparsity
+            [x] deploy
+            [x] test manually without seeds
+            [x] check heroku logs for printouts
+            [x] delete + re-seed using utils
+                > heroku run  cd db/crud-utils; node insert-seeds.js --app wumb-proxy-2
+            
+
+    [~] add a testDb vs productionDb
+
+
+    [x] add a route for cached songs:
+        
+        [x] add a new controller:
+            [x] test route
+            
+        [x] design the api:
+            - REST style?
+            
+                index route: basics
+                details route: 
+                    gaps of 10 minutes 
+
+        [x] list the needed params:
+            - total number of songs
+            - min/max times each day
+            - number of songs per day
+
+        [x] do some basic queries in demo-client
+            [x] find good documentation for this
+        
+        [x] getTime() from the Date object to an EST time
+        
+        
+        - queries to build "blocks of time"
+            a block consist of a date and startTime + endTime
+            blocks = [
+                {date: '5-13-21',
+                 startTime: "7:13 pm",
+                 endTime: "8:22 pm",
+                 numSongs: 22,
+                 },
+                 {date: '5-15-21',
+                  startTime: "6:00 am",
+                  endTime: "6:30 am"
+                  numSongs: 7,
+                 }
+            ]
+    
+
 6.29
 
     to move to a frontenv-v2, need to:
@@ -212,7 +397,7 @@ Overall ideas:
         - what about global variables like:
             playlist?
 
-    [ ] prototype the search cache
+    [x] prototype the search cache
         [x] check that new function returns the same thing
             [x] on dead
             [x] check logging
@@ -236,10 +421,10 @@ Overall ideas:
             [x] why is the server not finding existing songs
             -> checkCache wasn't turned on
                 
-        [ ] seed the db with site-mock/yt-mock-data
-            [ ] first get the db filled with initial seeds, and export
+        [x] seed the db with site-mock/yt-mock-data
+            [x] first get the db filled with initial seeds, and export
                 [ ] write to two separate db's
-            [ ] need to account for the dynamic id field, 
+            [x] need to account for the dynamic id field, 
                 by inserting Res, getting id's and using those in inserting request
 
             -> this will allow us to erase data and repopulate
@@ -270,15 +455,9 @@ Overall ideas:
                     [x] does cache get hit for most songs in console print?
                     [x] does an external request get made for the altered songTitle?
             
-        [ ] move print functions into utils/, fix its references
-            
-        [ ] get mock db setup
-            - this will use mock videos to connect with actual song-titles
-            - this can preserve the real database to have the correct songs
-            [ ] how to switch the behavior between the two modes? 
-                -environmental var?
+        
 
-        [ ] check quota
+        [~] check quota
 
         [x] .find Methods
             [x] what can we lookup for index 
@@ -295,17 +474,12 @@ Overall ideas:
         [x] results field
             [x] how to link?
 
-    [ ] commit and deploy cache
-        [ ] add in an atlasdb cluster
-        [ ] link to 
-        
     
-    [ ] add api rate limiting on proxy-2
-        no more than 5 requests in 10 seconds (without override)
-
     misc
         
-        [ ] does embedded player do commercials on incognito?
+        [x] does embedded player do commercials on incognito?
+            -> mostly not but it coudl be:
+            ->https://support.google.com/youtube/answer/132596?hl=en
         [x] need to split album from title
         [ ] better way to handle insertion to js from express
         [ ] we can cache scrapes as well
@@ -371,9 +545,9 @@ Overall ideas:
         [x] how to do this with environmental variables?
             >heroku create -a wumb-front-v1 
             >git subtree push --prefix frontend heroku master
-                >git subtree push --prefix proxy-2 heroku-proxy2 master
+                >git subtree push --prefix proxy-2 heroku-proxy-2 master
                 >git subtree push --prefix site-mock heroku-site-mock master
-            >heroku config:set ENV=val --app=wumb-front-v1
+                >heroku config:set ENV=val --app=wumb-front-v1
             >heroku create -a wumb-site-mock  --remote heroku-site-mock
 
         [x] deploy all three

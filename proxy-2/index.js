@@ -3,13 +3,28 @@ const express = require('express')
 const cors = require('cors')
 const fetch = require('node-fetch')
 const SearchReq = require('./models/search-req')
+const SearchRes = require('./models/search-res')
 
 const app = express()
 
 // const bLog = []
 // const bLog = ['testswitch']
-// const bLog = ['mockgoose']
-const bLog = ['all']
+// const bLog = ['all']
+const bLog = ['all', 'mockgoose', 'shortprint']
+const maxOutputChars = 300
+
+const prt = (o) => {
+    if (!bLog.includes("shortprint")) {
+        return o
+    } else {
+        if (typeof o === 'object') {
+            return JSON.stringify(o, null, 4).slice(0, maxOutputChars)
+        } else {
+            return o.slice(0, maxOutputChars)
+        }
+    }
+}
+
 
 app.use(cors())
 app.set('port', process.env.PORT || 3003 )
@@ -45,9 +60,10 @@ function searchItem(searchStr, live=false) {
     url    += `&type=video&key=${process.env.YT_KEY}`
 
     try {
-        return  fetch(url)
+        return fetch(url)
             .then(res => res.json())
             .then(data => {
+                // TODO - check response code
                 if (bLog.includes("all")) console.log(url)
                 return data
             })
@@ -55,7 +71,8 @@ function searchItem(searchStr, live=false) {
                 console.log(`cant search for item: ${err}`)
                 return undefined
             })
-    } catch {
+    } catch(err) { 
+        console.log(`error on reqeset external search resource:\n${err}`)
         return undefined
     }
 }
@@ -77,46 +94,42 @@ app.get('/search-yt-api', (req, res) => {
         console.log(`running /search-yt-api ${live ? 'live' : 'dead'}`)
     }
 
-    //Check if Songs is Cached
-    //pattern:  - must pass multiple checks - to return cached result
     function checkCached() {
+        
         let cachedFound = false
-        SearchReq.find({songTitle: decodeQuery.title, songArtist })
+        
         // SearchReq.find({scrapeDateTime: concatQueryDateTime(decodeQuery.time, decodeQuery.date) })
+        
+        SearchReq.find({
+            songTitle:  decodeQuery.title, 
+            songArtist: decodeQuery.artist,
+            })
+            .populate('requestResponse')
             .then((reqResults) => {  
                 
-                // TODO - check if reqResults.length > 0
-                // TODO - check if `requestResponseValid` is true
-                
-                if (reqResults) {
+                if (reqResults && 
+                    reqResults.length > 0 && 
+                    reqResults[0].requestResponseValid &&
+                    reqResults[0].requestResponse._id  &&
+                    reqResults[0].requestResponse.response
+                    ) {
                     
-                    // attempt to return cached results
+                    // return cached results
 
-                    if (bLog.includes("mockgoose")) console.log(`reqResults: ${reqResults}`)
-
-                    const linkedResponseId = reqResults[0]?.requestResponse?._id
-                    if (linkedResponseId) {
-                        SearchRes.findById(linkedResponseId)
-                            .then((resResults) => {
-                                if (resResults) {     // TODO - check if resResults.length > 0
-                                    
-                                    // all checks pass - return cached result
-                                    cachedFound = true
-
-                                    if (bLog.includes("mockgoose")) {
-                                        console.log(`returning cahced response: ${resResponse[0]}`)
-                                    }
-
-                                    res.json(resResponse[0].items)
-                                }
-                            })
-                            .catch(err => {
-                                if (bLog.includes("mockgoose")) {
-                                    console.log(`err on SearchRes lookup for id: ${linkedResponseId}\n${err}`)
-                                    //TODO - return an error here to hit finally?
-                                }
-                            })
+                    if (bLog.includes("mockgoose")) {
+                        console.log(`reqResults: ${prt(reqResults)}`)
                     }
+ 
+                    cachedFound = true
+                    
+                    const linkedResponse = reqResults[0].requestResponse
+
+                    if (bLog.includes("mockgoose")) {
+                        console.log(`\n\nreturning cahced response: ${prt(linkedResponse)}\n\n`)
+                    }
+
+                    res.json(linkedResponse.response.items)
+                        
                 }
             })
             .catch(err => {
@@ -141,32 +154,104 @@ app.get('/search-yt-api', (req, res) => {
             
     }
 
-    function externalSearch() {
-        let bSuccess = false
+    function externalSearch(cacheWrite=true) {
+        
+        let bSuccess    = false
+        let t0          = null
+        let t1          = null
+        
+        // perform external search
         searchItem(buildSearchStr(decodeQuery), live)
             .then(data => {
+                
+                // measure query write time
+                if (bLog.includes("mockgoose")) {
+                    t0 = new Date()
+                    t0 = t0.getTime()
+                }
+
+                // send back response of external search to client
                 res.json(data.items)
-                bSuccess = true
+                
+                // determine the success of external search
+                // TODO - check response code
+                if (data && data.items && data.items.length > 0) {
+                    bSuccess = true
+                }
+                
                 return data
             })
             .catch(err => {
                 console.log(`err in exteralSearch of yt-search-api. live: ${live}\nquery: ${decodeQuery}\nerr: ${err}`)
                 res.json([])
             })
-            .finally((data) => {
-                // does this hit from each branch?
-                //TODO - add database write here for result
-                if (bSuccess) {
-                // SearchRes.create()
-                // SearchReq.create()
+            .then((extData) => {
+                
+                // cache-ing is turned off at function-level
+                if (!cacheWrite) return
+                
+                if (bLog.includes("mockgoose")) {
+                    console.log(`extData: ${prt(extData)}`)
                 }
+                
+                SearchRes.create({response: extData})
+                    .then((searchResObj) => {
+                        
+                        const q = {...decodeQuery}
+
+                        let scrapeDateTime = null
+                        try {scrapeDateTime = new Date(`${q.date} ${q.time}`)} catch {}
+
+                        let normdArtist = null
+                        let normdTitle  = null
+                        let normdAlbum  = null
+                        try {
+                        normdArist = q.artist.toLowerCase()
+                        normdTitle = q.title.split(' (from ')[0].toLowerCase()
+                        normdAlbum = q.title.split('(from ')[1].split(')')[0].toLowerCase()
+                        } catch {}
+                        
+                        const reqDoc = {
+    
+                            songTitle:          q.title,
+                            songArtist:         q.artist,
+                            songAlbum:          null,
+                            
+                            normalizedTitle:    normdTitle,
+                            normalizedArtist:   normdArtist,
+                            normalizedAlbum:    normdAlbum,
+                            
+                            scrapeTime:         q.time,
+                            scrapeDate:         q.date,
+                            scrapeDateTime:     scrapeDateTime,
+                            
+                            requestDateTime:    new Date(),
+                            requestResponseValid: bSuccess,
+                            requestResponseErrMessage: null,
+
+                            requestResponse:    searchResObj._id
+
+                        }
+                        
+                        // write the clients request + external-response to the cache
+                        SearchReq.create(reqDoc)
+                            .then((output) => {
+                                
+                                // logging info about insertion
+                                if (bLog.includes("mockgoose")) {
+                                    t1 = new Date()
+                                    t1 = t1.getTime()
+                                    console.log(`inserted document:\n${prt(output)}\n`)
+                                    console.log(`insertTime - responseTime: ${t1 - t0} ms`)
+                                }
+                            })
+                        })
 
             })
-
     }
 
-    if (false) checkCached()        //TODO - enable when ready
-    if (true)  externalSearch()     //TODO - disable when ready
+    if (true)   checkCached()
+    if (false)  externalSearch(cacheWrite=false)
 })
 
 app.get("/parse", (req, res) => {

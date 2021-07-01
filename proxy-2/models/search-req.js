@@ -15,7 +15,7 @@ const SearchReqSchema = new mongoose.Schema(
             required: false,
         },
         normalizedTitle: {          // normalizedXxxxxx: these are lower cased + trimmed and special-char stripped
-            type: String,           // this facilitates quicker lookup .find method
+            type: String,           // this facilitates quicker + more accurate lookup .find method
             required: false,
         },
         normalizedArtist: {

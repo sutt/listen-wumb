@@ -36,6 +36,10 @@ Overall ideas:
             -> then use this to drop into a front-v2 react app
         - develop a js strategy for inserting info from the route?
 
+"The Two fetches":
+    fetch("https://wumb-proxy-2.herokuapp.com/parse?live=false&d=210522")
+    fetch("https://wumb-proxy-2.herokuapp.com/search-yt-api?time=1:35%20pm&artist=Karen%20Dalton&title=Something%20on%20Your%20Mind%20(from%20In%20My%20Own%20Time)&minsAfter=23&date=5-22-21&live=false&");
+
 
 6.24
 
@@ -218,30 +222,66 @@ Overall ideas:
             [x] turn off exisitng logic
         
         tech details:
-            [ ] how does mongoose handle consuming nested json? auto fields?
+            [x] how does mongoose handle consuming nested json? auto fields?
             [ ] how does mongoose handle a query that fails
-            [ ] how do promise then/catch/finally work for each branch
+            [x] how do promise then/catch/finally work for each branch
+                -> not the way I expected (converted finally to then)`
+            [ ] how to use await with promises    
+            [ ] how to string multiple promise db lookups together
+                and resolve only when all return empty
         
-        [ ] convert the seeding code from example
-            [ ] seed the db with site-mock/yt-mock-data
+        [x] convert the seeding code from example
+
+        debugging:
+            [x] why is the server not finding existing songs
+            -> checkCache wasn't turned on
+                
+        [ ] seed the db with site-mock/yt-mock-data
+            [ ] first get the db filled with initial seeds, and export
+                [ ] write to two separate db's
+            [ ] need to account for the dynamic id field, 
+                by inserting Res, getting id's and using those in inserting request
+
+            -> this will allow us to erase data and repopulate
+
+        
+        [ ] get utilities and clients ready to work
+            [ ] extract-seeds testing
+            [ ] insert-seeds
+            [ ] view-data
+                [ ] does redirecting standard out on cmdline ("<cmd> > tmp.json") work for console.logs?
+            [ ] clear-data
+            [ ] add utilities directory in db
+            [ ] which things have to be git mv'd from a previous commit?
+            [ ] move makeFn to a utils.js
+                [ ] how to export multiple functions?
             
-        [ ] .find Methods
-            [ ] what can we lookup for index 
+        [ ] get mock db setup
+            - this will use mock videos to connect with actual song-titles
+            - this can preserve the real database to have the correct songs
+            [ ] how to switch the behavior between the two modes? 
+                -environmental var?
+
+        [ ] check quota
+
+        [x] .find Methods
+            [x] what can we lookup for index 
                 - a songArtist && songTitle match
                 - a songArtist && songTitle && songAlbum match
                 - a DateTime match
                 - a fuzzy match
                 - we can use normalizedTitle etc
-            
-            [ ] how to string multiple promise db lookups together
-                and resolve only when all return empty
 
-        [ ] need extra fields
+        [x] need extra fields
             - time + date string?
             - last lookup time
         
-        [ ] results field
-            [ ] how to link?
+        [x] results field
+            [x] how to link?
+
+    [ ] commit and deploy cache
+        [ ] add in an atlasdb cluster
+        [ ] link to 
         
     
     [ ] add api rate limiting on proxy-2
@@ -266,6 +306,8 @@ Overall ideas:
         [ ] show user yt quota on page
         [ ] add a liked song functionality
         [ ] test perf on local + atlasdb - bigO / queryTime for N documents
+        [ ] add youtube-dl
+        [ ] add chords from chordify.net
 
 
     [ ] add scraping logic and basic player controls

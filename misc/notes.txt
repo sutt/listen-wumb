@@ -245,16 +245,32 @@ Overall ideas:
             -> this will allow us to erase data and repopulate
 
         
-        [ ] get utilities and clients ready to work
-            [ ] extract-seeds testing
-            [ ] insert-seeds
-            [ ] view-data
-                [ ] does redirecting standard out on cmdline ("<cmd> > tmp.json") work for console.logs?
-            [ ] clear-data
-            [ ] add utilities directory in db
-            [ ] which things have to be git mv'd from a previous commit?
-            [ ] move makeFn to a utils.js
-                [ ] how to export multiple functions?
+        [x] get utilities and clients ready to work
+            [x] extract-seeds testing
+            [x] insert-seeds
+            [x] view-data
+                [x] does redirecting standard out on cmdline ("<cmd> > tmp.json") work for console.logs?
+                -> yes
+            [x] clear-data
+            [x] add utilities directory in db
+            [x] which things have to be git mv'd from a previous commit?
+            [x] move makeFn to a utils.js
+                [~] how to export multiple functions?
+            [x] testing time:
+                [x] delete all
+                [x] rerun the app to load the database
+                [x] note the references between titles and videos (randomly assigned at first)
+                [x] extract seeds
+                [x] alter seeds - the songTitle of not the 1st item
+                [x] delete db again
+                [x] insert seeds
+                [x] check if app works:
+                    [x] does playlist load?
+                    [x] are the same songTitle and videoIds connected?
+                    [x] does cache get hit for most songs in console print?
+                    [x] does an external request get made for the altered songTitle?
+            
+        [ ] move print functions into utils/, fix its references
             
         [ ] get mock db setup
             - this will use mock videos to connect with actual song-titles

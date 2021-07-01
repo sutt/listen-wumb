@@ -1,7 +1,7 @@
 const fs = require('fs')
-const makeFn = require('../utils/makeFn')
-const SearchReq = require('../models/search-req')
-const SearchRes = require('../models/search-res')
+const makeFn = require('../../utils/makeFn')
+const SearchReq = require('../../models/search-req')
+const SearchRes = require('../../models/search-res')
 
 const maxDocuments = 100
 const outputDirectory = '../seeds/'
@@ -18,13 +18,10 @@ const outputDirectory = '../seeds/'
 
         - will take a maximum of `maxDocuments` unless its undefined
         
-        - strips ObjectId from both types of documents (?)
+        - strips ObjectId from SearchReq documents
 */
 
-// TODO - test cwd from different files
-// TODO - how will we deal with a new id for insertion of response and linking?
-//          - we'll remove the _id field before insertion
-//          - we can create a mapping table
+
 
 const fnReq = makeFn('search-req-seeds', outputDirectory)
 const fnRes = makeFn('search-res-seeds', outputDirectory)
@@ -40,7 +37,7 @@ SearchReq.find({}, {_id:0})
 
         console.log(`wrote ${outputReqData.length} Req documents to ${fnReq}`)
 
-        SearchRes.find({_id : { $in: outputResIds}}, {_id:0})
+        SearchRes.find({_id : { $in: outputResIds}}, {})    // keep objectID to link
             .then(data => {
 
                 fs.writeFileSync(fnRes, JSON.stringify(data, null, 4))

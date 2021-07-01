@@ -9,7 +9,7 @@ const stripKeys = (obj, arrKeys) => {
             out:  {b:2, d:4}
     */
     let tmp = {}
-    for (key in Objects.keys(obj)) {
+    for (key of Object.keys(obj)) {
         if (!arrKeys.includes(key)) tmp[key] = obj[key]
     }
     return tmp

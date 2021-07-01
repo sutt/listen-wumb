@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const mongoURI = 
-  process.env.NODE_ENV === 'production'
+  process.env.NODE_ENV === 'prod'
   ? process.env.DB_URL 
   : 'mongodb://localhost/wumb-proxy-2'
 

@@ -40,9 +40,9 @@ Overall ideas:
         [ ] signed out user sees the cached blocks as choices
         [ ] signed user sees calendar selection
 
-    [ ] deploy + test new features
-        [ ] proxy-2
-        [ ] front-end
+    [x] deploy + test new features
+        [x] proxy-2
+        [x] front-end
 
     [ ] build a client to pull and cache blocks of songs 
         - without going thru frontend itself
@@ -54,6 +54,13 @@ Overall ideas:
         no more than 5 requests in 10 seconds (without override)
 
 7.1
+
+    [x] refactor with controllers
+        
+    [ ] minor imporvements
+        [ ] checking status code in searchItem
+        [ ] adding videoEmbeddable
+        [ ] check for requestResponseValid=true in query
 
     [x] Build a cached-block frontend and have that apply to 
 

@@ -28,10 +28,201 @@ Overall ideas:
         - associated websites:
             - beale street caravan
 
-7.3
+7.7
+
+    [ ] build a deploy following pattern from previous
+        
+        [ ] script that copies both current frontend + backend
+            [x] basic test rsync
+
+            rsync -av --exclude='path1/to/exclude' --exclude='path2/to/exclude' source destination
+            
+            rsync 
+            -av 
+            --exclude='path1/to/exclude' 
+            --exclude='path2/to/exclude' 
+            source 
+            destination
+
+            [ ] write the correct rsync
+
+                rsync -vr --exclude='node_modules' ../x ./x_new
+
+                [ ] how to copy hidden files?
+                    - with dir/.* ?
+                    [ ] does folder copying work?
+
+
+
+        [ ] build a shared package.json
+            - packages from both?
+            - npm start
+            [ ] node script to combine packages
+        
+        [ ] how do we npm run build for the frontend directory?
+        
+        [ ] write to file which git commits the files were on
+            >git log -n 1
+
+        [ ] handle installing packages locally
+        
+        [ ] need to toggle local build on/off
+            - via branches?
+                - but this requires not .gitignoring the build folder
+                    - so change that too on the built branch?
+        [ ] need to add local dev urls
+        [ ] how to switch on off testing/live switches?
+        [ ] how to handle .env file(s)?
+
+        Ideal directory structure
+
+            deploy-1/
+            |
+                frontend/
+                |
+                    src
+                    ...
+
+                backend/
+                |
+                    db/
+                        |
+                        conn.js
+                    ...
+                    index.js
+
+            |
+            package.json
+            |
+                utils/
+                |
+                copy.sh
+                |
+                install.sh
+                |
+                deploy.sh
+
+
+        Example directory structure
+
+            deploy-1/
+            |
+            |   public/
+                |   ...
+                scr/
+                |   ...
+                api/
+                |
+                    index.js
+                    db/
+                    |   conn.js
+                    ...
+            |
+            package.json
+            [package-lock.json]
+            .gitignore
+
+            tricks nec:
+                
+                - package.json uses:
+                    "scripts": {
+                        "r-start": "react-scripts start",
+                        "start": "node api/index.js && npm run build"
+                        ...
+                    }
+                
+                - combine dependencies
+                    "dependencies": {
+                
+                - api/index.js sets up a static:
+
+                    app.use(express.static(path.join(__dirname, '../build')))
+                
+                - serve the built folder
+                    
+                    app.get('*', (req, res) => {
+                        res.sendFile(path.join(__dirname, '../build')
+
+                    - this occurs below all other routes
+
+                    this is nice because it serve all the assets too 
+                    via the wildcard
+
 
     
-    [ ] should have chromecast option
+    [ ] how to get params from url bar into react app's initial state?
+
+
+
+
+7.4
+
+    [ ] check that the  setting on heroku
+        -> resources/hobby-basic
+        [ ] check critical error in logs
+
+    [ ] get a solid workflow to contribute to wumb-front-2
+        [ ] how to get around package.lock
+        [ ] fork on my github
+
+    [ ] change the default on / route to 30 minutes before 
+        present time
+        - but what if there are no songs in that time period?
+        - also this requires a second parse as you "catch up"
+
+    [x] deploy the new app structure
+        [x] first test locally
+
+    [ ] /parse is slow to finish but quick to initally load
+    
+    [x] unhandled promise rejection in external resource request
+        
+        using:
+            wumb-proxy-2.herokuapp.com/search-yt-api?live=false
+        
+        [x] what fallout does this cause?
+            -> concurrent valid requests do get served
+        [x] reproduce after deploy
+        [x] reporduce locally
+        [x] fix the issue
+
+
+7.3
+
+    [ ] add the correct historical playlist in
+    
+        http://50.241.124.209:8080/cgi-bin/plarchive/playlist1.pl?date=210327
+
+        [x] how late, earlier does this calendar go?
+            Dec 14, 2019 to Present
+        [ ] find older archives:
+            
+            http://wumb.org/cgi-bin/playlist1.pl?date=160330&amp;bs=1459389722
+            
+            Snapshot on Aug 11, 2012:
+            July28 - works
+            https://web.archive.org/web/20120811172158/http://wumb.org/cgi-bin/playlist1.pl?date=120728
+            Aug 10 - works
+            https://web.archive.org/web/20120811172304/http://wumb.org/cgi-bin/playlist1.pl?date=120810
+
+        [x] what is this ip adr? can it be substitued? -> no
+            -> wumb.org: 205.178.146.236:80
+        [ ] there are other date= styles, correct?
+        [ ] does this url work for most recent playings?
+        [ ] what would it take to scrape the last 8 years?
+
+    random extras:
+        
+        https://onlineradiobox.com/us/wumbfm/playlist/
+        https://onlineradiobox.com/us/wumbfm/
+        http://player.streamguys.com/wumb/sgplayer/player.php
+        https://web.archive.org/web/20200810022336/http://wumb.org/cgi-bin/playlist1.pl
+        http://www.wumb.org/program-guide/2021/07/july-programming-highlights-6/
+        http://50.241.124.209:8080/cgi-bin/archive/archive1.pl
+        https://www.youtube.com/watch?v=O7EcT5YzKhQ
+
+    [x] should have chromecast option
+        -> casting page works
 
     [ ] prevent trying to play nonEmbeddable videos
         [ ] test this on canned heat example to see if it works
@@ -48,7 +239,7 @@ Overall ideas:
         - without going thru frontend itself
 
     [ ] allow frontend to play new songs (after first five)
-        [ ] but this also requires changing the 
+        [ ] but this also requires changing the one-request at a time thing
 
     [ ] add api rate limiting on proxy-2
         no more than 5 requests in 10 seconds (without override)

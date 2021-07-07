@@ -127,7 +127,13 @@ router.get('/', (req, res) => {
         let t0          = null
         let t1          = null
         
-        const encodedStr = buildSearchStr(decodeQuery)
+        try {
+            const encodedStr = buildSearchStr(decodeQuery)
+        } catch {
+            console.log(`err in buildSearchStr for ${decodeQuery}`)
+            res.json([])
+            return
+        }
 
         searchItem(encodedStr, live)
             .then(data => {

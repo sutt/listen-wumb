@@ -14,6 +14,8 @@ rsync -avr               ../wumb-front-2/wumb/.gitignore   ./
 rsync -avr --exclude='node_modules' ../proxy-2             ./
 mv proxy-2 backend
 
+rm ./yarn.lock
+
 node ../misc/utils/merge-deps.js
 
 cd ../wumb-front-2

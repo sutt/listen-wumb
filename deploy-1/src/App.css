@@ -1,0 +1,207 @@
+body {
+  background-image: url('https://assets.hongkiat.com/uploads/wood-textures/brown-wood.jpg');
+  }
+  
+iframe {
+    border: 2rem solid black;
+    border-radius: 10%;
+  }
+
+
+.App {
+  height:100%;
+  text-align: center;
+
+}
+
+.cal-button {
+  margin: 1rem;
+  background-color: rgb(7, 179, 90);
+  padding: 1rem;
+  border: 1 px solid white;
+  border-radius: 7%;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.cal-start {
+  display: block;
+
+}
+
+
+.header-container {
+  background-color:rgb(94, 39, 2) ;
+  height: 5rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+border-bottom: 2px solid white;
+}
+
+.header-text {
+ padding-top: -1.5rem; 
+}
+
+.home-screen-container{
+  margin-top:3rem;
+  background-color: rgb(250, 237, 186);
+  padding-top: 1%;
+  padding-bottom: 3%;
+  border: 10px solid black;
+  border-radius: 25%;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.nav {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.react-calendar__month-view__weekdays {
+  color: gray;
+}
+
+.react-calendar__navigation button {
+  font-size: 1em;
+}
+
+.result-calendar {
+  width: 30%;
+}
+
+
+
+.search-button{
+  height: 25%
+}
+
+ .search-date-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* .searchbar-container {
+  background-color: rgb(7, 179, 90);
+}  */
+
+.searchbar-forms{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
+
+.selected {
+  background-color: pink;
+}
+
+.table {
+  background-color: rgb(250, 237, 186);
+  padding-top: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 3%;
+  border: 10px solid black;
+  height: 50%;
+  border-radius: 25%;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+
+/* #lookupPrompt {
+  background-color: pink;
+} */
+#header-title {
+  font-family: 'Zen Tokyo Zoo', cursive;
+  font-weight: 500;
+  letter-spacing: 1.5rem;
+  color: rgb(7, 179, 90);
+  text-shadow: 1px 1px 2px black, 0 0 25px pink, 0 0 5px greenyellow;
+  font-size: 3.5rem;
+}
+
+#logout-button {
+  background-color: rgb(142, 69, 6);
+  height: 20%;
+  border: none;
+}
+
+#nav-link {
+  color: white;
+  font-size: .5rem;
+}
+
+
+.table-container {
+  display:flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+/* .video-responsive {
+  margin: auto;
+  width: 20%;
+  border: 2rem solid rgb(50, 48, 48);
+  border-radius: 15%;
+} */
+
+
+/* Postman Styles  */
+
+#LeftSideBarContainerOffline {
+
+  float: left;
+  width: 240px;
+  margin: 38px 0 0 0;
+  padding: 20px 0 20px 0;
+  background-color: #F2F2E8;
+  display: inline;
+  z-index: 1;
+
+}
+
+#ArchiveTable {
+
+  width: 240px;
+  margin: 0px;
+  border: none;
+  border-collapse: collapse;
+
+}
+
+.ArchiveTableCell {
+
+  width: 240px;
+  padding: 0px;
+  text-align: center;
+  vertical-align: top;
+
+}
+
+#MainContentContainerOffline {
+
+  float: left;
+  width: 674px;
+  min-height: 420px;
+  margin: 38px 0 0 0;
+  padding: 0 0 20px 10px;
+  background-color: #F2F2E8;
+  display: inline;
+  z-index: 1;
+
+}
+
+#TitleBannerContainer {
+
+  position: absolute;
+  left: 286px;
+  top: 201px;
+  width: 446px;
+  height: 30px;
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+  z-index: 2;
+}

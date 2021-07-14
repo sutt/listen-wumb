@@ -28,11 +28,52 @@ Overall ideas:
         - associated websites:
             - beale street caravan
 
+7.13
+
+    [x] get latest frontend and test
+    
+    [x] change the frontend to root
+        
+        [x] check that it works
+            [x] .gitingnore
+        [x] npm install
+        [x] npm start on front    
+            [x] retry the copy-deploy
+            [x] add invoke comment instructions
+            [x] add the browserlist to package.json
+        [x] add deploy-1/package-lock.json to root .gitignore
+        [x] npm run build
+        [x] run backend manually
+            [x] get the star route in proxy-2 controller
+                [x] find previous example -> sandbox/mern-review
+        [x] try it all again
+                misc/utils > copy-deploy.sh
+                deploy-1   > npm install
+                deploy-1   > npm run devstart   (run frontend separately)
+                deploy-1   > npm run build
+                deploy-1   > node backend/index.js
+                broswer:    localhost:3003/
+        [x] commit
+            two parts: 1.) utils + nec. changes 2.) deploy-1
+
+    [ ] attempt to deploy
+        [ ] create heroku app
+        [ ] do we need the mars buildpack?
+
+    [ ] can front connect to backend?
+        
+    notes on react-frontend
+        
+        - are blocks available in frontend?
+        - need auto play for songs
+
+
+
 7.7
 
-    [ ] build a deploy following pattern from previous
+    [x] build a deploy following pattern from previous
         
-        [ ] script that copies both current frontend + backend
+        [x] script that copies both current frontend + backend
             [x] basic test rsync
 
             rsync -av --exclude='path1/to/exclude' --exclude='path2/to/exclude' source destination
@@ -44,35 +85,44 @@ Overall ideas:
             source 
             destination
 
-            [ ] write the correct rsync
+            [x] write the correct rsync
 
                 rsync -vr --exclude='node_modules' ../x ./x_new
 
-                [ ] how to copy hidden files?
-                    - with dir/.* ?
-                    [ ] does folder copying work?
+                [x] how to copy hidden files?
+                    [x] does folder copying work? -> yes
 
-
-
-        [ ] build a shared package.json
+        [x] build a shared package.json
             - packages from both?
             - npm start
-            [ ] node script to combine packages
-        
-        [ ] how do we npm run build for the frontend directory?
-        
-        [ ] write to file which git commits the files were on
-            >git log -n 1
+            [x] node script to combine packages
 
-        [ ] handle installing packages locally
+        [x] need to add a .gitignore to deploy-1 via script
+            ignore frontend/build
+
+        [x] run locally
+            [x] handle installing packages locally
+            [x] is node_modules gitignore'd?
+
+            [x] how do we npm run build for the frontend directory?
+                -> we don't, frontend must be at root
+
+            notes:
+                https://create-react-app.dev/docs/deployment/#heroku
+                    https://github.com/mars/create-react-app-buildpack
+
         
-        [ ] need to toggle local build on/off
+        [x] write to file which git commits the files were on
+            >git log -n 1
+        
+        [~] need to toggle local build on/off
             - via branches?
                 - but this requires not .gitignoring the build folder
                     - so change that too on the built branch?
-        [ ] need to add local dev urls
-        [ ] how to switch on off testing/live switches?
-        [ ] how to handle .env file(s)?
+        [~] need to add local dev urls
+        [~] how to switch on off testing/live switches?
+        [x] how to handle .env file(s)?
+            - does it work with .env inside backend/ ?
 
         Ideal directory structure
 
@@ -147,6 +197,8 @@ Overall ideas:
 
                     this is nice because it serve all the assets too 
                     via the wildcard
+
+                - add that mars buildpack
 
 
     

@@ -1,0 +1,82 @@
+
+
+v1 - deploy by Monday
+
+    what are our priorities with this project?
+        - real url ?
+
+    current deployments:
+
+        https://wumb.herokuapp.com/
+            - should be sleeping but is not?
+            - this is the combined frontend backend on heroku
+            - react router doens't work here either
+
+        https://angry-belief.surge.sh/
+            - react router doesn't work for https://angry-belief.surge.sh/player
+
+        https://wumb-proxy-2.herokuapp.com/cacheStats
+            - current backend; being paid for not to sleep; this can switch i think?
+            - i think that 
+        
+        https://wumb-front-v1.herokuapp.com/home
+            - old frontend
+
+    
+    [ ] make a new deployment via the scripts and send it to heroku
+        
+        [ ] does react router work now?
+            - this bug can be reproduced by directly naviagating to /player route:
+                https://<host>/player
+        [ ] what's changed?
+
+
+    major points to solve:
+
+        - where does the frontend go?
+            - surge + github pages seem easier
+                - do they sleep
+                - requires cors
+        
+        - how to keep this code base ready for local dev?
+
+        [ ] refresh the api key
+        
+        [ ] there is no cache?
+            [ ] verify that songs are caching
+            [ ] if not
+
+        [ ] more than 2 months old for url
+            [ ] what is the oldest date available right now?
+            [ ] what is the url for the backup? what's it's newest date?
+            [ ] does react router work with new version
+
+        [ ] frontend controls 
+            [ ] is there a time selection?
+            [ ] is there a way to click on video?
+            [ ] is there away to continue listening after the initial batch?
+
+
+
+v1.1
+
+    - /blocks route displays exisitng cahces of blocks of songs
+
+    - advanced control of the playlist:
+
+    - build a scrape of the historical site
+
+    - cron job for utilizing full credits each day
+    
+    - any database mgmt tools needed?
+
+v2.0
+
+    - user login
+        - enables liking on an account
+        - differentiates landing page b/w logged-in non-signed-up
+
+    - chords via chordify api
+
+    - better /blocks page, maybe with times <-> shows
+

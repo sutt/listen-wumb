@@ -56,16 +56,32 @@ Overall ideas:
         [x] commit
             two parts: 1.) utils + nec. changes 2.) deploy-1
 
-    [ ] attempt to deploy
-        [ ] create heroku app
-        [ ] do we need the mars buildpack?
+    [x] attempt to deploy
+        [x] create heroku app
+        [x] do we need the mars buildpack? -> no; do not add it
+            https://create-react-app.dev/docs/deployment/#heroku
+            https://github.com/mars/create-react-app-buildpack
 
-    [ ] can front connect to backend?
+        >heroku buildpacks:set mars/create-react-app --app=wumb
+        >git subtree push --prefix deploy-1 heroku-deploy-1 masquestionter
+
+        -> need to NODE_ENV=prod to config for the app to communicate with db
+
+    [ ] can front connect to local backend?
+
+    [ ] somethings up with the DB? 
+        why is cacheStats not returning songs that have been played?
+        [ ] show: doesn't cache on my react, does cache on frontend-v1
+            [ ] check logs for the write message?
+        [ ] how do we connect with AtlasDB and view data?
+
+
         
     notes on react-frontend
         
         - are blocks available in frontend?
         - need auto play for songs
+        - where is the time input?
 
 
 
@@ -793,7 +809,7 @@ Overall ideas:
             https://stackoverflow.com/questions/5977234/how-can-i-push-a-part-of-my-git-repo-to-heroku
 
         [x] how to do this with environmental variables?
-            >heroku create -a wumb-front-v1 
+            >heroku cheroku reate -a wumb-front-v1 
             >git subtree push --prefix frontend heroku master
                 >git subtree push --prefix proxy-2 heroku-proxy-2 master
                 >git subtree push --prefix site-mock heroku-site-mock master

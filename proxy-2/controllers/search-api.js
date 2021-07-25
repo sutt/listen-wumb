@@ -178,7 +178,7 @@ router.get('/', (req, res) => {
                 const q = {...decodeQuery}
 
                 let scrapeDateTime = null
-                try {scrapeDateTime = new Date(`${q.date} ${q.time}`)} catch {}
+                try {scrapeDateTime = new Date(`${q.date} ${q.time}`)} catch {new Date("2000-1-1")}
 
                 let normdArtist = null
                 let normdTitle  = null

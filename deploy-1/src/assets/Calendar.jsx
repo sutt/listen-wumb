@@ -8,7 +8,7 @@ export default function CalendarReact({
   setSearchDay,
 }) {
   const [calDate, setCalDate] = useState(new Date(Date.parse("2021-06-01")));
-  const [cutDate, setCutDate] = useState("");
+  // const [cutDate, setCutDate] = useState("");
 
   useEffect(() => {
     setSearchDay(calDate.getDate().toString().padStart(2, 0));

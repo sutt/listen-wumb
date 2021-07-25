@@ -1,29 +1,12 @@
 import React, { useState, useEffect } from "react";
+import FF from "../assets/FF.png";
+import RW from "../assets/RW.png";
+import Record from "../assets/Record.gif";
 
-function Table({ radioData, searchDay, searchMonth, searchYear }) {
-  // const [displayDay, setdisplayDay] = useState("");
-  // const [displayMonth, setdisplayMonth] = useState("");
-  // const [displayYear, setdisplayYear] = useState("");
+function Table({ radioData, searchDay, searchMonth, searchYear, setSongId }) {
   const [startRange, setStartRange] = useState(0);
   const [endRange, setEndRange] = useState(10);
   const [displayData, setDisplayData] = useState([]);
-  // const [num0, setNum0] = useState(0);
-  // const [num1, setNum1] = useState(1);
-  // const [num2, setNum2] = useState(2);
-  // const [num3, setNum3] = useState(3);
-  // const [num4, setNum4] = useState(4);
-  // const [num5, setNum5] = useState(5);
-  // const [num6, setNum6] = useState(6);
-  // const [num7, setNum7] = useState(7);
-  // const [num8, setNum8] = useState(8);
-  // const [num9, setNum9] = useState(9);
-
-  // useEffect(() => {
-  //   setdisplayDay(searchDay);
-  //   setdisplayMonth(searchMonth);
-  //   setdisplayYear(searchYear);
-  //   setdisplayData(radioData);
-  // }, [searchYear, searchMonth, searchDay, radioData]);
 
   useEffect(() => {
     const radioDataToDisplay = [];
@@ -32,51 +15,65 @@ function Table({ radioData, searchDay, searchMonth, searchYear }) {
       radioDataToDisplay.push(radioData[i]);
     }
     setDisplayData(radioDataToDisplay);
+    setSongId(startRange);
   }, [startRange, endRange, radioData]);
 
-  const nextBatch = () => {
-    // needs an if statement to avoid an error at the end of the list
-
-    // console.log("first", num0, num1, num2);
-    // setNum0(num0 + 10);
-    // setNum1(num1 + 10);
-    // setNum2(num2 + 10);
-    // setNum3(num3 + 10);
-    // setNum4(num4 + 10);
-    // setNum5(num5 + 10);
-    // setNum6(num6 + 10);
-    // setNum7(num7 + 10);
-    // setNum8(num8 + 10);
-    // setNum9(num9 + 10);
-    // console.log("second", num0, num1, num2);
-    setStartRange(startRange + 10);
-    setEndRange(endRange + 10);
+  const prevBatch = () => {
+    if (startRange > radioData.length - 11) {
+      alert("Too early, go to previous day!");
+    } else {
+      setStartRange(startRange + 10);
+      setEndRange(endRange + 10);
+    }
   };
 
-  const prevBatch = () => {
+  const nextBatch = () => {
     if (startRange < 10) {
       alert("Too far, go to next day!");
     } else {
-      // console.log("first", num0, num1, num2);
-      // setNum0(num0 - 10);
-      // setNum1(num1 - 10);
-      // setNum2(num2 - 10);
-      // setNum3(num3 - 10);
-      // setNum4(num4 - 10);
-      // setNum5(num5 - 10);
-      // setNum6(num6 - 10);
-      // setNum7(num7 - 10);
-      // setNum8(num8 - 10);
-      // setNum9(num9 - 10);
-      // console.log("second", num0, num1, num2);
       setStartRange(startRange - 10);
       setEndRange(endRange - 10);
     }
   };
 
-  const tableRows = displayData.map((song) => {
+  const handleClickRow = (e) => {
+    e.preventDefault();
+    // removes 'selected' from className of all <tr> tags
+    const allRows = document.getElementsByClassName("row");
+    for (let i = 0; i < allRows.length; i++) {
+      allRows[i].classList.remove("selected");
+    }
+
+    // adds 'selected' to the className of the clicked <tr>
+    const rowElement = e.target.parentNode;
+    rowElement.classList.add("selected");
+
+    // sets the selected song
+    const song_id = e.target.parentNode.id.replace("song_", "");
+    setSongId(song_id);
+  };
+
+  const tableRows = displayData.map((song, i) => {
+    if (i === 0)
+      return (
+        <tr
+          key={song.time}
+          className="row selected"
+          id={"song_" + song.song_id}
+          onClick={handleClickRow}
+        >
+          <td>{song.time}</td>
+          <td>{song.artist}</td>
+          <td>{song.title}</td>
+        </tr>
+      );
     return (
-      <tr key={song.time} className="row">
+      <tr
+        key={song.time}
+        className="row"
+        id={"song_" + song.song_id}
+        onClick={handleClickRow}
+      >
         <td>{song.time}</td>
         <td>{song.artist}</td>
         <td>{song.title}</td>
@@ -106,23 +103,31 @@ function Table({ radioData, searchDay, searchMonth, searchYear }) {
           </table>
 
           <div className="buttons">
-            <button onClick={nextBatch} class="menu-button" id="next-button">
-              Click for earlier batch of songs!
+            <button
+              onClick={prevBatch}
+              className="arrow-button"
+              id="prev-button"
+            >
+              <img src={RW} alt="rw-icon" className="icon-button" />
             </button>
 
             <button
-              onClick={prevBatch}
-              className="menu-button"
-              id="prev-button"
+              onClick={nextBatch}
+              className="arrow-button"
+              id="next-button"
             >
-              Click for later batch of songs!
+              <img src={FF} alt="ff-icon" className="icon-button" />
             </button>
           </div>
         </div>
       </div>
     );
   } else {
-    return <div>Loading, Please Wait!!</div>;
+    return (
+      <div>
+        <img src={Record} alt="record" id="record" />
+      </div>
+    );
   }
 }
 

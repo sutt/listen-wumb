@@ -1,15 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import CalendarContainer from "../assets/CalendarContainer";
 
 function Searchbar({ setSearchYear, setSearchMonth, setSearchDay }) {
   const [dateInput, setDateInput] = useState("");
-  const [timeInput, setTimeInput] = useState("");
-  const [minuteTime, setMinuteTime] = useState("");
-  const [hourTime, setHourTime] = useState("");
-  const [ytTime, setYtTime] = useState("");
+  const [showCalendar, setShowCalendar] = useState(false);
 
+  // TODO: Do we take away the search function completely, and have the page reload onClick of the date?
   const searchWUMB = (e) => {
-    e.preventDefault();
     setSearchYear(dateInput[0].substring(2));
     setSearchMonth(dateInput[1]);
     setSearchDay(dateInput[2]);
@@ -17,65 +14,34 @@ function Searchbar({ setSearchYear, setSearchMonth, setSearchDay }) {
 
   const handleDateClick = (e) => {
     e.preventDefault();
-    const dateInput = e.target.value.split("-");
-    console.log(`dateInput: ${dateInput}`);
-    setDateInput(dateInput);
+    const searchDate = e.target.value.split("-");
+    console.log(`searchDate: ${searchDate}`);
+    setDateInput(searchDate);
   };
 
-  // const handleTimeClick = (evt) => {
-  //   evt.preventDefault();
-  //   setYtTime(evt.target.value);
-
-  // };
-  // const handleTimeSubmit = (evt) => {
-  //   evt.preventDefault()
-  //   setYtTime(evt.target.value);
-  //   console.log('searchbar', ytTime)
-  // };
-
-  // console.log(ytTime)
-  // console.log(ytTime.slice(3, 5))
-  // console.log(ytTime.slice(0, 2) )
-
-  // useEffect(() => {
-
-  //   const handleTimeSubmit = (evt) => {
-  //     evt.preventDefault()
-  //     setYtTime(evt.target.value);
-  //     console.log('searchbar', ytTime)
-  //   };
-
-  //   setMinuteTime(ytTime.slice(3, 5))
-  //   setHourTime(ytTime.slice(0, 2))
-  //   console.log(hourTime, minuteTime)
-  // }, [hourTime, minuteTime])
+  const toggleCalendar = (e) => {
+    e.preventDefault();
+    setShowCalendar(!showCalendar);
+  };
 
   return (
     <div className="searchbar-container">
-      <div className="controlbar">
-        <div className="calendar">
+      {/* <div className="calendar">
           <CalendarContainer
             {...{ setSearchYear, setSearchMonth, setSearchDay }}
           />
-        </div>
+        </div> */}
 
-        {/* <input type="time"
-                label="time"
-                value={ytTime}
-                onChange={handleTimeSubmit}/> 
-              
-
-         <input type="date"
-               label="date" 
-               onChange={handleDateClick} /> */}
-
-        {/* <button className="search-button" onClick={searchWUMB}>
-          Search WUMB Playlist
-        </button>
-         */}
+      
+      
+        <div className ="input-container">
+          <input className = "date-input" type="date" label="date" onChange={handleDateClick} />
+          <button className="search-button" onClick={searchWUMB}>
+            Search
+          </button>
+         </div> 
       </div>
-    </div>
-  );
+  )
 }
 
 export default Searchbar;

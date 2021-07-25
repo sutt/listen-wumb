@@ -1,8 +1,5 @@
-commit 46598a3396639112540721f39a29136d8510b342
-Merge: b291701 be5da7f
-Author: taubman33 <56704648+taubman33@users.noreply.github.com>
-Date:   Tue Jul 13 11:37:52 2021 -0400
+commit 9a3446c2e761a44a180ed5e7701444b2e2a12932
+Author: jataubman <jeremy.taubman@generalassemb.ly>
+Date:   Fri Jul 23 15:01:35 2021 -0400
 
-    Merge pull request #2 from taubman33/refactor
-    
-    Code Refactor
+    style changes

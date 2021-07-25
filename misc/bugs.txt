@@ -1,0 +1,15 @@
+
+
+[ ] Heroku env: NODE_ENV=prod (instead of 'production')
+
+    The build doesnt optimize:
+        
+        remote: -----> Pruning devDependencies
+        remote:        Skipping because NODE_ENV is not 'production'
+        remote:
+
+    This is manually set to help some process.env code in proxy-2
+
+    date: 7.25
+
+    

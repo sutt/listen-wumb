@@ -56,6 +56,9 @@ v1 - deploy by Monday
             [ ] is there a way to click on video?
             [ ] is there away to continue listening after the initial batch?
 
+        misc
+            [ ] move favicon if nec. 
+
 
 
 v1.1

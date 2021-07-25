@@ -28,6 +28,53 @@ Overall ideas:
         - associated websites:
             - beale street caravan
 
+7.25
+
+    get work done on the deploy
+    [x] clone down latest from JR
+    [x] run it locally
+    [x] deploy it to wumb.herokuapp
+
+
+    work through v1 checklist
+
+    [ ] refresh the api key
+        [x] how did this get exposed? -> misc/files/api-demo.sh
+        [x] anything else exposed like atlasdb url? -> no
+        [x] reset the key on dashboard
+        
+        [x] what parts of the codebase / prod servers need updates?
+
+            - env files for proxy-2 and deploy?
+
+            - heroku config:
+                on proxy-2 and 
+
+            [ ] update files, 
+                - there shouldn't be any git status changes, right?
+            
+            [ ] test that the current api key is down
+            [ ] test that the current
+            
+            [ ] new deployments?
+                - update config, push a dummy commit to each app?
+                    [ ] proxy-2
+                    [ ] deploy-1
+
+            [ ] test all apps now work
+        
+    
+    [ ] there is no cache?
+        [ ] verify that songs are not caching
+            - can use a request and then see cacheStats display it
+            - can compare against frontend-v1 running locally
+        
+        [ ] if compare the v1-frontend running against the deployed backend
+
+    [ ] change the urls on the frontend:
+         wumb-proxy-2.herokuapp.com -> wumb.herokuapp.com
+    
+
 7.13
 
     [x] get latest frontend and test
@@ -61,9 +108,11 @@ Overall ideas:
         [x] do we need the mars buildpack? -> no; do not add it
             https://create-react-app.dev/docs/deployment/#heroku
             https://github.com/mars/create-react-app-buildpack
+            >heroku buildpacks:set mars/create-react-app --app=wumb
 
-        >heroku buildpacks:set mars/create-react-app --app=wumb
-        >git subtree push --prefix deploy-1 heroku-deploy-1 masquestionter
+        Here's how you push a build
+
+        >git subtree push --prefix deploy-1 heroku-deploy-1 master
 
         -> need to NODE_ENV=prod to config for the app to communicate with db
 

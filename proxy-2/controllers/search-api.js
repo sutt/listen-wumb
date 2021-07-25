@@ -177,8 +177,17 @@ router.get('/', (req, res) => {
                         
                 const q = {...decodeQuery}
 
-                let scrapeDateTime = null
-                try {scrapeDateTime = new Date(`${q.date} ${q.time}`)} catch {new Date("2000-1-1")}
+                let scrapeDateTime =  null
+                try {
+                    const tmp = new Date(`${q.date} ${q.time}`)
+                    if (isNaN(tmp.valueOf())) {
+                        scrapeDateTime = null
+                    } else {
+                        scrapeDateTime = tmp
+                    }
+                } catch {
+                        scrapeDateTime = null
+                }
 
                 let normdArtist = null
                 let normdTitle  = null

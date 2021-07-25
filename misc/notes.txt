@@ -50,19 +50,30 @@ Overall ideas:
             - heroku config:
                 on proxy-2 and 
 
-            [ ] update files, 
+            [x] update files, 
                 - there shouldn't be any git status changes, right?
             
-            [ ] test that the current api key is down
-            [ ] test that the current
+            [~] test that the current api key is down
+                -> not yet
+            [x] test that the current api key works
             
-            [ ] new deployments?
+            [x] new deployments?
                 - update config, push a dummy commit to each app?
-                    [ ] proxy-2
-                    [ ] deploy-1
+                    [x] proxy-2
+                    [x] deploy-1
 
-            [ ] test all apps now work
-        
+            [x] test all apps now work
+            
+                [x] some kind of cors error?
+                    
+                    -> not a cors
+                    
+                    -what's changed since last deploy on july4?
+                     >git diff 70a7468a6  -- proxy-2
+
+                    - does return not work inside the catch statement? 
+                        - seems that way
+
     
     [ ] there is no cache?
         [ ] verify that songs are not caching

@@ -12,4 +12,16 @@
 
     date: 7.25
 
+[ ] running proxy-2 locally
     
+    all requests, e.g. to search-yt-api triggers:
+        
+        Warning on request, even routes like search-yt-api
+        
+            Error: ENOENT: no such file or directory, stat 'C:\Users\wsutt\Desktop\files\listen-wumb\build'
+
+        This came from init the static server for the build folder
+
+    date: 7.25
+                            
+                            

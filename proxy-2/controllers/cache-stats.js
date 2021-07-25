@@ -30,8 +30,10 @@ router.get('/', (req, res) => {
             
             const cvtOutput = aggOutput.map(item => {
                 const tmp = {...item}
+                try {
                 tmp.minTimeS = cvtTime(tmp.minTime)
                 tmp.maxTimeS = cvtTime(tmp.maxTime)
+                } catch {}
                 return tmp
             })
 

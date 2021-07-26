@@ -23,12 +23,12 @@ v1 - deploy by Monday
             - old frontend
 
     
-    [ ] make a new deployment via the scripts and send it to heroku
+    [x] make a new deployment via the scripts and send it to heroku
         
-        [ ] does react router work now?
+        [~] does react router work now?
             - this bug can be reproduced by directly naviagating to /player route:
                 https://<host>/player
-        [ ] what's changed?
+        [x] what's changed?
 
 
     major points to solve:
@@ -40,11 +40,10 @@ v1 - deploy by Monday
         
         - how to keep this code base ready for local dev?
 
-        [ ] refresh the api key
+        [x] refresh the api key
         
-        [ ] there is no cache?
-            [ ] verify that songs are caching
-            [ ] if not
+        [x] there is no cache?
+            [X] verify that songs are caching
 
         [ ] more than 2 months old for url
             [ ] what is the oldest date available right now?
@@ -72,6 +71,7 @@ v1.1
     - cron job for utilizing full credits each day
     
     - any database mgmt tools needed?
+        -> yes, to remove cached blocks with the filler videos in them.
 
 v2.0
 

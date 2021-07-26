@@ -75,15 +75,34 @@ Overall ideas:
                         - seems that way
 
     
-    [ ] there is no cache?
-        [ ] verify that songs are not caching
+    [x] there is no cache?
+        [x] verify that songs are not caching
             - can use a request and then see cacheStats display it
             - can compare against frontend-v1 running locally
-        
-        [ ] if compare the v1-frontend running against the deployed backend
 
+        -> problem is in writeResult
+        
+        [x] if compare the v1-frontend running against the deployed backend
+
+        there are two ways to fix it:
+            A.) fix the client side param encoding?
+                - do we need date+ time to checkCache?
+                - also, the encodeURI doesn't usually work with an ampersand etc
+            B.) Hardening server-side against this
+                -> took this route
+
+    [x] get it to run locally
+    
+    [x] fix the clientside request on search-yt-api
+        [x] fix the encodeURI aspect
+        [x] add date + time to query params
+            -> this allows /blocks down the road
+        
+    
     [ ] change the urls on the frontend:
          wumb-proxy-2.herokuapp.com -> wumb.herokuapp.com
+
+
     
 
 7.13
@@ -127,13 +146,14 @@ Overall ideas:
 
         -> need to NODE_ENV=prod to config for the app to communicate with db
 
-    [ ] can front connect to local backend?
+    [x] can front connect to local backend?
+        -> via .env with REACT_APP_BACKEND=local
 
-    [ ] somethings up with the DB? 
+    [x] somethings up with the DB? 
         why is cacheStats not returning songs that have been played?
-        [ ] show: doesn't cache on my react, does cache on frontend-v1
+        [x] show: doesn't cache on my react, does cache on frontend-v1
             [ ] check logs for the write message?
-        [ ] how do we connect with AtlasDB and view data?
+        [x] how do we connect with AtlasDB and view data?
 
 
         

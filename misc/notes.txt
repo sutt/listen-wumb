@@ -27,6 +27,96 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+9.28
+
+    proof-of-concept for new search action is complete in:
+        misc/cookie-fetch-2/index.js
+
+        change the `searchDate` in the script and run:
+            node index.js > results.html
+        then open the page
+
+    scratch workaround this concept is available in misc/cookie-fetch
+
+    todos:
+        [ ] parse html to view
+        [ ] build some asserts to see if the searchDate specified is changing what's returning
+        [ ] how to get current dates songs?
+        [ ] error handling for script
+            - this allows multiple try/catches before failing
+        
+
+
+9.20
+
+    Get site to work with site change:
+
+        - some kind of weird persistence of the playlist date across page reloads
+
+        - removing cookies from get request makes the request current day
+
+            "credentials": "omit"
+
+            - but keeping the credentials will get page with 
+
+        - ok, so server-side checking of the cookie for what to send back
+
+            this can be seen in the GET to playlist-archives
+
+            same:
+                SSESS2744f84ab896362390472b0afbbe54dd
+            
+            different:
+                nv7rsan84fq67f2gc2glmfro57
+                9abj9n5g6n57kh6pth97gi6eqp
+
+            - this was demonstrated by changing the cookies in incognito to match the other
+            - also, removing cookies does the present day even if you searched others
+
+        - but it appears the cookie value is arbitrary and can be altered
+
+            in DevTools > Applications >Cookies
+
+        [x] can we spoof the cookie?
+
+            [x] in the secondary GET request, 
+                -> yes
+
+                see: misc/cookie-fetch/
+                    > node index.js > output.html
+
+                    "cookie": "SSESS2744f84ab896362390472b0afbbe54dd=nv7rsan84fq67"
+
+                - but, this only works when you've established a session seesion token, at least by the PUT request
+
+                [~] check that the browser doesn't need to be active to maintain a session
+
+            
+            [x] verify you can receive the token from a node-fetch constructed POST
+
+
+            notes:
+
+                in browser:
+                - first omit the credentials, then add to header
+                    -> doesnt work b/c chrome-dev-tools disallows constructing fetches that way
+                    -> but does work in node-detch request construction
+
+                - note: we get set-cookie in the PUT response headers
+
+        pragmatic questions:
+            [x] can we do the search without cookies?
+                (and therefore completely head-less)
+                -> no
+            [x] can we spoof the cookies or acquire them in headless form?
+                see: https://stackoverflow.com/questions/34815845/how-to-send-cookies-with-node-fetch
+
+                    - note: might not be respected in Chrome / DevTools
+                            but should work with node-fetch or others
+
+        theoretical questions
+            [x] how does a 302 to work from a fetch?
+            [x] what does this 302 response mean
 
 7.25
 

@@ -19,9 +19,13 @@ app.use('/cacheStats',      cacheStatsRouter)
 
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../build'), (err) => {
-        console.log(`problem sending file, ${err}`)
-    })
+    try {
+        res.sendFile(path.join(__dirname, '../build'), (err) => {
+            console.log(`problem sending file, ${err}`)
+        })
+    } catch {
+        res.status(404).send("")
+    }
 })
 app.listen(app.get('port'), () => {
     console.log(`proxy2 listening on ${app.get('port')}`)

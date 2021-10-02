@@ -29,9 +29,31 @@ app.get("/page", (req, res) => {
     
     res.sendFile(
         fn,
-        {root: __dirname + '/wumb-pages/'}
+        {root: __dirname + '/old-wumb-pages/'}
     )
 })
+
+let postSearchDate = '210928'
+
+app.get("/page-new", (req, res) => {
+    
+    const availablePages = ['210928', '210901']
+    
+    const fn = availablePages.includes(postSearchDate)
+                ? `${dParam}.html`
+                : `210928.html`
+    
+    res.sendFile(
+        fn,
+        {root: __dirname + '/new-wumb-pages/'}
+    )
+})
+
+app.put("/page-new", (req, res) => {
+    postSearchDate = req.body['acf[field_5e4bac0c25353]']
+    res.send("ok")
+})
+
 
 app.get("/ytmock", (req, res) => {
     mockData = ["abcdefg", "xxxxxxx", "99problems"]

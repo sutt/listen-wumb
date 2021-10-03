@@ -27,6 +27,12 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+10.2
+
+    Other good stations
+        https://theriverboston.com/discover/just-played/
+        http://wxrv.tunegenie.com/onair/
+
 9.28
 
     proof-of-concept for new search action is complete in:
@@ -38,14 +44,14 @@ Overall ideas:
 
     scratch workaround this concept is available in misc/cookie-fetch
 
-    [ ] port: cookie-fetch-2/index.js to proxy-2/controllers/parse-api.js
+    [x] port: cookie-fetch-2/index.js to proxy-2/controllers/parse-api.js
 
-    [ ] add site-mock logic for new script
+    [x] add site-mock logic for new script
         - just one page with results, served back
         [x] get pages loaded
-        [ ] need to allow a put to go thru
-        [ ] variable which ties the put's body to the get
-        [ ] does the script work without a valid cookie?
+        [x] need to allow a put to go thru
+        [x] variable which ties the put's body to the get
+        [x] does the script work without a valid cookie?
         
 
     [ ] frontend logic scraping logic
@@ -54,6 +60,23 @@ Overall ideas:
     [ ] add diagnostic script for the remote:
         e.g. > heroku run node diagnose-parse.js
         >>> Site is responding correctly
+        [ ] add this in parse_modules as a script we can run just like fetch-cookies-2:
+            > node diagnositic.js > wumb-9-1.html
+
+    [x] what is the average request time: locally and live?
+        -> locally: 50-70ms
+        -> live:    6000 ms
+
+    [ ] acf_nonce breaks the scrape today
+        [x] quickfix 
+        [ ] add that aspect in
+            [ ] requires html parsing
+            looks like: _acf_from & _acf_nonce changed
+                [ ] may want to just load the whole body from the html elements
+    
+    [ ] error hanlding in parse_modules/main/scrapeSite
+        - send back a response in `catch` statements
+        - also loop thru multiple tries after failure
     
     [ ] add error logging to heroku logs / database
         - console.log will get it in heroku logs,

@@ -12,6 +12,8 @@ const resultTextStdout  = false
 const resultTextWriteFS = false
 
 // const url = "https://wumb.org/playlist-archives/"
+// `url` now comes as an argument from parsi-api.js
+// this allows it to switch between mocksite and actual
 
 // 1 - GET request to establish session
 function scrapeSite(url, searchDate, responseCallback) {

@@ -4,7 +4,7 @@ const qs = require('querystring')
 const {basicHeaders, putHeaders, putBody, putBodyFieldName} = require('./modules/initials')
 const {headersToArray, getSessCookie, obj2Str} = require('./modules/utils')
 
-const searchDate = "20210903"
+const searchDate = "20210906"
 
 const debug             = true
 const logHtml           = false
@@ -18,12 +18,8 @@ const url = "https://wumb.org/playlist-archives/"
 getToken()                  
 .then(sessTokenObj => {
     
-    console.log(obj2Str(sessTokenObj))
     // 2 - POST the searchdate + complementary body fields and session cookie
-    return putSearchDate(
-        searchDate,
-        sessTokenObj
-        ) 
+    return putSearchDate(searchDate, sessTokenObj) 
 })
 .then(data => {
     
@@ -40,7 +36,7 @@ getToken()
     }
 })
 .finally( () => {
-    console.log("done")    
+    console.log("script done")    
 })
 
 
@@ -62,7 +58,7 @@ async function getToken() {
         if (debug) {
             console.log(`response is ok? ${res.ok}`)
             console.log(`sessTokenObj: ${JSON.stringify(sessTokenObj)}`)
-            // console.log(headersArr)
+            console.log(headersArr)
         }
         
         if (logHtml) {

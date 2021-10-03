@@ -30,7 +30,7 @@ const obj2Str = (obj) => {
         s += key
         s += "="
         s += obj[key]
-        // s += "&"
+        // s += "&"  //maybe s += ";" when combining cookies
     }
     return s
 }

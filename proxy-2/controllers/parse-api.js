@@ -8,6 +8,7 @@ const SearchRes = require('../models/search-res')
 const prt = require('../utils/prt')
 const {scrapeSite} = require('../parse_modules/main')
 
+const debug = true
 
 const pad = (n, amt=2) => (n.toString().length === amt) ? n: `0${n}`
 
@@ -26,7 +27,7 @@ router.get("/", (req, res) => {
 
     let url = null
     if (req.query.live === 'true') {
-        url =         "http://wumb.org/playlist-archives/"
+        url =         "https://wumb.org/playlist-archives/"
     } else {
         url = process.env.NODE_ENV
                     ? "https://wumb-site-mock.herokuapp.com/page-new"
@@ -41,6 +42,10 @@ router.get("/", (req, res) => {
                 ? "20" + incomingSearchDate
                 : getFormattedCurrentDate()
                     
+    if (debug) {
+        console.log(formattedSearchDate)
+        console.log(url)
+    }
 
     // back the `res` object, to call `.send` method inside 
     const responseCallback = (text) => {res.send(text)}

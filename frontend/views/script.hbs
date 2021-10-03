@@ -245,13 +245,27 @@ function scrapeArchive () {
 
                 const parser = new DOMParser()
                 const doc = parser.parseFromString(body, 'text/html')
-                const tbs = doc.querySelector("#MainContentTextOnly").querySelectorAll("tbody")
+                
+                // for site_v1
+                // const tbs = doc.querySelector("#MainContentTextOnly").querySelectorAll("tbody")
 
-                const data = Array.from(tbs).map( tb => {
+                // const data = Array.from(tbs).map( tb => {
+                //     return {
+                //         time: tb.children[0].children[0].innerText.replaceAll("\n", ""), 
+                //         artist: tb.children[0].children[1].innerText.replaceAll("\n", ""), 
+                //         title: tb.children[1].innerText.replaceAll("\n", "")
+                //     }
+                // })
+
+                // For site_v2
+                const items = doc.getElementsByClassName("playlist_grid")[0]
+                                 .getElementsByClassName("playlist_grid_item")
+
+                const data = Array.from(items).map( e => {
                     return {
-                        time: tb.children[0].children[0].innerText.replaceAll("\n", ""), 
-                        artist: tb.children[0].children[1].innerText.replaceAll("\n", ""), 
-                        title: tb.children[1].innerText.replaceAll("\n", "")
+                        time:   e.getElementsByClassName("playlist_item_date")[0].innerText,
+                        artist: e.getElementsByClassName("playlist_item_artist")[0].innerText,
+                        title:  e.getElementsByClassName("playlist_item_song")[0].innerText,
                     }
                 })
 

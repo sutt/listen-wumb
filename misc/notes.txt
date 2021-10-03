@@ -27,6 +27,29 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+10.3
+
+    [x] get full stack up and running
+        [x] set default start date to Sept 1, 5pm
+        [x] test fully live:
+            localhost:4000/alllive
+            localhost:4000/home
+
+    [ ] first load usually fails...
+        - this occurs because the first parse returns the current date
+        [ ] build a fallback option
+        [ ] build a repeat loop 
+
+    [ ] get rid of cached mock-yt-results
+        e.g. there's the wutang song result for many
+        [ ] at least do this for the default time
+
+    note: using a proxy server to return this page:
+        https://www.youtube.com/results?search_query=joe+moakley
+
+        -> get's us around having to use google api
+
+
 10.2
 
     Other good stations
@@ -54,8 +77,8 @@ Overall ideas:
         [x] does the script work without a valid cookie?
         
 
-    [ ] frontend logic scraping logic
-        [ ] remove the code from script.js, place into hbs
+    [x] frontend logic scraping logic
+        [x] remove the code from script.js, place into hbs
 
     [ ] add diagnostic script for the remote:
         e.g. > heroku run node diagnose-parse.js

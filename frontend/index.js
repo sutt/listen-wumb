@@ -4,8 +4,8 @@ const app = express()
 
 const bLog = true
 
-const defaultTime = "1:12 pm"
-const defaultDate = "5-22-21"
+const defaultTime = "3:31 pm"
+const defaultDate = "9-01-21"
 
 app.use(express.static('public'))
 app.set('view engine', 'hbs')

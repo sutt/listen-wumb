@@ -27,6 +27,29 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+10.7
+
+    [ ] find out if the page you GOT is working as expected:
+        
+        [ ] capture this possibility:
+            
+            "No playlist information was found for this date."
+
+            [ ] this will throw exception in the current dom parser 
+                b/c there is no playlist grid
+
+        [ ] capture the date listed and match date to input date:
+            "10/31/2021"
+
+
+
+10.6
+
+    [x] domparser in node
+    [x] diagnostic from module in proxy-2
+    [ ] put the nonce + associated fields in post body
+    [ ] multi-try/catch/repeat
+
 10.3
 
     [x] get full stack up and running
@@ -43,6 +66,9 @@ Overall ideas:
     [ ] get rid of cached mock-yt-results
         e.g. there's the wutang song result for many
         [ ] at least do this for the default time
+
+    [ ] update readme
+        [ ] document the new parse route
 
     note: using a proxy server to return this page:
         https://www.youtube.com/results?search_query=joe+moakley

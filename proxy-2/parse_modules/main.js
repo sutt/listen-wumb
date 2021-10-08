@@ -1,8 +1,11 @@
 const fetch = require("node-fetch")
+const DomParser = require('dom-parser')
 const qs = require('querystring')
 //note: put is actually a post in the verbiage below:
 const {basicHeaders, putHeaders, putBody, putBodyFieldName} = require('./initials')
 const {headersToArray, getSessCookie, obj2Str} = require('./utils')
+
+const parser = new DomParser()
 
 const searchDate = "20210903"
 
@@ -34,8 +37,10 @@ function scrapeSite(url, searchDate, responseCallback) {
                 if (resultTextStdout) {
                     console.log(text)
                 }    
-
-                responseCallback(text)
+                
+                const jsonData = parsePlaylistHtml(text)
+                
+                responseCallback(jsonData)
                 
                 //Todo 
                 // - write to filesystem
@@ -49,6 +54,33 @@ function scrapeSite(url, searchDate, responseCallback) {
     })
 }
 
+function parsePlaylistHtml(text) {
+    
+    try {
+
+        const doc = parser.parseFromString(text)
+        
+        const items = doc.getElementsByClassName("playlist_grid")[0]
+                         .getElementsByClassName("playlist_grid_item")
+
+        const data = Array.from(items).map( e => {
+            return {
+                time:   e.getElementsByClassName("playlist_item_date")[0].innerHTML,
+                artist: e.getElementsByClassName("playlist_item_artist")[0].innerHTML,
+                title:  e.getElementsByClassName("playlist_item_song")[0].innerHTML,
+            }
+        })
+
+        return data
+    
+    } catch {
+        
+        // if the date did not contain any data it's wrong
+        return null
+    
+    }
+
+}
 
 async function getToken(url) {
 

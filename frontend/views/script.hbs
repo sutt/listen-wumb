@@ -240,11 +240,11 @@ function buildSearchStr(itemObj) {
 function scrapeArchive () {
     fetch(scraperEndpoint + `&d=${scrapeDate}`)
     .then(res => {
-        res.text()   
-            .then(body => {
+        res.json()   
+            .then(data => {
 
-                const parser = new DOMParser()
-                const doc = parser.parseFromString(body, 'text/html')
+                // const parser = new DOMParser()
+                // const doc = parser.parseFromString(body, 'text/html')
                 
                 // for site_v1
                 // const tbs = doc.querySelector("#MainContentTextOnly").querySelectorAll("tbody")
@@ -258,16 +258,16 @@ function scrapeArchive () {
                 // })
 
                 // For site_v2
-                const items = doc.getElementsByClassName("playlist_grid")[0]
-                                 .getElementsByClassName("playlist_grid_item")
+                // const items = doc.getElementsByClassName("playlist_grid")[0]
+                //                  .getElementsByClassName("playlist_grid_item")
 
-                const data = Array.from(items).map( e => {
-                    return {
-                        time:   e.getElementsByClassName("playlist_item_date")[0].innerText,
-                        artist: e.getElementsByClassName("playlist_item_artist")[0].innerText,
-                        title:  e.getElementsByClassName("playlist_item_song")[0].innerText,
-                    }
-                })
+                // const data = Array.from(items).map( e => {
+                //     return {
+                //         time:   e.getElementsByClassName("playlist_item_date")[0].innerText,
+                //         artist: e.getElementsByClassName("playlist_item_artist")[0].innerText,
+                //         title:  e.getElementsByClassName("playlist_item_song")[0].innerText,
+                //     }
+                // })
 
                 console.log(data)
                 

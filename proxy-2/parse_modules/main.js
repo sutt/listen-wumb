@@ -39,13 +39,19 @@ function scrapeSite(url, searchDate, responseCallback) {
             getSearchResults(url, data.sessTokenObj)
             .then(text => {    
                 
-                if (resultTextStdout) {
-                    console.log(text)
-                }    
+                if (resultTextStdout) console.log(text)
+                    
+                const pageDate = parsePlaylistDate(text)
+
+                if ( pageDate != searchDate ) {
+                    
+                    console.log(`input searchDate ${searchDate} does not pageDate ${pageDate}`)
                 
-                const jsonData = parsePlaylistHtml(text)
+                } else {
                 
-                responseCallback(jsonData)
+                    const jsonData = parsePlaylistHtml(text)    
+                    responseCallback(jsonData)
+                }
                 
                 //Todo 
                 // - write to filesystem
@@ -108,6 +114,13 @@ function parseFormFields(text) {
         console.log("error in parseFormFields")
         return null
     }
+}
+
+function parsePlaylistDate(text) {
+    const doc = parser.parseFromString(text)
+    return doc.getElementById("acf-field_5e4bac0c25353")
+            .getAttribute("value")
+
 }
 
 async function getInitialPage(url) {

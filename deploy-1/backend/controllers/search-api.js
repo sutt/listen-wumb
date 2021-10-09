@@ -134,8 +134,6 @@ router.get('/', (req, res) => {
             console.log(`err in buildSearchStr for ${decodeQuery}`)
             res.json([])
             return
-            console.log("hey")
-            
         }
 
         searchItem(encodedStr, live)
@@ -179,8 +177,17 @@ router.get('/', (req, res) => {
                         
                 const q = {...decodeQuery}
 
-                let scrapeDateTime = null
-                try {scrapeDateTime = new Date(`${q.date} ${q.time}`)} catch {}
+                let scrapeDateTime =  null
+                try {
+                    const tmp = new Date(`${q.date} ${q.time}`)
+                    if (isNaN(tmp.valueOf())) {
+                        scrapeDateTime = null
+                    } else {
+                        scrapeDateTime = tmp
+                    }
+                } catch {
+                        scrapeDateTime = null
+                }
 
                 let normdArtist = null
                 let normdTitle  = null

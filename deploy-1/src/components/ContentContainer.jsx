@@ -37,6 +37,7 @@ const EmbedContainer = () => {
             time: tb.children[0].children[0].innerText.replaceAll("\n", ""),
             artist: tb.children[0].children[1].innerText.replaceAll("\n", ""),
             title: tb.children[1].innerText.replaceAll("\n", ""),
+            date: `${searchMonth}-${searchDay}-${searchYear}`,
           };
         });
         setRadioData(data);

@@ -1,5 +1,5 @@
-commit b498928302f1cdd9a4346c5d7d6966d9fbb7eacc
+commit 02aafc997913909a22342734d8569d7da112cb07
 Author: Will Sutton <wsutton17@gmail.com>
-Date:   Sun Jul 25 17:48:36 2021 -0400
+Date:   Sat Oct 9 10:42:30 2021 -0400
 
-    tmp fix for deploy?
+    check date on search results page for match to input date

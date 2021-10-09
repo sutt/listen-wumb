@@ -189,12 +189,16 @@ const params = Object.entries(trackInfo)
    .reduce((a,b) => {
        return a + b[0] + "=" + encodeURI(b[1]) + "&"
    }, "?" )
+console.log(params)
 
 // const url = {PROD_ON}
 const url = 'url'
+console.log(process.env.REACT_APP_BACKEND)
 
-? "https://wumb-proxy-2.herokuapp.com/search-yt-api" + params
-: "http://localhost:3003/search-yt-api" + params
+(process.env.REACT_APP_BACKEND !== 'local') 
+    ? "https://wumb-proxy-2.herokuapp.com/search-yt-api" + params
+    : "http://localhost:3003/search-yt-api" + params
+
 try {
 return  fetch(url)
 .then(res => res.json())

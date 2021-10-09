@@ -8,9 +8,24 @@ const YoutubeEmbed = ({ radioData, selectedSong, songId, setSongId }) => {
 
   // Fetches youtube data using the 'selectedSong' info
   useEffect(() => {
-    const artistUrl = selectedSong.artist.replace(/ /g, "%20");
-    const titleUrl = selectedSong.title.replace(/ /g, "%20");
-    const url = `https://wumb-proxy-2.herokuapp.com/search-yt-api?artist=${artistUrl}&title=${titleUrl}&live=${onSwitch}`;
+    
+    const base = (process.env.REACT_APP_BACKEND == `local`) 
+                  ? `http://localhost:3003/search-yt-api`
+                  : `https://wumb-proxy-2.herokuapp.com/search-yt-api`
+    
+    const trackInfo = {
+      time: selectedSong.time,
+      date: selectedSong.date,
+      title: selectedSong.title,
+      artist: selectedSong.artist,
+      live: onSwitch,
+    }
+    const params = Object.entries(trackInfo)
+          .reduce((a,b) => {
+              return a + b[0] + "=" + encodeURI(b[1]) + "&"
+          }, "?" )
+    
+    const url = base + params
 
     fetch(url)
       .then((res) => res.json())

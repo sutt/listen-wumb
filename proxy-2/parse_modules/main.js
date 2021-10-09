@@ -18,14 +18,19 @@ const resultTextWriteFS = false
 // `url` now comes as an argument from parsi-api.js
 // this allows it to switch between mocksite and actual
 
-// 1 - GET request to establish session
+
 function scrapeSite(url, searchDate, responseCallback) {
  
-    getToken(url)                  
-    .then(sessTokenObj => {
+    // 1 - GET request to establish session
+    getInitialPage(url)                  
+    .then(returnData => {
         
         // 2 - POST the searchdate + complementary body fields and session cookie
-        return putSearchDate(url, searchDate, sessTokenObj) 
+        return putSearchDate(url, 
+                            searchDate, 
+                            returnData.sessTokenObj,
+                            returnData.formFieldsObj
+                            ) 
     })
     .then(data => {
         
@@ -44,7 +49,6 @@ function scrapeSite(url, searchDate, responseCallback) {
                 
                 //Todo 
                 // - write to filesystem
-                // - parse the html to playlist json
                 // - add the data to database collection
             })
         }
@@ -82,8 +86,36 @@ function parsePlaylistHtml(text) {
 
 }
 
-async function getToken(url) {
+function parseFormFields(text) {
+    
+    try {
+        let formFieldsObj = {}
+        const doc = parser.parseFromString(text)
+        const hiddens = doc.getElementsByClassName("acf-hidden")[0]
+                            .getElementsByTagName("input")
+        
+        Array.from(hiddens).forEach(htmlElem => {
+            try {
+                formFieldsObj[htmlElem.getAttribute("name")] = 
+                    htmlElem.getAttribute("value")
+            } catch {}
+        })
+        
+        return formFieldsObj
 
+    } catch {
+        
+        console.log("error in parseFormFields")
+        return null
+    }
+}
+
+async function getInitialPage(url) {
+
+    // this will be filled in with relevant return data
+    // in multiple .then clauses
+    let pageData = {}
+    
     return await fetch(
         url, 
         {
@@ -96,33 +128,53 @@ async function getToken(url) {
         
         const headersArr = headersToArray(res)
         const sessTokenObj = getSessCookie(headersArr)
+
+        pageData['sessTokenObj'] = sessTokenObj
         
         if (debug) {
             console.log(`response is ok? ${res.ok}`)
             console.log(`sessTokenObj: ${JSON.stringify(sessTokenObj)}`)
-            console.log(headersArr)
-        }
-        
-        if (logHtml) {
-            res.text().then(text => console.log(text))
+            // console.log(headersArr)
         }
 
-        return sessTokenObj
+        return res.text()
+    })
+    .then(text => {
+        
+        if (logHtml) console.log(text)
+
+        const formFieldsObj = parseFormFields(text)
+
+        pageData['formFieldsObj'] = formFieldsObj
+
+        if (debug) {
+            console.log(`formFieldsObj: ${JSON.stringify(formFieldsObj)}`)
+        }
+
+        return pageData
+        
     })
 
 }
 
-async function putSearchDate(url, searchDate, sessTokenObj) {
+async function putSearchDate(url, searchDate, sessTokenObj, formFieldsObj) {
 
     // add session toekn as cookie
     const headersAndSessCookie = putHeaders
     headersAndSessCookie['cookie'] = obj2Str(sessTokenObj)
     
+    const putBodyComplete = putBody
+    putBodyComplete[putBodyFieldName] = searchDate
+    
+    // two fields are nec to load dynamically from initial page get
+    // they change roughly daily (?) the other fields remain static.
+    // these added fields are already encoded to x-www
+    putBodyComplete['_acf_nonce'] = formFieldsObj._acf_nonce
+    putBodyComplete['_acf_form']  = formFieldsObj._acf_form
+    
     // endpoint only accepts body as x-www-urlencoded
     // add in search date via object indexing then
     // change the body back into encoded string form
-    const putBodyComplete = putBody
-    putBodyComplete[putBodyFieldName] = searchDate
     const putBodyCompleteEncoded = qs.encode(putBodyComplete)
 
     if (debug) {

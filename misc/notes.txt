@@ -27,6 +27,15 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+
+10.9
+
+    [ ] log the time it took to get the results
+
+    [ ] A little surprised that putSearchDate() works
+        where we put encoded data in _acf_form then 
+        encode again using querystring, demo this to understand
+
 10.7
 
     [ ] find out if the page you GOT is working as expected:
@@ -47,7 +56,7 @@ Overall ideas:
 
     [x] domparser in node
     [x] diagnostic from module in proxy-2
-    [ ] put the nonce + associated fields in post body
+    [x] put the nonce + associated fields in post body
     [ ] multi-try/catch/repeat
 
 10.3
@@ -131,10 +140,10 @@ Overall ideas:
         - console.log will get it in heroku logs,
         - write to db 
 
-    [ ] DOMParsing changes on frontend or toJSON on the serve side
+    [x] DOMParsing changes on frontend or toJSON on the serve side
 
     todos:
-        [ ] parse html to view
+        [x] parse html to view
         [ ] build some asserts to see if the searchDate specified is changing what's returning
         [ ] how to get current dates songs?
         [ ] error handling for script

@@ -48,7 +48,7 @@ router.get("/", (req, res) => {
     }
 
     // back the `res` object, to call `.send` method inside 
-    const responseCallback = (text) => {res.send(text)}
+    const responseCallback = (text) => {res.json(text)}
     
     scrapeSite(url, formattedSearchDate, responseCallback)
 

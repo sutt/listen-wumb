@@ -28,13 +28,45 @@ Overall ideas:
         - associated websites:
             - beale street caravan
 
+10.10
+
+    [x] remove debug=true from deployed version
+        [x] use env variable
+    
+    [ ] make a new deploy with updated react frontend
+
 10.9
 
     [ ] log the time it took to get the results
+    [ ] note time on round-trip on the deployed site
 
     [ ] A little surprised that putSearchDate() works
         where we put encoded data in _acf_form then 
         encode again using querystring, demo this to understand
+
+    [x] update react / front-v2 url and json
+
+    [x] rebase, and deploy to heroku
+        [x] rebase + push to github
+        [x] figure what is the slug for "live" -> /alllive
+        [x] push frontend-v1
+        [x] push proxy-2
+            [x] find the deploy utils
+            -> misc/utils/copy-deploy.sh
+            [x] push with a force
+            
+                works:
+                    https://gist.github.com/tduarte/eac064b4778711b116bb827f8c9bef7b
+
+                    git checkout master # you can avoid this line if you are in master...
+                    git subtree split --prefix dist -b gh-pages # create a local gh-pages branch containing the splitted output folder
+                    git push -f origin gh-pages:gh-pages # force the push of the gh-pages branch to the remote gh-pages branch at origin
+
+                doesnt work:
+                    https://stackoverflow.com/questions/33172857/how-do-i-force-a-subtree-push-to-overwrite-remote-changes
+                    git push <remote> `git subtree split --prefix <local-folder> <local-branch>`:<remote-branch> --force
+
+                
 
 10.7
 

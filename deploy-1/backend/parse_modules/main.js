@@ -9,10 +9,13 @@ const parser = new DomParser()
 
 const searchDate = "20210903"
 
-const debug             = true
+const debug             = (process.env.NODE_ENV === 'prod') 
+                          ? false : true
 const logHtml           = false
 const resultTextStdout  = false
 const resultTextWriteFS = false
+const allowWrongDate    = (process.env.NODE_ENV === 'prod') 
+                          ? false : true     
 
 // const url = "https://wumb.org/playlist-archives/"
 // `url` now comes as an argument from parsi-api.js
@@ -43,7 +46,10 @@ function scrapeSite(url, searchDate, responseCallback) {
                     
                 const pageDate = parsePlaylistDate(text)
 
-                if ( pageDate != searchDate ) {
+                // allowWrongDate - for sitemock testing where we
+                // want to return an example page that probably has the
+                // wrong date on it
+                if ((pageDate != searchDate) && !allowWrongDate) {
                     
                     console.log(`input searchDate ${searchDate} does not pageDate ${pageDate}`)
                 

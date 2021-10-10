@@ -17,29 +17,25 @@ const EmbedContainer = () => {
   const [searchMonth, setSearchMonth] = useState(today[0]);
   const [searchDay, setSearchDay] = useState(today[1]);
 
+  //Local Testing vs Deployed Running
+  let baseUrl = (process.env.REACT_APP_BACKEND !== 'local') 
+                ? "https://wumb-proxy-2.herokuapp.com"
+                : "http://localhost:3003"
+
+  let parseLive = (process.env.REACT_APP_PARSE_LIVE) == 'false'
+                  ? false
+                  : true
+                  
   // Fetches playlist data from WUMB for a given date
   // Sets 'songId' to 0 which is the latest song played on wumb
   // Runs everytime [searchYear, searchMonth, searchDay] chnages
   useEffect(() => {
     fetch(
-      `https://wumb-proxy-2.herokuapp.com/parse?live=true&d=${searchYear}${searchMonth}${searchDay}`
+      `${baseUrl}/parse?live=${parseLive}&d=${searchYear}${searchMonth}${searchDay}`
     )
-      .then((res) => res.text())
-      .then((body) => {
-        const parser = new DOMParser();
-        const doc = parser.parseFromString(body, "text/html");
-        const tbs = doc
-          .querySelector("#MainContentTextOnly")
-          .querySelectorAll("tbody");
-        const data = Array.from(tbs).map((tb, i) => {
-          return {
-            song_id: i,
-            time: tb.children[0].children[0].innerText.replaceAll("\n", ""),
-            artist: tb.children[0].children[1].innerText.replaceAll("\n", ""),
-            title: tb.children[1].innerText.replaceAll("\n", ""),
-            date: `${searchMonth}-${searchDay}-${searchYear}`,
-          };
-        });
+      .then((res) => res.json())
+      .then((data) => {
+        
         setRadioData(data);
         setSongId(data[0].song_id);
       })

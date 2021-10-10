@@ -1,5 +1,5 @@
-commit d81e9f1855836e6401b11b521f86643ecf473ce7
+commit 52c819145ee86ad55c9b143dc4f2c24bdf1e64c5
 Author: Will Sutton <wsutton17@gmail.com>
-Date:   Sun Jul 25 20:50:47 2021 -0400
+Date:   Sun Oct 10 09:30:25 2021 -0400
 
-    add `date` to search-yt-api req params
+    interfaces with new parse route on backend + local testing env vars

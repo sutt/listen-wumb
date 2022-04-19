@@ -4,8 +4,8 @@ const app = express()
 
 const bLog = true
 
-const defaultTime = "3:31 pm"
-const defaultDate = "9-01-21"
+const defaultTime = "9:00 pm"
+const defaultDate = "4-08-22"
 
 app.use(express.static('public'))
 app.set('view engine', 'hbs')
@@ -81,7 +81,7 @@ app.get("/:args", (req, res) => {
     
     
     const q = Object.fromEntries(
-        Object.entries(req.query).map(kv => [kv[0], decodeURI(kv[1])])
+        Object.entries(req.query).map(kv => [kv[0], decodeURI(kv[1])])   
     )
     
     const args = {

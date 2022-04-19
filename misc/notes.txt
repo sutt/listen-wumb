@@ -27,8 +27,71 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+4.18
 
-10.10
+    frontend/index.js is open to refactor how it serves specific js values for the different testing modes
+
+        - should instead use:
+            a main.js script which:
+                imports shared-code-script.js (code for all modes)
+                imports param-config-vars.js (specific)
+                run the 
+
+    note that the site doesn't work offline because it relies on an external script, this could be added to site-mock
+
+        - want a try/except for this failing to load
+
+    [ ] check the remote branches present
+
+    What is the state of the current features?
+
+        - scrapeCache
+            -> none
+        - cacheStats
+            - some basics
+
+    - cahceStats routes:
+        -the exisitng index route here is more like /daySummary which has concise information but wouldn't fully show all the timeslots
+         -> a more volumimous return would show all the songs cahced in the day
+
+
+    - Need a way to clean up the database from the mock data
+
+4.17
+
+    goal: quick and strong release and deployment
+        ok - have some hacks, things don't scale
+        ok - no advanced features where I'll learn new things
+
+        sprint:
+            mvp:
+            - frontend bootstrapped
+            - frontend no bugs 
+                - continues the play
+                - loading the playlist while still playing
+                - ?
+            - cached scrape
+                - 30 days backlog
+            - starts up quickly at a good spot
+            - simple and easy mechanism to restrict
+            
+            
+            stretch: 
+            - have a catalog
+            - server side cron job
+            - document/diagram v3 of app
+                now users server side scrape caching and,
+                server side cookies based approach to scraping
+
+        backlog:
+            - logged in users can see new songs
+            - adding images from the search feature
+            - animation for loading, e.g. static tv screen
+
+
+        
+
+
 
     [x] remove debug=true from deployed version
         [x] use env variable

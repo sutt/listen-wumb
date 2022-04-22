@@ -9,8 +9,8 @@ const parser = new DomParser()
 
 const searchDate = "20210903"
 
-const debug             = (process.env.NODE_ENV === 'prod') 
-                          ? false : true
+const debug             = (process.env.DEBUG_PARSE_MODULES === 'true') 
+                          ? true : false
 const logHtml           = false
 const resultTextStdout  = false
 const resultTextWriteFS = false
@@ -22,7 +22,7 @@ const allowWrongDate    = (process.env.NODE_ENV === 'prod')
 // this allows it to switch between mocksite and actual
 
 
-function scrapeSite(url, searchDate, responseCallback) {
+function scrapeSite(url, searchDate, responseCallback, searchDateDate) {
  
     // 1 - GET request to establish session
     getInitialPage(url)                  
@@ -56,7 +56,7 @@ function scrapeSite(url, searchDate, responseCallback) {
                 } else {
                 
                     const jsonData = parsePlaylistHtml(text)    
-                    responseCallback(jsonData)
+                    responseCallback(jsonData, searchDateDate)
                 }
                 
                 //Todo 

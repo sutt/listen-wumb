@@ -27,6 +27,65 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+
+4.22
+
+    Kind of hacky technique to be doing setUTCHours(0,0,0,0) on each of these?
+        - could combine this into one step with the right code lines?
+
+    [ ] We're not sure if a simple 3/31 -> 4/1 is awknowledged here
+    
+    Good Suggestions for `ParseRes` schema from coPilot:
+
+        // isMock: process.NODE_ENV === 'production' ? false: true,
+        // good suggestions from copilot
+        // playlist: data.playlist,
+        // isComplete: data.isComplete,
+        // isLive: data.isLive,
+        // isValid: data.isValid,
+        // isError: data.isError,
+        // errorMsg: data.errorMsg,
+        // isCached: true,
+        // cacheDate: Date.now(),
+
+    [x] demonstrate how to add to the DB
+        [x] find where the playlist is parsed:
+            - how it comes back to frontend:
+                -> parse_modules/main::parseparsePlaylistHtml 
+        [x] build the items schema
+        [x] how to create the DateTime field
+        [x] find example from writeToSearchRes
+
+    [x] build the writeCache() function
+        - first basic operations
+
+    [ ] let's get a simple run thru here:
+        - turn off the new functionality via stubs
+        - turn on functionality 1 by 1
+
+    
+
+4.19 - 4.20
+
+        
+    
+    [ ] Misc: why is the month in js Date(YYYY, MM, DD) use index0 for month?
+
+        [x] first test basic Operations
+        [x] then extend to how to add one day
+    
+    open up a mongoose connection via node + .load of script to:
+        - dynamically interoperate with mongoose agg queries
+        - 
+        example from: https://stackoverflow.com/questions/11973304/mongodb-mongoose-querying-at-a-specific-date
+
+            db.posts.find({ //query today up to tonight
+                created_on: {
+                    $gte: new Date(2012, 7, 14), 
+                    $lt: new Date(2012, 7, 15)
+                }
+            })
+
 4.18
 
     frontend/index.js is open to refactor how it serves specific js values for the different testing modes
@@ -34,8 +93,8 @@ Overall ideas:
         - should instead use:
             a main.js script which:
                 imports shared-code-script.js (code for all modes)
-                imports param-config-vars.js (specific)
-                run the 
+                imports param-config-vars.js (specific to the )
+                then, run the main loop 
 
     note that the site doesn't work offline because it relies on an external script, this could be added to site-mock
 
@@ -74,6 +133,7 @@ Overall ideas:
                 - 30 days backlog
             - starts up quickly at a good spot
             - simple and easy mechanism to restrict
+            - simple checkin on the state of historical record
             
             
             stretch: 
@@ -82,6 +142,7 @@ Overall ideas:
             - document/diagram v3 of app
                 now users server side scrape caching and,
                 server side cookies based approach to scraping
+            
 
         backlog:
             - logged in users can see new songs

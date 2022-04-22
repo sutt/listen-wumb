@@ -28,5 +28,15 @@ app.get('*', (req, res) => {
     }
 })
 app.listen(app.get('port'), () => {
-    console.log(`proxy2 listening on ${app.get('port')}`)
+    const envs = [
+        'YT_KEY',
+        'DEBUG_PARSE_API',
+        'DEBUG_PARSE_MODULES',
+        'MOCK_PARSE',
+    ]
+    const envSettings = envs.map(e => `${e}=${process.env[e]}`)
+    console.log(`proxy2 running with env's:\n${envSettings.join('\n')}`)
+    
+    console.log(`proxy2 listening on ${app.get('port')}\n...`)
+
 })

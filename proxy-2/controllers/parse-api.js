@@ -24,18 +24,23 @@ const getFormattedCurrentDate = () => {
         )
 }
 
-const setTimeOnDate = (date, time) => {
+const setUTCTimeOnDate = (date, time) => {
     
     try {    
     
         const output = new Date(date)
+        output.setUTCHours(0,0,0,0)
         
         const [hour, minuteXm] = time.split(":")
         const [minute, ampm] = minuteXm.split(" ")
 
-        ampm.toLowerCase().trim() === "pm" && hour.trim() !== "12" 
-            ? output.setHours(parseInt(hour) + 12) 
-            : output.setHours(hour)
+        if ((ampm == "am") && (parseInt(hour) !== 12)) {
+            output.setUTCHours(parseInt(hour))
+        } else if ((ampm == "pm") && (parseInt(hour) !== 12)) {
+            output.setUTCHours(parseInt(hour) + 12)
+        } else if ((ampm == "pm") && (parseInt(hour) == 12)) {
+            output.setUTCHours(parseInt(hour))
+        }
 
         output.setMinutes(minute)
         
@@ -43,7 +48,7 @@ const setTimeOnDate = (date, time) => {
     
     } catch (err) {
     
-        return date
+        return null
     }
 }
 
@@ -67,21 +72,21 @@ router.get("/", (req, res) => {
                 ? "20" + incomingSearchDate
                 : getFormattedCurrentDate()
 
-    const searchDate = new Date(
+    const searchDateUTC = new Date(
         formattedSearchDate.slice(0,4),
         parseInt(formattedSearchDate.slice(4,6)) - 1,
         formattedSearchDate.slice(6,8),
     )
 
-    searchDate.setUTCHours(0,0,0,0)
+    searchDateUTC.setUTCHours(0,0,0,0)
             
     if (debug) {
         console.log(formattedSearchDate)
-        console.log(searchDate)
+        console.log(searchDateUTC)
         console.log(url)
     }
 
-    checkCachedParseRes(searchDate)
+    checkCachedParseRes(searchDateUTC)
         
         .then(data => {
     
@@ -100,7 +105,7 @@ router.get("/", (req, res) => {
                     writeParseResToCache(playlistData, searchDate)
                 }
                 
-                scrapeSite(url, formattedSearchDate, responseCallback, searchDate)
+                scrapeSite(url, formattedSearchDate, responseCallback, searchDateUTC)
             }
         })
 })
@@ -118,18 +123,20 @@ async function checkCachedParseRes(searchDate) {
                 $gte: searchDate,
                 $lt:  searchDatePlusOneDay,
             },
-            // TODO - check for isComplete, etc
+            isMock: isMock,
+            complete: true,
         }
         
         )
         
     if (data.length > 0) {
-        // TODO - add explicit sort here
-        return data[0].items.map(item => {
+        return data[0].items
+        .sort((a,b) => a.time - b.time)
+        .map(item => {
             return {
                 artist: item.artist,
-                title: item.title,
-                time: item.timeStr,
+                title:  item.title,
+                time:   item.timeStr,
             }
         }) 
     }
@@ -143,14 +150,19 @@ function writeParseResToCache(playlistData, searchDate) {
     
     playlistData.forEach(item => {
         item.timeStr    = item.time
-        item.time       = setTimeOnDate(searchDate, item.time)
+        item.time       = setUTCTimeOnDate(searchDate, item.time)
     })
+
+    playlistData.sort((a,b) => a.time - b.time)
 
     try {
 
+        const nowUTC = new Date()
+        nowUTC.setUTCHours(0,0,0,0)
+
         const newParseRes = new ParseRes({
             playlistDate: searchDate,
-            searchDate: Date.now(),
+            searchDate: nowUTC,
             complete: (new Date).getDate() - searchDate.getDate() > 1 ? true: false,
             isMock: isMock,
             items: playlistData,
@@ -172,6 +184,12 @@ function writeParseResToCache(playlistData, searchDate) {
         return 
     }
 
+}
+
+function newUTCTime() {
+    const date = new Date()
+    date.setUTCHours(0,0,0,0)
+    return date
 }
 
 module.exports = router

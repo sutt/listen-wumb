@@ -2,6 +2,7 @@ const express = require('express')
 const router = express.Router()
 const SearchReq = require('../models/search-req')
 const SearchRes = require('../models/search-res')
+const ParseRes = require('../models/parse-res')
 
 router.get('/', (req, res) => {
     SearchReq.aggregate([
@@ -62,5 +63,48 @@ router.get('/date-detail/:date', (req, res) => {
 
         })
 })
+
+
+function getGaps(items, playlistDate, intervalMins=30) {
+    
+    const numIntervals = Math.floor(24*60 / intervalMins)
+    const times = items.map(item => item.time)
+
+    const cvtDate = (d) => {
+        const output = new Date(d)
+        return output
+    }
+    
+    return Array(numIntervals).fill(1).map((v,i) => {
+        const [start, end] = [cvtDate(playlistDate),cvtDate(playlistDate)]
+        start.setUTCMinutes(   intervalMins*i      )
+        end.setUTCMinutes(     intervalMins*(i+1)  )
+        return times.some(t => (start < t) && (t < end))
+    })
+
+}
+
+router.get('/parse-detail', (req, res) => {
+
+    reqDate = new Date(req.query.date)
+    
+    if (isNaN(reqDate.valueOf())) {
+        res.status(500).json({'errMsg': `unable to parse date: ${decodeQuery?.date}`})
+    } 
+    
+    ParseRes.findOne({playlistDate: reqDate})
+        .then(parseDoc => {
+            const gapsArray = getGaps(parseDoc.items, reqDate)
+            res.json(gapsArray)
+        })
+        .catch(err => {
+            console.log(`err on parse-detail: ${err}`)
+            const dummy = Array(24*2).fill(false)
+            res.status(500).json(dummy)
+        })
+
+
+})
+
 
 module.exports = router

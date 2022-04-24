@@ -1,0 +1,69 @@
+
+
+.day-outline {
+    border-style: groove;
+    background-color: bisque;
+    width: 17rem;
+    height: 30rem;
+    padding: 0.4rem;
+    /* display:inline; */
+}
+
+.form-container {
+    padding: 1rem;
+}
+
+.day-header {
+    font-size: 1.0rem;
+    font-style: italic;
+    /* text-align: center; */
+    padding: 0.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.day-header-date-section {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.day-header-info-section {
+    font-size: 0.8rem;
+}
+.graphic {
+    display: block;
+}
+
+.time-label-outline {
+    width: 4rem;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.time-label-slot {
+    font-size: 0.8rem;
+    font-weight: bold;
+    overflow: hidden;
+    /* display: block; */
+    height: 3rem;
+    top: -3.0rem;
+}
+
+.time-label-slot:last-child {
+    height:1rem;
+}
+.slot-outline {
+    width:12rem;
+    float:left;
+    /* float: right; */
+    /* float:right; */
+}
+
+.time-slot {
+    height: 0.5em;
+    background-color: coral;
+}
+
+.empty {
+    background-color: bisque;
+}

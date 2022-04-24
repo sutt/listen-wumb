@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/graph-style.css">
+    <script>
+        function submitDate(e) {
+            e.preventDefault();
+            var form = document.querySelector('#date-input');
+            console.log(`date form: ${form.value}`);
+            let newUrl = `http://localhost:3003/cacheStats/parse-detail?date=${form.value}`
+            clearRender()
+            dateUTC = new Date(form.value)
+            // dateUTC.setUTCHours(0,0,0,0)
+            getData(newUrl, dateUTC)
+            return false
+        }
+    </script>
+</head>
+<body>
+    <h1>Playlist Availability</h1>
+    <div id=""main>
+        
+        <div class="form-container">
+            <form id="date-selector" onsubmit="submitDate(event)">
+                <label for="date">Start Date</label>
+                <input type="date" id="date-input" name="date" value="2022-04-08">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        
+        <div class="day-outline">
+            
+            <div class="header-outline">
+                
+                <div class="day-header">
+                    <div class="day-header-date-section">
+                        <span class="header-date">Mon Apr 8 2022</span>
+                    </div>
+                    <div class="day-header-info-section">
+                        <span class="total-songs-info">260</span>
+                        <span> songs | </span>
+                        <span> </span>
+                        <span class="earliest-song-info">2:01 am</span>
+                        <span> - </span>
+                        <span class="latest-song-info">10:15 pm</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="graphic">
+            
+                <div class="time-label-outline">
+                    <!-- 3 HR LIMIT SLOTS -->
+                </div>
+            
+                <div class="slot-outline">
+          
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>footer</footer>
+    <script src="graph-script.js"></script>
+</body>
+</html>

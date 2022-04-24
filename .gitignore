@@ -6,3 +6,5 @@ wumb-front
 wumb-front-2
 deploy-1/package-lock.json
 .vscode
+frontend/public/tmp
+misc/site-saved

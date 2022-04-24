@@ -52,6 +52,19 @@ app.get('/blocks', (req,res) => {
     )
 })
 
+app.get('/graph', (req, res) => {
+    res.sendFile(
+        'graph.html',    
+        {root: __dirname + '/static/'}
+    )
+})
+
+app.get('/graph-script.js', (req, res) => {
+    res.sendFile('graph-script.js',
+                {root: __dirname + '/static/'}
+    )
+})
+
 app.get("/:args", (req, res) => {
     
     if (req.params.args == "home") {

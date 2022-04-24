@@ -28,12 +28,106 @@ Overall ideas:
         - associated websites:
             - beale street caravan
 
+4.23
+
+    Major Functionality Feature Needed: about 20% of songs are declared - "Video unavailable playback on other websites has been disabled by the video owner"
+
+    
+
+
 4.22
+
+    [x] BUG - songs are being sorted wrong:
+        12am comes directly after 12pm -> fixed
+
+    [x] Finish off work on the parse cache, move to frontend
+
+        first get the basic cache
+
+        there's a site image in misc/site-saved
+            that contains all the youtube scripts
+            -> those can be added to site mock
+
+            - note: this are best understood from the iniator chains in networkTab:devTools
+                - keep these
+
+        we can do a couple things to code the frontend offline...
+            - add the yt scripts
+            - add try except to accomplish
+
+        mostly we want to focus on:
+             the blocks api + basic graphical view of it to get the preview for parse and search we have cached
+             - we'll need some mongo agg queries here
+             - some js processing of the items
+             - some frontend view of it with a bar with color codes
+
+
+
+    [x] Getting 10 real dates in there should work  
+        
+        Prep Steps:
+            [x] shutdown the proxy-2
+            [x] change env variable
+            [x] frontend url
+            
+            - monitor the terminal for cache-found / cache-not-found
+
+            - verify that different start times:
+                - display in the proper order
+                - don't trigger another parse search
+
+        
+        [x] Get these dates:
+        4/8, 4/7, 4/6, 4/5, 4/4, 4/9, 4/10
+        
+        [x] verify in the database
+        db.parseres.find({isMock:false},{playlistDate:1, _id:0})
+
+    
+    [~] Figure out an api call to hit the parse route
+
+    [x] Add cacheStats route to check which dates have parse res
+
+    [x] verify that the new query with multiple requests is working as an AND not an OR
+
+    Notes on Displaying a Catalog:
+
+        - There are some sections of a day - begin, end, and in the middle - where the playlist does not exist. 
+
+            -> This is different then a section that doesn't have existing search results
+
+        
+
+    Notes on Caching Parses:
+    
+        - MOCK_PARSE when set to true (as an .env)
+            - will only find cache records marked isMock:true
+            - will write records with isMock=true
+
+            -> otherwise (e.g. in production), it will only read/write 
+               parse documents with isMock=false
+
+            - notice how this logic is separate from the url logic in the frontend
+        
+        - Currently no logic for `complete` field:
+            - we'll just keep adding new documents each time the current date is search, and no logic:
+                - to pull the most recent playlist page
+                - to delete old copies
+
+        - We should probably just have a DateString attribute in the document
+
+        - We don't know how to deal with timezones and other info about dates
+
+    TODO:
+        - sort the items in checkCache return
+        - account for isMock running in dev / prod
+        - when doing parse_modules/run-main.js
 
     Kind of hacky technique to be doing setUTCHours(0,0,0,0) on each of these?
         - could combine this into one step with the right code lines?
 
-    [ ] We're not sure if a simple 3/31 -> 4/1 is awknowledged here
+    [x] We're not sure if a simple 3/31 -> 4/1 is awknowledged here
+        -> does work
     
     Good Suggestions for `ParseRes` schema from coPilot:
 
@@ -59,7 +153,7 @@ Overall ideas:
     [x] build the writeCache() function
         - first basic operations
 
-    [ ] let's get a simple run thru here:
+    [x] let's get a simple run thru here:
         - turn off the new functionality via stubs
         - turn on functionality 1 by 1
 
@@ -67,8 +161,6 @@ Overall ideas:
 
 4.19 - 4.20
 
-        
-    
     [ ] Misc: why is the month in js Date(YYYY, MM, DD) use index0 for month?
 
         [x] first test basic Operations

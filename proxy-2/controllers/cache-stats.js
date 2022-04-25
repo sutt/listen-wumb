@@ -4,6 +4,8 @@ const SearchReq = require('../models/search-req')
 const SearchRes = require('../models/search-res')
 const ParseRes = require('../models/parse-res')
 
+const debug = process.env.DEBUG_CACHE_STATS == 'true' ? true : false
+
 router.get('/', (req, res) => {
     SearchReq.aggregate([
         {$group: {
@@ -84,23 +86,66 @@ function getGaps(items, playlistDate, intervalMins=30) {
 
 }
 
+function getPlaylistInfo(items) {
+    
+    const infoObj = {}
+    const tmpItems = [...items]
+    tmpItems.sort((a,b) => a.time - b.time)
+    
+    infoObj.earliestTime    = tmpItems[0].time
+    infoObj.earliestTimeStr = tmpItems[0].timeStr
+    infoObj.latestTime      = tmpItems[tmpItems.length-1].time
+    infoObj.latestTimeStr   = tmpItems[tmpItems.length-1].timeStr
+    infoObj.totalSongs      = tmpItems.length
+    
+    return infoObj
+}
+
+
 router.get('/parse-detail', (req, res) => {
 
-    reqDate = new Date(req.query.date)
+    const errMsg = (status, msg) => {
+        
+        if (debug) console.log(msg)
+        
+        res.status(status).json({errMsg: msg})
+    }
+
+    try {
+        
+        reqDate = new Date(req.query.date)
+        
+        if (isNaN(reqDate.valueOf())) {
+            errMsg(500, `unable to parse date: ${req.query.date}`)
+            return
+        }     
+
+    } catch (err) {
+
+        errMsg(500, `error on parse date: ${req.query.date}`)
+        return
+    }
     
-    if (isNaN(reqDate.valueOf())) {
-        res.status(500).json({'errMsg': `unable to parse date: ${decodeQuery?.date}`})
-    } 
     
     ParseRes.findOne({playlistDate: reqDate})
+        
         .then(parseDoc => {
-            const gapsArray = getGaps(parseDoc.items, reqDate)
-            res.json(gapsArray)
+            
+            if (!parseDoc) {
+                errMsg(404, `no parse doc found for date: ${reqDate}`)    
+                return
+            }
+
+            const infoObj = getPlaylistInfo(parseDoc.items)
+            
+            infoObj.gaps = getGaps(parseDoc.items, reqDate)
+            
+            res.json(infoObj)
         })
         .catch(err => {
-            console.log(`err on parse-detail: ${err}`)
-            const dummy = Array(24*2).fill(false)
-            res.status(500).json(dummy)
+
+            errMsg(500, `error on parse-detail: ${err}`)
+            return
         })
 
 

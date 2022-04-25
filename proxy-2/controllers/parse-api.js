@@ -147,6 +147,11 @@ async function checkCachedParseRes(searchDate) {
 
 
 function writeParseResToCache(playlistData, searchDate) {
+
+    if (!playlistData) { 
+        if (debug) console.log("no playlist data to cache")
+        return
+    }
     
     playlistData.forEach(item => {
         item.timeStr    = item.time
@@ -171,10 +176,10 @@ function writeParseResToCache(playlistData, searchDate) {
 
         newParseRes.save()
             .then(data => {
-                console.log("saved parseRes to cache")
+                if (debug) console.log("saved parseRes to cache")
             })
             .catch(err => {
-                console.log(`err on writeParseResToCache: ${err}`)
+                if (debug) console.log(`err on writeParseResToCache: ${err}`)
             })
 
     } catch (err) {
@@ -186,10 +191,5 @@ function writeParseResToCache(playlistData, searchDate) {
 
 }
 
-function newUTCTime() {
-    const date = new Date()
-    date.setUTCHours(0,0,0,0)
-    return date
-}
 
 module.exports = router

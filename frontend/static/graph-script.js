@@ -5,19 +5,47 @@ let url = "http://localhost:3003/cacheStats/parse-detail?date=2022-04-08"
 const inputDate = new Date("2022-04-08")
 let dateUTC = new Date()
 dateUTC.setDate(inputDate.getDate())
-// dateUTC.setUTCHours(0,0,0,0)
 console.log(dateUTC)
+
 
 getData(url, dateUTC)
 
 
 function getData(url, dateUTC) {
+    
+    let err = false
+    let errMsg = null
+    
     fetch(url)
-        .then(res => res.json())
+        
+        .then(res => {
+            
+            if (res.status == 500) {
+                err = true
+                errMsg = "Internal Server Error"
+            }
+
+            if (res.status_code == 404) {
+                err = true
+                errMsg = "Not Found"
+            }
+            
+            return res.json()
+        })
         .then(data => {
+            
             console.log(data)
-            renderGraphHeader(dateUTC)
-            renderGraph(data)
+
+            renderGraphHeader(dateUTC, data)
+
+            if ((err) || (!data?.gaps)) {
+                
+                displayError(data.errMsg)
+
+            } else {
+                
+                renderGraph(data.gaps)
+            }
 
         })
 }
@@ -26,10 +54,21 @@ function getData(url, dateUTC) {
 function clearRender() {
     const slotOutline = document.querySelector('.slot-outline')
     const timeLabelOutline = document.querySelector('.time-label-outline')
+    const errorBody = document.querySelector('.error-body')
     slotOutline.innerHTML = ""
     timeLabelOutline.innerHTML = ""
+    errorBody.style.display = "none"
 }
-function renderGraphHeader(dateUTC) {
+
+function displayError(msg) {
+    console.log("display error")
+    const errorBody = document.querySelector('.error-body')
+    const errorMsg = document.querySelector('.error-message')
+    // errorMsg.innerText = msg
+    errorBody.style.display = "block"
+}
+
+function renderGraphHeader(dateUTC, infoObj) {
     
     const headerDate = document.querySelector('.header-date')
     const totalSongsInfo = document.querySelector('.total-songs-info')
@@ -41,10 +80,17 @@ function renderGraphHeader(dateUTC) {
 
     headerDate.innerText = dateUTC.toUTCString().split(" ").slice(0,4).join(" ")
 
-    // totalSongsInfo.innerText = `${data.length}`
+    totalSongsInfo.innerText    = ""
+    earliestSongInfo.innerText  = ""
+    latestSongInfo.innerText    = ""
+
+    if (infoObj?.totalSongs)        totalSongsInfo.innerText = infoObj.totalSongs
+    if (infoObj?.earliestTimeStr)   earliestSongInfo.innerText = infoObj.earliestTimeStr
+    if (infoObj?.latestTimeStr)     latestSongInfo.innerText = infoObj.latestTimeStr
+}
 
     
-}
+
 
 function renderGraph(data) {
     

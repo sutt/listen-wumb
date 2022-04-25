@@ -52,6 +52,7 @@
 .time-label-slot:last-child {
     height:1rem;
 }
+
 .slot-outline {
     width:12rem;
     float:left;
@@ -66,4 +67,13 @@
 
 .empty {
     background-color: bisque;
+}
+
+.error-body {
+    display:none;
+    
+}
+
+.footer {
+    padding-top: 1rem;
 }

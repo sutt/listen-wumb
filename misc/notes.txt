@@ -27,12 +27,30 @@ Overall ideas:
         - spotify?
         - associated websites:
             - beale street caravan
+4.24
 
+    Finish off the parse-v2 branch
+    
+    Start linking the graph.html and main.html
+
+    Start getting the frontend bug free and continuously playing
+
+    
 4.23
 
     Major Functionality Feature Needed: about 20% of songs are declared - "Video unavailable playback on other websites has been disabled by the video owner"
 
-    
+        basic feature is to just skip the songs on the frontend
+
+        better solution is to test them and try a replacement
+            "v3.1"
+
+    Future Vision:
+        Open the Availability Widget to the left, keep current playlist going to the right
+
+    Nice to have:
+        - explain some of the purposes of this site
+        - v3.0 backend diagram
 
 
 4.22
